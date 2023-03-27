@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ltw 27/03</title>
+    <script>
+        function inizializzaStorageUtenti(){
+            if(typeof(localStorage.utenti) == "undefined"){
+                localStorage.utenti= "[]";
+            }
+        }
+
+        function inserisciUtente(){
+            if(document.getElementsByName("cognome").item(0).value == ""){
+                alert("Campo cognome non può essere vuoto");
+                return false;
+            }
+
+            if(document.getElementsByName("nome").item(0).value == ""){
+                alert("Campo nome non può essere vuoto");
+                return false;
+            }
+            
+            var n= parseInt(document.registrazione.matricola.value);
+            if(document.getElementsByName("matricola").item(0).value == "" || isNaN(n)) {
+                alert("Campo matricola non può essere vuoto e deve essere un numero");
+                return false;
+            }
+
+            var u= JSON.parse(localStorage.utenti);
+            var len= u.length;
+            var obj= {c: document.getElementsByName("cognome").item(0).value,
+                      n: document.getElementsByName("nome").item(0).value,
+                      m: document.getElementsByName("matricola").item(0).value };
+            u[len] = obj;
+            localStorage.utenti = JSON.stringify(u);
+            return true;
+        }
+
+        //nel progetto pratico riproduzione lato client di qualcosa
+        //potremmo farci venire in mente una funzionalità che usa localStorage
+        //non ai fini della registrazione nel sito perchè può essere cancellato 
+        function stampaStorageSemplice(){
+            var u= JSON.parse(localStorage.utenti);
+            var l= u.length;
+            var s= new String("<h3>Stato di localStorage:</h3>");
+            for(i=0; i<l; i++){
+                s += JSON.stringify(u[i]) +"<br/>";
+            }
+            document.getElementById("visitaStorage").innerHTML=s;
+            return true;
+        }
+
+        function stampaStorageTabella(){
+            var u = JSON.parse(localStorage.utenti);
+            var len= u.length;
+            var s= new String("<h2>Stato di localStorage</h2> <br/> <table border=1>");
+            s+= "<tr><th>Cognome</th><th>Nome</th><th>Matricola</th></tr>"
+            for(i=0; i<len; i++){
+                s+= "<tr>"
+                var ith_el= u[i];
+                s+= "<td>" + ith_el.c + "</td>";
+                s+= "<td>" + ith_el.n + "</td>";
+                s+= "<td>" + ith_el.m + "</td>";
+                s+= "</tr>";
+            }
+            s += "</table>";
+            document.getElementById("visitaStorage").innerHTML=s;
+            return true;
+        }
+
+
+        function resetStorageUtenti(){
+            localStorage.utenti="[]";
+        }
+    </script>
+</head>
+<body onload="inizializzaStorageUtenti();">
+    <img src="./logo.png">
+    <form action="" method="post" name="registrazione" onsubmit="return inserisciUtente();" accept-charset="UTF-8">
+        Cognome: <input type="text" name="cognome" size="40" maxlength="40"> <br>
+        Nome: <input type="text" name="nome" size="30" maxlength="30"> <br>
+        Matricola: <input type="text" name="matricola" size="12" maxlength="12"> <br>
+        <input type="submit" value="Invia">
+        <input type="button" value="Stampa Storage Semplice" onclick="stampaStorageSemplice();">
+        <input type="button" value="Stampa Storage Tabella" onclick="stampaStorageTabella();">
+        <input type="button" value="Reset Storage" onclick="resetStorageUtenti();">
+        <input type="reset" value="Reset form">
+    </form>
+    <hr/>
+    <div id="visitaStorage"></div>
+    <hr/>
+</body>
+</html>
