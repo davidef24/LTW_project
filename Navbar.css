@@ -1,56 +1,57 @@
 *{
-    margin:0 ;
-    padding:0 ;
+    margin:0;
+    padding:0;
     list-style:none;
     text-decoration: none ;
 }
-.nodecoration{
-    text-decoration:none;
-}
 body{
-    font-family: 'Poppins';
+    font-family: "Poppins";
 }
-.navbarpers{
+header{
+    height:100vh;
+    width:100vh;
+    background-image: url("./R.jpeg");
+    background-size:cover;
+}
+.navbar{
     position:absolute;
-    padding:16px;
+    padding:50px;
     display: flex;
     justify-content: space-between;
     width:100%;
     box-sizing: border-box;
-    background-color: rgba(17, 0, 255, 0.479);
 }
-.navbarpers a{
-    color:rgb(255, 255, 255);
-    font-size: 1.3em;
-}
-.navbarpers a:hover
-{
+.navbar a{
     color:rgb(0, 0, 0);
 }
-.navbarpers .logo
+.navbar a:hover
+{
+    color:blue;
+}
+.navbar .logo
 {
     font-size:2em;
     font-weight: bold;
 }
-.navbarpers .nav-linkspers{
+.navbar .nav-links{
     display: flex;
     align-items:center;
 }
-.navbarpers .nav-linkspers ul
+.navbar .nav-links ul
 {
     display: flex;
 }
-.navbarpers .nav-linkspers ul li
+.navbar .nav-links ul li
 {
-    margin: 0 30px;
+    margin: 0 25px;
     display: flex;
 }
-.navbarpers .nav-linkspers ul li.activepers a
+.navbar .nav-links ul li.active a
 {
-    color:rgb(255, 255, 255);
+    color:blue;
     font-weight: 600;
 }
-.navbarpers .menu-mobile{
+.navbar .menu-mobile{
     display:none;
     position: absolute;
     top:30px;
@@ -59,20 +60,20 @@ body{
 }
 @media screen and (max-width:900px) 
 {
-    .navbarpers{
-        padding:50px;
-        background-color: rgba(17, 0, 255, 0.479);
+    .navbar{
+        padding:0;
+
     }
-    .navbarpers .menu-mobile
+    .navbar .menu-mobile
     {
         display:block;
     }
-    .nav-linkspers
+    .nav-links
     {
         top:0;
         left:0;
         position: absolute;
-        background-color: rgba(34, 0, 255, 0.2);
+        background-color: rgba(255, 255, 255, 0.20);
         backdrop-filter: blur(8px);
         width:100%;
         height:100vh;
@@ -82,26 +83,26 @@ body{
         margin-left:+100%;
         transition: all 0.5s ease;
     }
-    .navbarpers a{
-        color:rgb(255, 255, 255);
+    .navbar a{
+        color:rgb(0, 0, 0);
     }
-    .navbarpers .logo
+    .navbar .logo
     {
         position:absolute;
         top:40px;
         left:30px;
     }
-    .nav-linkspers.mobile-menu{
+    .nav-links.mobile-menu{
         margin-left:0;
     }
-    .nav-linkspers ul
+    .nav-links ul
     {
         display:flex;
         flex-direction:column;
         align-items:center;
 
     }
-    .navbarpers .nav-linkspers ul li
+    .navbar .nav-links ul li
     {
         margin: 25px 0;
         font-size:1.2em;
