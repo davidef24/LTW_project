@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina di registrazione</title>
+    <link rel="stylesheet" href="../bootstrap-5.2.3/bootstrap-5.2.3/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="signin.css">
+    <script src="../bootstrap-5.2.3/bootstrap-5.2.3/dist/js/bootstrap.min.js"></script>
+</head>
+<body class="text-center">
+    <form method="post" action="" name="registrazione" onsubmit='return check_lr();' class="form-signin m-auto">
+
+        <h1>Crea un account</h1> 
+        <input id="nomeField" placeholder="Nome" type="text" name="nome" maxlength="30" class="form-control">
+        
+        <input placeholder="Cognome" type="text" name="cognome" maxlength="30" class="form-control">
+
+        <input placeholder="Data di nascita" type="date" name="nascita" class="form-control">
+           
+        <input placeholder="Email" type="text" name="email" maxlength="40" class="form-control">
+        
+        <input placeholder="Password" type="password" name="password1" maxlength="40" class="form-control">
+        <i class="far fa-eye"></i>
+
+        <input placeholder="Ripeti la password" type="password" name="password2" maxlength="40" class="form-control">
+        <i class="far fa-eye"></i>
+    
+        <input type="submit" value="Registrati" class="btn btn-light">
+        <input type="reset" value="Reset" class="btn btn-light">
+                
+    </form>
+</body>
+</html>
