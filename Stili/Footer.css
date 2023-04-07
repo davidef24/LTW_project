@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); 
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.mybody{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+.myfooter{
+    background-color:rgba(17, 0, 255, 0.479);
+    padding:50px 0;
+}
+.myrow
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mycontainer
+{
+    max-width: 1200px;
+    background-color:rgba(17, 0, 255, 0);
+    margin:auto;
+}
+ul{
+    list-style: none;
+}
+.myfooter-col
+{
+    width:25%;
+    padding:0 15px;
+}
+.myfooter-col h4
+{
+    font-size:18px;
+    color:#ffffff;
+    text-transform: capitalize;
+    margin-bottom:35px;
+    font-weight:500;
+    position:relative;
+}
+.myfooter-col h4::before
+{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-10px;
+    background-color: rgb(255, 255, 255);
+    height:2px;
+    box-sizing: border-box;
+    width:50px;
+}
+.myfooter-col ul li:not(:last-child)
+{
+    margin-bottom:10px;
+}
+.mylabel{
+    color:#000000
+}
+.myform
+{
+    font-size:16px;
+    text-decoration: none;
+    font-weight:300;
+    color:#ffffff;
+    display:block;
+    transition:all 0.3s ease;
+}
+.myform:hover
+{
+    color:#000000;
+    padding-left:8px;
+}
+.myfooter-col ul li a 
+{
+    font-size:16px;
+    text-transform:capitalize;
+    text-decoration: none;
+    font-weight:300;
+    color:#ffffff;
+    display:block;
+    transition:all 0.3s ease;
+}
+.myfooter-col ul li a:hover 
+{
+    color:#000000;
+    padding-left:8px;
+}
+@media screen and (max-width:900px)
+{
+    .myfooter-col
+    {
+        width: 50%;
+        margin-bottom:30px;
+    }
+}
+@media screen and (max-width:700px)
+{
+    .myfooter-col
+    {
+        width:100%;
+    }
+
+}
+.btn .btn-primary
+{
+    margin:5px;
+}
+
