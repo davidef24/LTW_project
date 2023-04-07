@@ -3,15 +3,31 @@ body {
   height: 100%;
 }
 
+.header{
+  background-color: blue;
+  grid-area: header;
+}
+
 body {
   display: flex;
   display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr repeat(5, 2fr);
+  grid-template-areas: 'header header header header header header'
+                        '. . . . . .'
+                        '. c1 c1 c2 . .'
+                        '. c1 c1 c2  . .'
+                        '. . . . . .'
+                        '. . . . . .';
   background-color: #ffffff;
+}
+
+.btn{
+  margin-bottom: 5px;
 }
 
 .c1 {
   grid-area: c1;
-  text-align:center;
 }
 
 .c2 {
