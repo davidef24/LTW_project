@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;500&display=swap');
+
 html,
 body {
   height: 100%;
@@ -5,7 +7,24 @@ body {
 
 body {
   display: flex;
-  background-color:antiquewhite;
+  background-image: url("../Località/Spagna3.png");
+}
+
+.container {
+  background-color: #ffffffc5;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  top: 50%;
+  left: 50%;
+  width: 325px;
+  height: 450px;
+  margin-top: 130px;
+}
+
+.q1 {
+  margin-top: 10px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  font-size: larger;
 }
 
 .form-signin {

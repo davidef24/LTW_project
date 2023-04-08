@@ -11,7 +11,7 @@ function emailToRegister(){
         return false;
     }
     else{
-        if (document.registrazione.email.value.match(/@/)) return true;
+        if (document.registrazione.email.value.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) return true;
         else{
             alert("Email invalida");
             return false;

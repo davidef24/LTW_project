@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="../bootstrap-5.2.3/bootstrap-5.2.3/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="signin.css">
     <script src="../bootstrap-5.2.3/bootstrap-5.2.3/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="validate.js"></script>
 </head>
 <body class="text-center">
+    <div= class="container">
+    <div class="q1">Inserisci i tuoi dati</div>
     <form method="post" action="" name="registrazione" onsubmit='return check_lr();' class="form-signin m-auto">
-
-        <h1>Crea un account</h1> 
         <input id="nomeField" placeholder="Nome" type="text" name="nome" maxlength="30" class="form-control">
         
         <input placeholder="Cognome" type="text" name="cognome" maxlength="30" class="form-control">
 
-        <input placeholder="Data di nascita" type="date" name="nascita" class="form-control">
+        <input placeholder="Data di nascita" type="text" onfocus="this.type='date'" name="nascita" class="form-control">
            
         <input placeholder="Email" type="text" name="email" maxlength="40" class="form-control">
         
@@ -27,9 +28,10 @@
         <input placeholder="Ripeti la password" type="password" name="password2" maxlength="40" class="form-control">
         <i class="far fa-eye"></i>
     
-        <input type="submit" value="Registrati" class="btn btn-light">
-        <input type="reset" value="Reset" class="btn btn-light">
+        <input type="submit" value="Registrati" class="btn btn-primary">
+        <input type="reset" value="Reset" class="btn btn-danger">
                 
     </form>
+    </div>
 </body>
 </html>
