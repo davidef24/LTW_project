@@ -1,5 +1,6 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,9 +14,9 @@
 <body>
 <!--<img src="Image/Image/Logo.png" alt="Imagine1" width="150" height="150" class="d-inline-block align-text-top"> -->
 <nav class="navbarpers">
-        <a  class="nodecoration logo" href="#" class="logo">
-            Flight-Mates
-        </a>
+        <?php
+            echo "<h1>Ciao, ".$_GET['nome']."</h1>";
+        ?>
         <div class="nav-linkspers">
         <ul>
         <li class="activepers">

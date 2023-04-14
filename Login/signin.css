@@ -8,6 +8,17 @@ body {
   display: flex;
   background-image: url("../Località/Spagna2.png");
 }
+
+.container2 {
+  background-color: #ffffffc5;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  top: 40%;
+  left: 40%;
+  width: 325px;
+  height: 150px;
+  position: relative;
+}
+
 .q1 {
   margin-top: 10px;
   font-family: 'Outfit', sans-serif;

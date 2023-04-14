@@ -17,8 +17,19 @@ body {
   left: 50%;
   width: 325px;
   height: 450px;
-  margin-top: 130px;
+  margin-top: 200px;
 }
+
+.container2 {
+  background-color: #ffffffc5;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  top: 40%;
+  left: 40%;
+  width: 325px;
+  height: 150px;
+  position: relative;
+}
+
 
 .q1 {
   margin-top: 10px;
@@ -38,5 +49,10 @@ body {
 
 .form-signin .form-floating:focus-within {
   z-index: 2;
+}
+
+.login-image {
+  margin-left: 35px;
+  height: 35px;
 }
 
