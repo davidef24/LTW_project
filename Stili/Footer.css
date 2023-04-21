@@ -33,6 +33,7 @@ ul{
 }
 .myfooter-col h4
 {
+    display:block;
     font-size:18px;
     color:#ffffff;
     text-transform: capitalize;
