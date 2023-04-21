@@ -65,9 +65,10 @@ body{
 }
 @media screen and (max-width:800px) 
 {
+
     .navbarpers{
         padding:50px;
-        background-color: rgba(17, 0, 255, 0.479);
+        background-color: rgba(17, 0, 255, 0.904);
     }
     .navbarpers .menu-mobile
     {

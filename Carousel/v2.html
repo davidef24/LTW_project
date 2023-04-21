@@ -40,6 +40,7 @@
             $("#dove-andare").autocomplete({
                 source: città,
                 select: function(event, ui){
+                    //var url= ui.item.value + ".html"
                     event.preventDefault();
                     window.location.href="../Homepage/homepage.html";
                 }
