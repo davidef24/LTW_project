@@ -1,12 +1,12 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Stili/Colors_link_nav.css">
     <link rel="stylesheet" href="../bootstrap-5.2.3/bootstrap-5.2.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../Stili/Footer.css">
     <script src="../bootstrap-5.2.3/bootstrap-5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Flight-Mates</title>
@@ -14,9 +14,9 @@
 <body>
 <!--<img src="Image/Image/Logo.png" alt="Imagine1" width="150" height="150" class="d-inline-block align-text-top"> -->
 <nav class="navbarpers">
-        <a  class="nodecoration logo" href="#" class="logo">
-            Flight-Mates
-        </a>
+        <?php
+            echo "<h1>Ciao, ".$_GET['nome']."</h1>";
+        ?>
         <div class="nav-linkspers">
         <ul>
         <li class="activepers">
@@ -40,10 +40,15 @@
             Chi siamo</a>
         </li>
         <li>
-            <a class="nodecoration" href="../Login/login.html">
-                <img src="../Icone/Image/iconizer-person-circle.svg"  alt="person-circle" width="28" height="28"  class="d-inline-block align-text-center">
-                Login
-            </a>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Ricerca" aria-label="Ricerca">
+                <img src="../Icone/Image/iconizer-search.svg"  type="submit" alt="search" width="28" height="28">
+                <div class="login-image">
+                    <a href="../Login/login.html">
+                        <img src="../Icone/Image/iconizer-person-circle.svg" href="./Login/login.html" alt="person-circle" width="28" height="28">
+                    </a>
+                </div>
+            </form>
         </li>
         </ul>
         </div>
@@ -99,54 +104,6 @@
         <span class="visually-hidden">Next</span>
     </button>
 </div>
-<footer class="myfooter mybody">
-    <div class="mycontainer">
-        <div class="myrow">
-            <div class="myfooter-col">
-                <h4>Informazioni Sito</h4>
-                <ul>
-                <li><a href="">Chi siamo</a></li>
-                <li><a href="">Programma</a></li>
-                <li><a href="">Contattaci</a></li>
-                </ul>
-            </div>
-             <div class="myfooter-col">
-                <h4>Mappa del sito web</h4>
-                <ul>
-                <li><a href="">Destinations</a></li>
-                <li><a href="">Users in Flights</a></li>
-                <li><a href="">Help_Users</a></li>
-                <li><a href="">Presentation</a></li>
-                </ul>
-            </div>
-             <div class="myfooter-col">
-                <h4>Note Legali</h4>
-                <ul>
-                <li><a href="">Privacy</a></li>
-                <li><a href="">Cookie Policy</a></li>
-                </ul>
-            </div>
-             <div class="myfooter-col">
-                <h4>Iscriviti alla Newsletter</h4>
-                <ul>
-                    <li>
-                    <div class="myform">
-                        <form  method="post" action="" name="news_letter" onsubmit="return check_nl();">
-                                Per non perderti le ultime novità
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                    <label for="floatingInput" class="mylabel">Email address</label>
-                                </div>
-                                <hr>
-                                <input class="btn btn-primary" type="submit" value="Invia">
-                        </form>
-                    </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer>
 </body>
 <script>
     const menu_mobile=document.querySelector(".menu-mobile");

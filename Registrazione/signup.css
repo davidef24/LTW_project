@@ -1,12 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;500&display=swap');
-html, body {
+
+html,
+body {
   height: 100%;
 }
 
-
 body {
   display: flex;
-  background-image: url("../Località/Spagna2.png");
+  background-image: url("../Località/Spagna3.png");
+}
+
+.container {
+  background-color: #ffffffc5;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  top: 50%;
+  left: 50%;
+  width: 325px;
+  height: 450px;
+  margin-top: 200px;
 }
 
 .container2 {
@@ -19,44 +30,12 @@ body {
   position: relative;
 }
 
+
 .q1 {
   margin-top: 10px;
   font-family: 'Outfit', sans-serif;
   font-weight: 500;
   font-size: larger;
-}
-
-.q2 {
-  margin-bottom: 10px;
-  font-family: 'Outfit', sans-serif;
-  font-weight: 100;
-  font-size: large;
-}
-
-.btn{
-  margin-bottom: -3px;
-}
-
-
-.c1 {
-  grid-area: c1;
-  top: 50%;
-  left: 30%;
-}
-
-.container {
-  background-color: #ffffffc5;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-  top: 50%;
-  left: 50%;
-  width: 325px;
-  height: 320px;
-  margin-top: 180px;
-}
-
-h3{
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
 }
 
 .form-signin {
@@ -70,5 +49,10 @@ h3{
 
 .form-signin .form-floating:focus-within {
   z-index: 2;
+}
+
+.login-image {
+  margin-left: 35px;
+  height: 35px;
 }
 
