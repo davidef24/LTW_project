@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.2.3/bootstrap-5.2.3/dist/css/bootstrap.min.css">
+    <script src="../bootstrap-5.2.3/bootstrap-5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+    <style>
+        .img-container {
+            position: relative;
+            display: inline-block;
+        }
+        img {
+            max-width: 100%;
+            object-fit: cover;
+            height: auto;
+            filter: blur(5px);
+        }
+        .form-dove-andare {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+        }
+        @media (max-width: 1000px) {
+            .form-dove-andare {
+                width: 100%;
+            }
+        }
+    </style>
+    <script>
+        $(function(){
+            var città=["Barcellona", "Palma di Maiorca", "Madrid"];
+            $("#dove-andare").autocomplete({
+                source: città,
+                select: function(event, ui){
+                    event.preventDefault();
+                    window.location.href="../Homepage/homepage.html";
+                }
+            });
+        });
+    </script>
+    <title>Carousel v2</title>
+</head>
+<body>
+    <div class="img-container">
+        <img src="../Altro/tutti insieme.png">
+        <form method="post" action="" name="shortcut" class="align-items-center form-dove-andare">
+            <div class="col-12">
+                <div class="input-group mb-3">
+                    <input type="text" id="dove-andare" class="form-control-lg rounded-pill" placeholder="Dove vuoi andare?" style="width: 1000px; display: flex;">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
