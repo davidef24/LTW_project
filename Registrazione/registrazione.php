@@ -31,14 +31,15 @@ else {
                 if ($tuple=pg_fetch_array($result, null, PGSQL_ASSOC)) {
                         echo "<div class=\"container2\">
                                 <h1 class=\"q1\"> 
-                                    Spiacente, l'indirizzo email non e' disponibile, se vuoi
+                                    Spiacente, l'indirizzo email e' già utilizzato
                                 </h1> 
                                 <a href=../Login/login.html>
-                                    <button class=\"btn btn-success\">
+                                    <button class=\"btn btn-success\" id=\"log-btn\">
                                         Clicca qui per loggarti
                                     </button>
                                 </a> 
                             </div>";
+                            
                 }
                 else {
                     //qui usiamo la stessa connessione per lanciare la nostra query
@@ -54,7 +55,7 @@ else {
                         echo "
                         <div class=\"container2\"><h1 class=\"q1\"> 
                             Registrazione completata. Puoi iniziare a usare il sito <br/></h1>
-                            <a href=../login/index.html> 
+                            <a href=../Login/login.html> 
                                 <button class=\"btn btn-success\">
                                     Clicca qui per loggarti!
                                 </button>
@@ -65,7 +66,7 @@ else {
             }
         ?>
         <nav class="navbarpers">
-        <a  class="nodecoration logo" href="#" class="logo">
+        <a  class="nodecoration logo" href="../Homepage/homepage.html" class="logo">
             Flight-Mates
         </a>
         <div class="nav-linkspers">
@@ -91,19 +92,42 @@ else {
             Chi siamo</a>
         </li>
         <li>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Ricerca" aria-label="Ricerca">
-                <img src="../Icone/Image/iconizer-search.svg"  type="submit" alt="search" width="28" height="28">
-                <div class="login-image">
-                    <a href="../Login/login.html">
-                        <img src="../Icone/Image/iconizer-person-circle.svg" href="./Login/login.html" alt="person-circle" width="28" height="28">
-                    </a>
+            <!--<a class="nodecoration" href="../Login/login.html">
+                <img src="../Icone/Image/iconizer-person-circle.svg"  alt="person-circle" width="28" height="28"  class="d-inline-block align-text-center">
+                Login
+            </a> -->
+            <button type="button" data-bs-toggle="modal" data-bs-target="#logPage" class="btn bg-success" style="color: rgb(255, 255, 255);">Accedi</button>
+              <!-- Modal -->
+              <div class="modal fade" id="logPage" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Inserisci le tue credenziali</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form method="post" action="../Login/login.php" name="registrazione" class="form-signin m-auto" onsubmit="return check_lr();">
+        
+                            <input placeholder="Email" type="text" name="email" maxlength="40" class="form-control" required autofocus>
+                    
+                            <input placeholder="Password" type="password" name="password1" maxlength="40" class="form-control" required>
+                    
+                            <i class="far fa-eye"></i>
+                           
+                            <input type="submit" value="Accedi" class="btn btn-primary" >     
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <h5 class="modal-title">Non sei registrato?</h5>
+                        <a href="../Registrazione/registrazione.html"><button class="btn btn-success" form="">Crea un nuovo account</button></a>
+                        
+                    </div>
+                  </div>
                 </div>
-            </form>
+              </div>
         </li>
         </ul>
         </div>
         <img src="../Icone/Image/iconizer-menu-up.svg" class="menu-mobile"> 
-        </nav>
+</nav>
     </body>
 </html>

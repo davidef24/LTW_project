@@ -10,14 +10,14 @@ body {
   background-image: url("../Località/Spagna3.png");
 }
 
-.container {
+.form-container {
   background-color: #ffffffc5;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-  top: 50%;
-  left: 50%;
+  top: 28%;
+  left: 40%;
   width: 325px;
   height: 450px;
-  margin-top: 200px;
+  position: absolute;
 }
 
 .container2 {
@@ -30,6 +30,9 @@ body {
   position: relative;
 }
 
+#log-btn{
+  margin-top: 20px;
+}
 
 .q1 {
   margin-top: 10px;

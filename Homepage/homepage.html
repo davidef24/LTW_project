@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,46 +9,18 @@
     <link rel="stylesheet" href="../Stili/Footer.css">
     <script src="../bootstrap-5.2.3/bootstrap-5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Login/modal-signin.css">
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Flight-Mates</title>
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("../Navbar/navbar.html");
+        });
+    </script>
 </head>
 <body>
 <!--<img src="Image/Image/Logo.png" alt="Imagine1" width="150" height="150" class="d-inline-block align-text-top"> -->
-<nav class="navbarpers">
-        <a  class="nodecoration logo" href="#" class="logo">
-            Flight-Mates
-        </a>
-        <div class="nav-linkspers">
-        <ul>
-        <li class="activepers">
-        <a class="nodecoration"  href="#">
-            <img src="../Icone/Image/iconizer-globe-central-south-asia.svg" alt="direct-flight" width="28" height="28" class="d-inline-block align-text-center">
-            Destinazioni</a>
-        </li>
-        <li>
-        <a class="nodecoration" href="#">
-            <img src="../Icone/Image/iconizer-13869315071620553079.svg" alt="tourist" width="28" height="28" class="d-inline-block align-text-center">
-            Utenti in volo</a>
-        </li>
-        <li>
-        <a  class="nodecoration" href="#">
-            <img src="../Icone/Image/iconizer-9685629051582823580.svg" alt="support" width="28" height="28" class="d-inline-block align-text-center">
-            Assistenza</a>
-        </li>
-        <li>
-        <a class="nodecoration" href="#">
-            <img src="../Icone/Image/iconizer-514948881625157164.svg" alt="support" width="28" height="28" class="d-inline-block align-text-center">
-            Chi siamo</a>
-        </li>
-        <li>
-            <a class="nodecoration" href="../Login/login.html">
-                <img src="../Icone/Image/iconizer-person-circle.svg"  alt="person-circle" width="28" height="28"  class="d-inline-block align-text-center">
-                Login
-            </a>
-        </li>
-        </ul>
-        </div>
-        <img src="../Icone/Image/iconizer-menu-up.svg" class="menu-mobile"> 
-</nav>
+<div id="nav-placeholder"></div>
 <br>
 <br>
 <br>

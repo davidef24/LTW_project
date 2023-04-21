@@ -39,17 +39,6 @@
             <img src="../Icone/Image/iconizer-514948881625157164.svg" alt="support" width="28" height="28" class="d-inline-block align-text-center">
             Chi siamo</a>
         </li>
-        <li>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Ricerca" aria-label="Ricerca">
-                <img src="../Icone/Image/iconizer-search.svg"  type="submit" alt="search" width="28" height="28">
-                <div class="login-image">
-                    <a href="../Login/login.html">
-                        <img src="../Icone/Image/iconizer-person-circle.svg" href="./Login/login.html" alt="person-circle" width="28" height="28">
-                    </a>
-                </div>
-            </form>
-        </li>
         </ul>
         </div>
         <img src="../Icone/Image/iconizer-menu-up.svg" class="menu-mobile"> 
