@@ -2,62 +2,52 @@
 <html>
     <head>
         <title>Prova</title>
-        <link  rel="stylesheet" src="./StileMegaMenu.css">
+        <link rel="stylesheet" href="./StileMegaMenu.css">
+        <link rel="stylesheet" href="../Stili/Colors_link_nav.css">
     </head>
     <body>
         <!--creazione menu-->
-        <nav>
-            <ul>
+        <header>
+            <nav class="navbarpers">
+                <a  class="nodecoration logo" href="#" class="logo">
+                    Flight-Mates
+                </a>
+                <div class="nav-linkspers">
+                <ul>
                 <li>
-                    <li><a href="#">home</a></li>
-                    <li id="menu-item-1"><a href="#">Sottomenu</a></li>
-                    <div class="submenu">
-                        <div class="mega-menu">
-                            <div class="children">
-                                <div class="sub-menu">
-                                <h3>Asia</h3>
-                                <figure>
-                                    <img src="../Località/lake-braies-in-south-tyrol-in-summer-royalty-free-image-1598602493.jpg">
-                                </figure>
-                                <figure>
-                                    <img src="../Località/Giappone.png">
-                                </figure>
-                                </div>
-                            </div>
-                            <div class="children">
-                                <h3>Africa</h3>
-                                <ul class="sub-menu">
-                                    <li>
-                                        <a href="#">
-                                            Link-item1
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            Link-item2
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            Link-item3
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="children">
-                                <h3>America</h3>
-
-                            </div>
-                            <div class="children">
-                                <h3>Europa</h3>
-                            </div>
-                        </div>
-                    </div>
+                <a class="nodecoration"  href="#">
+                    <img src="../Icone/Image/iconizer-globe-central-south-asia.svg" alt="direct-flight" width="28" height="28" class="d-inline-block align-text-center">
+                    Destinazioni</a>
                 </li>
-            </ul>
+                <li>
+                <a class="nodecoration" href="#">
+                    <img src="../Icone/Image/iconizer-13869315071620553079.svg" alt="tourist" width="28" height="28" class="d-inline-block align-text-center">
+                    Utenti in volo</a>
+                </li>
+                <li>
+                <a  class="nodecoration" href="#">
+                    <img src="../Icone/Image/iconizer-9685629051582823580.svg" alt="support" width="28" height="28" class="d-inline-block align-text-center">
+                    Assistenza</a>
+                </li>
+                <li>
+                <a class="nodecoration" href="#">
+                    <img src="../Icone/Image/iconizer-514948881625157164.svg" alt="support" width="28" height="28" class="d-inline-block align-text-center">
+                    Chi siamo</a>
+                </li>
+                <li>
+                    <a class="nodecoration" href="../Login/login.html">
+                        <img src="../Icone/Image/iconizer-person-circle.svg"  alt="person-circle" width="28" height="28"  class="d-inline-block align-text-center">
+                        Login
+                    </a>
+                </li>
+                </ul>
+                </div>
+                <img src="../Icone/Image/iconizer-menu-up.svg" class="menu-mobile"> 
         </nav>
+    </header>
     </body>
     <script>
-        const drop_button=document.querySelector('#menu-item-1')
+        const drop_button=document.querySelector('#menu-item-1');
+         
     </script>
 </html>
