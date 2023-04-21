@@ -11,15 +11,18 @@ img{
     width:80%;
     margin: 0 auto;
 }
-.spacer{
+.spacer
+{
     padding:70px 0;
 }
-nav{
-    background-color: bisque;
+nav
+{
+    padding:70px 0;
+    background-color:rgba(17, 0, 255, 0.479);
     position:relative;
-    padding:0 20px;
 }
-nav ul {
+nav ul 
+{
     display:flex;
     list-style:none;
 }
@@ -43,21 +46,23 @@ nav a:hover
     position:absolute;
     top:53px;
     left:0;
-    background-color: blue;
+    background-color: rgba(17, 0, 255, 0.479);
     border: 1px solid #bbb;
     width:100%;
     padding:30px;
-    display: none;
+    /*display: none;*/
 }
 .show{
     display:initial;
 }
-.mega-menu{
+.mega-menu
+{
     display:flex;
     justify-content: space-between;
     flex-wrap:wrap;
 }
-.children{
+.children
+{
     width:23%;
 }
 .children h3
@@ -67,6 +72,7 @@ nav a:hover
     padding:10px 0;
     border-bottom:1px solid #bbb;
     margin-bottom:20px;
+    text-align: center;
 }
 .sub-menu{
     flex-direction: column;
