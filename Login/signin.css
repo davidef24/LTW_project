@@ -9,25 +9,15 @@ body {
   background-image: url("../Località/Spagna2.png");
 }
 
-.container2 {
-  background-color: #ffffffc5;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-  top: 40%;
-  left: 40%;
-  width: 325px;
-  height: 150px;
-  position: relative;
-}
-
 .q1 {
-  margin-top: 10px;
-  font-family: 'Outfit', sans-serif;
-  font-weight: 500;
-  font-size: larger;
+    margin-top: 10px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    font-size: larger;
 }
 
 .q2 {
-  margin-bottom: 10px;
+  margin-bottom: 100px;
   font-family: 'Outfit', sans-serif;
   font-weight: 100;
   font-size: large;
@@ -38,25 +28,14 @@ body {
 }
 
 
-.c1 {
-  grid-area: c1;
-  top: 50%;
-  left: 30%;
-}
-
-.container {
+.log-container {
   background-color: #ffffffc5;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-  top: 50%;
-  left: 50%;
-  width: 325px;
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  width: 320px;
   height: 320px;
-  margin-top: 180px;
-}
-
-h3{
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
 }
 
 .form-signin {

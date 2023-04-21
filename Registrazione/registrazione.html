@@ -12,70 +12,37 @@
     <link rel="stylesheet" href="signup.css">
     <script src="../bootstrap-5.2.3/bootstrap-5.2.3/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="validate.js"></script>
+    <link rel="stylesheet" href="../Stili/Footer.css">
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("../Navbar/navbar.html");
+        });
+    </script>
 </head>
 <body class="text-center">
-    <nav class="navbarpers">
-        <a  class="nodecoration logo" href="#" class="logo">
-            Flight-Mates
-        </a>
-        <div class="nav-linkspers">
-        <ul>
-        <li class="activepers">
-        <a class="nodecoration"  href="#">
-            <img src="../Icone/Image/iconizer-globe-central-south-asia.svg" alt="direct-flight" width="28" height="28" class="d-inline-block align-text-center">
-            Destinazioni</a>
-        </li>
-        <li>
-        <a class="nodecoration" href="#">
-            <img src="../Icone/Image/iconizer-13869315071620553079.svg" alt="tourist" width="28" height="28" class="d-inline-block align-text-center">
-            Utenti in volo</a>
-        </li>
-        <li>
-        <a  class="nodecoration" href="#">
-            <img src="../Icone/Image/iconizer-9685629051582823580.svg" alt="support" width="28" height="28" class="d-inline-block align-text-center">
-            Assistenza</a>
-        </li>
-        <li>
-        <a class="nodecoration" href="#">
-            <img src="../Icone/Image/iconizer-514948881625157164.svg" alt="support" width="28" height="28" class="d-inline-block align-text-center">
-            Chi siamo</a>
-        </li>
-        <li>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Ricerca" aria-label="Ricerca">
-                <img src="../Icone/Image/iconizer-search.svg"  type="submit" alt="search" width="28" height="28">
-                <div class="login-image">
-                    <a href="../Login/login.html">
-                        <img src="../Icone/Image/iconizer-person-circle.svg" href="./Login/login.html" alt="person-circle" width="28" height="28">
-                    </a>
-                </div>
-            </form>
-        </li>
-        </ul>
-        </div>
-        <img src="../Icone/Image/iconizer-menu-up.svg" class="menu-mobile"> 
-        </nav>
-    <div= class="container">
-    <div class="q1">Inserisci i tuoi dati</div>
-    <form method="post" action="registrazione.php" name="registrazione" onsubmit='return check_lr();' class="form-signin m-auto">
-        <input id="nomeField" placeholder="Nome" type="text" name="nome" maxlength="30" class="form-control">
-        
-        <input placeholder="Cognome" type="text" name="cognome" maxlength="30" class="form-control">
+    <div id="nav-placeholder"></div>
+    <div class="form-container">
+        <div class="q1">Inserisci i tuoi dati</div>
+        <form method="post" action="registrazione.php" name="registrazione" onsubmit='return check_lr();' class="form-signin m-auto">
+            <input id="nomeField" placeholder="Nome" type="text" name="nome" maxlength="30" class="form-control">
+            
+            <input placeholder="Cognome" type="text" name="cognome" maxlength="30" class="form-control">
 
-        <input placeholder="Data di nascita" type="text" onfocus="this.type='date'" name="nascita" class="form-control">
-           
-        <input placeholder="Email" type="text" name="email" maxlength="40" class="form-control">
-        
-        <input placeholder="Password" type="password" name="password1" maxlength="40" class="form-control">
-        <i class="far fa-eye"></i>
+            <input placeholder="Data di nascita" type="text" onfocus="this.type='date'" name="nascita" class="form-control">
+            
+            <input placeholder="Email" type="text" name="email" maxlength="40" class="form-control">
+            
+            <input placeholder="Password" type="password" name="password1" maxlength="40" class="form-control">
+            <i class="far fa-eye"></i>
 
-        <input placeholder="Ripeti la password" type="password" name="password2" maxlength="40" class="form-control">
-        <i class="far fa-eye"></i>
-    
-        <input type="submit" value="Registrati" class="btn btn-primary">
-        <input type="reset" value="Reset" class="btn btn-danger">
+            <input placeholder="Ripeti la password" type="password" name="password2" maxlength="40" class="form-control">
+            <i class="far fa-eye"></i>
+            
+            <input type="submit" value="Registrati" class="btn btn-primary">
+            <input type="reset" value="Reset" class="btn btn-danger">
                 
-    </form>
+        </form>
     </div>
 </body>
 </html>
