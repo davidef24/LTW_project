@@ -1,29 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@700;900&display=swap');
 
 #crpd-txt{
-    transform: translate(10px, -50px);
     color: rgb(255, 255, 255);
     font-family: 'Archivo Black', sans-serif;
     position: absolute;
     bottom: 0;
 }
 
-#crpd-img{
-    border-radius: 10px;
-}
-
-#crpd-txt-long{
-    transform: translate(10px, -70px);
-    color: rgb(255, 255, 255);
-    font-family: 'Archivo Black', sans-serif;
+#div-header{
+    text-align: center; 
+    margin-top: 1px;
+    color: rgb(0, 0, 0); 
+    font-weight: 900;
+    margin-bottom: 40px;
+    font-family: 'Lexend Deca', sans-serif;
+    padding-top: 20px;
 }
 
 #crpd-txt:hover{
-    transform: translate(10px, -70px);
+    transform: translate(0px, -20px);
     transition-duration: 1000ms;
 }
 
-#crpd-txt-long:hover{
-    transform: translate(10px, -90px);
-    transition-duration: 1000ms;
+#par-description {
+    text-align: left;
+    color: rgb(130, 132, 134);
+}
+
+#par-header {
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-family: 'Lilita One', cursive;
 }
