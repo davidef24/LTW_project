@@ -10,30 +10,7 @@
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css">
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
-    <style>
-        .img-container {
-            position: relative;
-            display: inline-block;
-        }
-        img {
-            max-width: 100%;
-            object-fit: cover;
-            height: auto;
-            filter: blur(5px);
-        }
-        .form-dove-andare {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            
-        }
-        @media (max-width: 1000px) {
-            .form-dove-andare {
-                width: 100%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
     <script>
         $(function(){
             var città=["Barcellona", "Palma di Maiorca", "Madrid"];
@@ -55,7 +32,7 @@
         <form method="post" action="" name="shortcut" class="align-items-center form-dove-andare">
             <div class="col-12">
                 <div class="input-group mb-3">
-                    <input type="text" id="dove-andare" class="form-control-lg rounded-pill" placeholder="Dove vuoi andare?" style="width: 1000px; display: flex;">
+                    <input type="text" id="dove-andare" class="form-control-lg rounded-pill" placeholder="Dove vuoi andare?" style="width: 1000px; display: flex; border: rgb(252, 252, 252);">
                 </div>
             </div>
         </form>

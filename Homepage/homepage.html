@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../Login/modal-signin.css">
     <script src= "../Jquery/jquery.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="../Stili/carousel.css">
+    <link rel="stylesheet" href="../Stili/cropped-img.css">
     <title>Flight-Mates</title>
     <script>
         $(function(){
@@ -25,14 +29,41 @@
             $("#img-placeholder").load("../Carousel/v2.html");
         });
     </script>
+    <script>
+        $(function(){
+            var città=["Barcellona", "Palma di Maiorca", "Madrid", "Berlino", "Tokyo", "New York"];
+            $("#dove-andare").autocomplete({
+                source: città,
+                select: function(event, ui){
+                    //var url= ui.item.value + ".html"
+                    event.preventDefault();
+                    window.location.href="../Homepage/homepage.html";
+                }
+            });
+        });
+    </script>
 </head>
 <body>
 <!--<img src="Image/Image/Logo.png" alt="Imagine1" width="150" height="150" class="d-inline-block align-text-top"> -->
-<div id="nav-placeholder"></div>
+<div id="nav-placeholder" style="position: relative;"></div>
 <br>
 <br>
 <br>
-<div id="Nazioni" class="carousel carousel-container carousel slide slide mx-auto" data-bs-ride="carousel" data-bs-interval="3000" style="width:100%">
+<br>
+<br>
+<div class="img-container">
+    <img src="../Altro/tutti insieme.png" id="img-1">
+    <form method="post" action="" name="shortcut" class="align-items-center form-dove-andare">
+        <div class="col-12">
+            <div class="input-group mb-3">
+                <input type="text" id="dove-andare" class="form-control-lg rounded-pill" placeholder="Dove vuoi andare?" style="width: 1000px; display: flex; border: rgb(252, 252, 252);">
+            </div>
+        </div>
+        <h1 id="img-text">Tante mete intorno al mondo. <br> Vivi esperienze uniche conoscendo nuove persone</h1>
+    </form>
+</div>
+<!--<img src="../Località/Giappone.png" height="1000" width="1519" class="flex-grow-1">-->
+<!--<div id="Nazioni" class="carousel carousel-container carousel slide slide mx-auto" data-bs-ride="carousel" data-bs-interval="3000" style="width:100%">
     <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
             <img src="../Località/Spagna1.png" class="d-block w-100" alt="Spagna">
@@ -79,14 +110,100 @@
         <span class="visually-hidden">Next</span>
     </button>
 </div>
-
+-->
+<h2 style="text-align: center; margin-top: 15px;color: orange; font-weight: 900;">Le nostre mete più popolari</h2> <br>
+<!--
+<div id="carousel-cntr">
+    <div style="width: 400px; height: 400px;">
+        <div id="car-1" class="carousel slide carousel-fade" style="border-radius: 100px;">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../Località/Spagna1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../Località/Spagna2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../Località/Spagna3.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#car-1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#car-1" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    <div style="width: 400px; height: 400px;">
+        <div id="car-2" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../Località/Germania.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../Località/Giappone.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../Località/Stati Uniti.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#car-2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#car-2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    </div>
+</div>
+-->
+<div class="cnt" style="background-color: rgb(255, 255, 255);">
+    <div class="row justify-content-center">
+        <div class="col-lg-2 col-md-4 col-sm-12 mb-4 mb-lg-0"> 
+            <div style="position: relative; background-color: aquamarine;">
+                <img id="crpd-img" src="../Altro/cropped_imgs/Little_Image.webp" class="w-100 h-75 shadow-1-strong rounded-4 mb-4">
+                <h3 id="crpd-txt" class="carousel-caption" >ULURU</h3>
+            </div>
+            <div style="position: relative;background-color: rgb(5, 243, 41);">
+                <img id="crpd-img" src="../Altro/cropped_imgs/spain-3-cropped.png" class="w-100 h-75 shadow-1-strong rounded mb-4">
+                <h3 id="crpd-txt-long" class="carousel-caption">PALMA DI MAIORCA</h3>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-12 mb-4 mb-lg-0">
+            <div style="position: relative; background-color: rgb(2, 10, 239);">
+                <img id="crpd-img" src="../Altro/cropped_imgs/france-cropped.png" class="w-100 h-75 shadow-1-strong rounded mb-4">
+                <h3 id="crpd-txt" class="carousel-caption">PARIGI</h3>
+            </div>
+            <div style="position: relative; background-color: rgb(228, 5, 5);">
+                <img id="crpd-img" src="../Altro/cropped_imgs/spain-2-cropped.png" class="w-100 h-75 shadow-1-strong rounded mb-4">
+                <h3 id="crpd-txt" class="carousel-caption">MADRID</h3>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-12 mb-4 mb-lg-0">
+            <div style="position: relative; background-color: blueviolet;"> 
+                <img id="crpd-img" src="../Altro/cropped_imgs/new-york.jpg" class="w-100 h-75 shadow-1-strong rounded mb-4">
+                <h3 id="crpd-txt" class="carousel-caption">NEW YORK</h3>
+            </div>
+            <div style="position: relative;">
+                <img id="crpd-img" src="../Altro/cropped_imgs/germany-cropped.png" class="w-100 h-75 shadow-1-strong rounded mb-4">
+                <h3 id="crpd-txt" class="carousel-caption">BERLINO</h3>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<hr>
+<div style="background-color: rgb(248, 215, 250);">
+    Qualcos'altro?
+</div>
 <div id="footer-placeholder">
 
 </div>
 </body>
-<script>
-    const menu_mobile=document.querySelector(".menu-mobile");
-    const nav_links=document.querySelector(".nav-linkspers");
-    menu_mobile.addEventListener('click',()=>{nav_links.classList.toggle('mobile-menu')});   
-</script>
 </html>

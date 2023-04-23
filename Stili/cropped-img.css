@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+#crpd-txt{
+    transform: translate(10px, -50px);
+    color: rgb(255, 255, 255);
+    font-family: 'Archivo Black', sans-serif;
+    position: absolute;
+    bottom: 0;
+}
+
+#crpd-img{
+    border-radius: 10px;
+}
+
+#crpd-txt-long{
+    transform: translate(10px, -70px);
+    color: rgb(255, 255, 255);
+    font-family: 'Archivo Black', sans-serif;
+}
+
+#crpd-txt:hover{
+    transform: translate(10px, -70px);
+    transition-duration: 1000ms;
+}
+
+#crpd-txt-long:hover{
+    transform: translate(10px, -90px);
+    transition-duration: 1000ms;
+}
