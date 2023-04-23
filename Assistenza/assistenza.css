@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap%27');
+.mycover
+{
+    top:110px;
+    height:500px;
+    background-image: url("./Viaggiare-organizzando-un-viaggio-1200x630.avif");
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.mycover_caption
+{
+    display:table;
+    height:100%;
+    width:100%;
+    position: relative;
+    z-index:1;
+}
+.mycover_caption_copy
+{
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+    color:rgb(255, 255, 255);
+    font-family:'Archivo Black', sans-serif;
+    font-weight: bold;
+}
+.mycover_filter{
+    background: #000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index:0;
+    opacity:0.5;
+}
+@media screen and (max-width:990px){
+    .mycover
+    {
+        top:98px;
+    }
+}

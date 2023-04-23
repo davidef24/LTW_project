@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+
+#carousel-cntr{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    
+}
+
+.carousel {
+    padding: 10px;
+}
+
+.img-container {
+    position: relative;
+    display: inline-block;
+}
+#img-1 {
+    max-width: 100%;
+    /*object-fit: cover;*/
+    height: auto;
+    filter: blur(2px);
+}
+.form-dove-andare {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+#img-text{
+    color: rgb(7, 11, 243);
+    margin-top: -420px;
+    text-align: center;
+    font-family: 'Secular One', sans-serif;
+    position: absolute;
+}
+
+@media screen and (max-width:1450px){
+    #img-text{
+        display: none;
+    }
+}
+
+@media screen and (max-width:800px) {
+    #img-1 {
+        filter: blur(0,3px);
+       margin-top: -20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .form-dove-andare {
+        width: 100%;
+    }
+}
