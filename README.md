@@ -8,3 +8,5 @@ Obiettivi prossimo incontro: fare carousel, iniziare almeno una pagina non princ
 Recap 6/04: carosello, passi avanti su menù e pagina di login/registrazione
 
 ~Davide Recap 7/04: file php per login e registrazione
+
+Recap 21/04: miglioramento navbar, cambio idea su carosello homepage, migliorie varie per il login e nuovo logo (da valutare)
