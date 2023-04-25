@@ -27,6 +27,18 @@
             });
         });
     </script>
+    <script>
+        function myFunction(x) {
+            if (x.matches) { // If media query matches
+                document.getElementById("link-disabled").setAttribute("href", "../Login/login.html");
+            } else {
+                document.getElementById("link-disabled").removeAttribute("href");
+            }
+        }
+        var x = window.matchMedia("(max-width: 950px)")
+        myFunction(x)
+        x.addListener(myFunction) 
+    </script>
     <body>
     <nav class="navbarpers">
         <a  class="nodecoration logo" href="../Homepage/homepage.html"><img src="../Altro/LogoMakr-3hmd64.png" height="95" width="115" style="margin-left: 35px;"></a>
@@ -106,7 +118,7 @@
             Riconoscimenti</a>
         </li>
         <li>
-            <button type="button" id="b123" data-bs-toggle="modal" data-bs-target="#logPage" class="btn bg-body d-inline-block align-text-center">Accedi</button>
+           <a id="link-disabled" role="link" aria-disabled="true"><button type="button" id="b123" data-bs-toggle="modal" data-bs-target="#logPage" class="btn bg-body d-inline-block align-text-center">Accedi</button></a>
               <!-- Modal -->
               <div class="modal fade" id="logPage" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">

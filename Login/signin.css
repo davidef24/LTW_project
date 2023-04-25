@@ -8,7 +8,7 @@ html, body {
 
 body {
   overflow: hidden;
-  /*background-image: url("../Località/Spagna2.png");*/
+  background-image: url("../Località/Spagna2.png");
 }
 
 .q1 {
@@ -33,7 +33,8 @@ body {
 .log-container {
   background-color: #ffffffc5;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-  margin: 44%;
+  margin-top: 20%;
+  margin-left: 40%;
   width: 320px;
   height: 320px;
 }
