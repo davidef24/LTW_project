@@ -6,7 +6,6 @@ body {
 }
 
 body {
-  display: flex;
   background-image: url("../Località/Spagna3.png");
   background-size: cover;
 }
@@ -14,11 +13,18 @@ body {
 .form-container {
   background-color: #ffffffc5;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-  top: 28%;
-  left: 40%;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
   width: 325px;
   height: 450px;
-  position: absolute;
+}
+
+@media screen and (max-width: 950px){
+  .form-container{
+    margin-top: 25%;
+  }
 }
 
 #log-btn{

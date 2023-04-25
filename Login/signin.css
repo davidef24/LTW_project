@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;500&display=swap');
 
-/*
-html, body {
+html,
+body {
   height: 100%;
 }
-*/
 
 body {
   overflow: hidden;
   background-image: url("../Località/Spagna2.png");
+  background-size: cover;
 }
 
 .q1 {
@@ -33,13 +33,19 @@ body {
 .log-container {
   background-color: #ffffffc5;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-  margin-top: 20%;
-  margin-left: 40%;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
   width: 320px;
   height: 320px;
 }
 
-/*
+@media screen and (max-width: 850px) and (min-height: 750px){
+  .log-container{
+    margin-top: 25%;
+  }
+}
 .form-signin {
   max-width: 330px;
   padding: 15px;
@@ -52,4 +58,3 @@ body {
 .form-signin .form-floating:focus-within {
   z-index: 2;
 }
-*/
