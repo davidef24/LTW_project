@@ -18,9 +18,9 @@
 }
 #img-1 {
     max-width: 100%;
-    /*object-fit: cover;*/
+    object-fit: cover;
     height: auto;
-    filter: blur(2px);
+    filter: blur(3px);
 }
 .form-dove-andare {
     position: absolute;

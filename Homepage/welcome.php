@@ -10,6 +10,7 @@
     <script src="../bootstrap-5.2.3/bootstrap-5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../Stili/Footer.css">
+    <link rel="stylesheet" href="../Homepage/StileMegaMenu.css">
     <script src= "../Jquery/jquery.js"></script>
     <title>Flight-Mates</title>
     <script>
@@ -40,10 +41,63 @@
         ?>
         <div class="nav-linkspers">
         <ul>
-        <li>
-        <a class="nodecoration"  href="#">
+        <li class="drop_menu">
+            <a class="nodecoration"  href="#">
             <img src="../Icone/Image/iconizer-globe-central-south-asia.svg" alt="direct-flight" width="28" height="28" class="d-inline-block align-text-center">
             Destinazioni</a>
+            <div class="megamenu">
+                <ul class="content">
+                    <li class="megamenu_item header_megamenu">
+                        <h4>Località Popolari:</h4>
+                    </li>
+                    <li class="megamenu_item">
+                        <div class="megamenu_link">
+                            <div class="gallery">
+                                <figure class="gallery-element-1">
+                                    <a href=""><img src="../Località/lake-braies-in-south-tyrol-in-summer-royalty-free-image-1598602493.jpg" class="gallery_image" alt="Immagine1"> </a>
+                                    <h4 class="text">Immagine1</h4>    
+                                </figure>
+                                <figure class="gallery-element-2">
+                                    <a href=""><img src="../Località/cinque-terre-in-liguria-italia.jpg" alt="Immagine1" class="gallery_image"></a>
+                                    <h4 class="text">Immagine2</h4> 
+                                  </figure>
+                                <figure class="gallery-element-3">
+                                    <a href=""><img src="../Località/20191114131631Ovindoli.jpg" alt="Immagine1" class="gallery_image"></a>
+                                    <h4 class="text">Immagine3</h4> 
+                                </figure>
+                                <figure  class="gallery-element-4" >
+                                    <a href=""><img src="../Località/adf20f3d19afa1f7687c4af9ebb0a328--bella-italia-in-italia.jpg" alt="Immagine1" class="gallery_image"></a>
+                                    <h4 class="text">Immagine4</h4> 
+                                </figure>
+                                <figure  class="gallery-element-5">
+                                    <a href=""><img src="../Località/GettyImages-636865894.jpg" alt="Immagine1" class="gallery_image"> </a>
+                                    <h4 class="text">Immagine5</h4>     
+                                </figure>
+                                <figure  class="gallery-element-6">
+                                    <a href=""><img src="../Località/seceda.webp" alt="Immagine1" class="gallery_image"> </a>
+                                    <h4 class="text">Immagine6</h4>    
+                                </figure>
+                                <figure  class="gallery-element-7">
+                                    <a href=""><img src="../Località/Francia.png" alt="Immagine1" class="gallery_image"></a>
+                                    <h4 class="text">Immagine7</h4>    
+                                </figure>
+                                <figure class="gallery-element-8" >
+                                    <a href=""><img src="../Località/Braies-lake-shutterstock-The-Lost-Avocado.jpg" alt="Immagine1" class="gallery_image"> </a>
+                                    <h4 class="text">Immagine8</h4>    
+                                </figure>
+                                <figure  class="gallery-element-9">
+                                    <a href=""><img src="../Località/GettyImages-636865894.jpg" alt="Immagine1" class="gallery_image"> </a>
+                                    <h4 class="text">Immagine9</h4>  
+                                </figure>
+                                <figure  class="gallery-element-10">
+                                    <a href=""><img src="../Località/57ebc76e2596f0.79662011-299.jpg" alt="Immagine1" class="gallery_image"> </a>
+                                    <h4 class="text">Immagine10</h4>  
+                                </figure>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </li>
         <li>
         <a class="nodecoration" href="#">
@@ -66,13 +120,13 @@
         </ul>
         </div>
         <img src="../Icone/Image/iconizer-menu-up.svg" class="menu-mobile"> 
+    
 </nav>
 <br>
 <br>
 <br>
 <img src="../Località/Giappone.png" height="1000" width="1519">
 <div id="footer-placeholder">
-
 </div>
 </body>
 <script>

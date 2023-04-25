@@ -8,6 +8,7 @@ body {
 body {
   display: flex;
   background-image: url("../Località/Spagna3.png");
+  background-size: cover;
 }
 
 .form-container {
@@ -18,16 +19,6 @@ body {
   width: 325px;
   height: 450px;
   position: absolute;
-}
-
-.container2 {
-  background-color: #ffffffc5;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-  top: 40%;
-  left: 40%;
-  width: 325px;
-  height: 150px;
-  position: relative;
 }
 
 #log-btn{
