@@ -100,12 +100,28 @@ function comparePws(){
     }
     return true;
 }
+function validBirthDate(){
+    var today=new Date();
+    var date=document.registrazione.nascita.value;
+    if (date==""){
+        alert("Inserire data di nascita");
+        return false;
+    }
+    var spl=date.split('-');
+    var day=parseInt(spl[2]), month=parseInt(spl[1]), year=parseInt(spl[0]);
+    var selected=new Date(year, month, day);
+    if (selected>today){
+        alert("Hanno inventato le macchine del tempo?");
+        return false;
+    }
+    else return true;
+}
 function check_lr(mode){
     if (mode=="login"){
         if (emailIsEmpty()) return false;
     }
     else{
-        if (!emailToRegister() || !comparePws()) return false;
+        if (!validBirthDate() || !emailToRegister() || !comparePws()) return false;
     }
     return true;
 }
@@ -130,68 +146,6 @@ function check_nl(){
 }
 
 // controlli su form destinazione
-function valid_surname(){
-    if (document.destinazione.cognome.value==""){
-        alert("Inserire cognome");
-        return false;
-    }
-    else{
-        for (var i=0; i<document.destinazione.cognome.value.length; i++){
-            if (!isNaN(document.destinazione.cognome.value.charAt(i))){
-                alert("Cognome invalido");
-                return false;
-            }
-        }
-    }
-    return true;
-}
-function valid_name(){
-    if (document.destinazione.nome.value==""){
-        alert("Inserire nome");
-        return false;
-    }
-    else{
-        for (var i=0; i<document.destinazione.nome.value.length; i++){
-            if (!isNaN(document.destinazione.nome.value.charAt(i))){
-                alert("Nome invalido");
-                return false;
-            }
-        }
-    }
-    return true;
-}
-function valid_email(){
-    if (document.destinazione.email.value==""){
-        alert("Inserire email");
-        return false;
-    }
-    else{
-        if (document.destinazione.email.value.match(/@/)) return true;
-        else{
-            alert("Email invalida");
-            return false;
-        }
-    }
-}
-function valid_telephone(){
-    if (document.destinazione.telefono.value==""){
-        alert("Inserire numero di telefono");
-        return false;
-    }
-    var re=/(\d{10})$/;
-    if (re.test(document.destinazione.telefono.value)) return true;
-    else{
-        alert("Numero di telefono invalido");
-        return false;
-    }
-}
-function validBirthDate(){
-    if (document.destinazione.nascita.value==""){
-        alert("Inserire data di nascita");
-        return false;
-    }
-    return true;
-}
 function validRange(){
     if (document.destinazione.fascia_età.value==""){
         alert("Inserire la fascia d'età desiderata");
@@ -232,6 +186,6 @@ function validDateTrip(){
     }
 }
 function check_dest(){
-    if (valid_surname() && valid_name() && valid_email() && valid_telephone() && validBirthDate() && validRange() && validDateTrip()) return true;
+    if (validRange() && validDateTrip()) return true;
     return false;
 }
