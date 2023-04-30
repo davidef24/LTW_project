@@ -15,6 +15,11 @@
     width:100%;
     position: absolute;
 }
+
+#ciao{
+    font-weight: lighter;
+}
+
 .mycover_caption_copy
 {
     display:table-cell;

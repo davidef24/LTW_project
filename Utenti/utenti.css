@@ -1,0 +1,53 @@
+.container-legenda{
+    width: 50%;
+}
+
+.legenda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.yellow-circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: gold;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.green-circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: green;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 950px) {
+    .container-legenda{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 750px) and (min-width: 450px) {
+    #tabella-richieste .stagione {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #tabella-richieste .stagione {
+        display: none;
+    }
+    #tabella-richieste .periodo {
+        display: none;
+    }
+    #tabella-richieste .età {
+        display: none;
+    }
+}

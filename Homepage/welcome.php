@@ -125,7 +125,7 @@
             </div>
         </li>
         <li>
-        <a class="nodecoration" href="#">
+        <a class="nodecoration" href="../Utenti/utenti.php">
             <img src="../Icone/Image/iconizer-13869315071620553079.svg" alt="tourist" width="28" height="28" class="d-inline-block align-text-center">
             Utenti</a>
         </li>
