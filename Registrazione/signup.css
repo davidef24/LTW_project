@@ -6,7 +6,7 @@ body {
 }
 
 body {
-  background-image: url("../Località/Spagna3.png");
+  background: linear-gradient(45deg,#7274d2, #b78a4e);
   background-size: cover;
 }
 
@@ -19,6 +19,18 @@ body {
   margin-bottom: auto;
   width: 325px;
   height: 450px;
+}
+
+.container2 {
+  background-color: #ffffffc5;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  padding: 3px;
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  width: 325px;
+  height: 130px;
 }
 
 @media screen and (max-width: 950px){
