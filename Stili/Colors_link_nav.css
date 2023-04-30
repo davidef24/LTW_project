@@ -33,14 +33,30 @@ body{
     z-index: 1000;
     
 }
-.navbarpers a{
+.navbarpers .nav-linkspers a{
+    position:relative;
     color:rgb(255, 255, 255);
     font-size: 1.3em;
+    letter-spacing: 0.5px;
 }
-.navbarpers a:hover
-{
-    color:rgb(0, 0, 0);
+
+.navbarpers .nav-linkspers a.underline:after{
+    content:"";
+    position:absolute;
+    background-color: azure;
+    height:3px;
+    width:0;
+    left:0;
+    bottom:-10px;
+    transition: 0.3s;
+}
+.navbarpers .nav-linkspers a.underline:hover{
     transition:color 0.3s;
+}
+.navbarpers .nav-linkspers a.underline:hover:after
+{
+    width:100%;
+
 }
 .navbarpers .logo 
 {
@@ -56,12 +72,12 @@ body{
 }
 .navbarpers .nav-linkspers ul
 {
-    display: flex;
+    display:flex;
 }
 .navbarpers .nav-linkspers ul li
 {
     margin: 10px 30px;
-    display: flex;
+    display:flex;
 }
 .navbarpers .nav-linkspers ul li.activepers a
 {
