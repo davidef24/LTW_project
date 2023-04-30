@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap%27');
 .mycover
 {
-    top:110px;
+    top:130px;
     height:500px;
     background-image: url("./Viaggiare-organizzando-un-viaggio-1200x630.avif");
     background-size: cover;
@@ -13,8 +13,7 @@
     display:table;
     height:100%;
     width:100%;
-    position: relative;
-    z-index:1;
+    position: absolute;
 }
 .mycover_caption_copy
 {
@@ -25,17 +24,66 @@
     font-family:'Archivo Black', sans-serif;
     font-weight: bold;
 }
+.show_help_answer{
+    position: relative;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    top:150px;
+}
 .mycover_filter{
     background: #000;
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index:0;
     opacity:0.5;
+}
+.stile-search{
+    width: 1000px;
+    border:rgb(252, 252, 252);
+    z-index:-1;  
+}
+.result{
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:630px;
+    align-items: center;
+}
+.result h1{
+    color:rgb(0, 0, 0);
+    text-align: center;
+}
+.list-answer{
+    position: absolute;
+    width:80%;
+    height:80%;
+    left:25%;
+    top:700px;
+    font-family: 'Archivo Black','sans-serif';
+}
+.style-button{
+    background-color: blue;
+    color:antiquewhite;
 }
 @media screen and (max-width:990px){
     .mycover
     {
         top:98px;
+        height:500px;
+        background-image: url("./Viaggiare-organizzando-un-viaggio-1200x630.avif");
+        background-size: cover;
+        background-position: center center;
+        position:relative;
+    }
+    .stile-search{
+        width:80%;
+        border:rgb(252, 252, 252);
+    }
+    .show_help_answer
+    {
+        top:100px;
+        position: relative;
+        text-align: center;
+        color:rgb(0, 0, 0);
     }
 }

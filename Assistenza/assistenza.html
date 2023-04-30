@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
     <head>
         <title>Assistenza</title>
@@ -14,7 +14,50 @@
         <link rel="stylesheet" href="../Login/modal-signin.css">
         <link rel="stylesheet" href="./assistenza.css">
         <script src= "../Jquery/jquery.js"></script>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css">
+        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js" ></script>
+        <script src="./plusToX.json"></script>
     </head>
+    <script>
+    $(function(){
+    var domande_frequenti =["Come eseguire la registrazione/login?","dove parlare con i compagni di viaggio?","quante destinazioni sono attualmente disponibili?","Come entrare a far parte di un gruppo?"];
+    $(document).ready(function()
+    {
+        $("#form-help").autocomplete({
+        source: domande_frequenti,
+        select: function(event, ui)
+        {
+            var url= ui.item.value;
+            //event.preventDefault();
+            if(url=="Come eseguire la registrazione/login?")
+            {
+               $(".result").load("document1.html",function(response,statusTxt,t_error){
+                if(statusTxt=="success") alert("Caricamento della risposta è avvenuto con successo");
+                if(statusTxt=="error") alert("Errore di caricamento della risposta"+t_error.status+":" +t_error.statusTxt);
+                });
+            }else if(url=="Come entrare a far parte di un gruppo?")
+            {   
+                $(".result").load("documentx.html",function(response,statusTxt,t_error){
+                if(statusTxt=="success")   alert("Caricamento della risposta è avvenuto con successo");
+                if(statusTxt=="error") alert("Errore di caricamento della risposta"+t_error.status+":" +t_error.statusTxt)
+                });
+            }else if(url=="dove parlare con i compagni di viaggio?"){
+                $(".result").load("documentx.html",function(response,statusTxt,t_error){
+                    if(statusTxt=="success")   alert("Caricamento della risposta è avvenuto con successo");
+                    if(statusTxt=="error") alert("Errore di caricamento della risposta"+t_error.status+":" +t_error.statusTxt)
+                    });
+            }else if(url=="quante destinazioni sono attualmente disponibili?"){
+                $(".result").load("documentx.html",function(response,statusTxt,t_error){
+                    if(statusTxt=="success")   alert("Caricamento della risposta è avvenuto con successo");
+                    if(statusTxt=="error") alert("Errore di caricamento della risposta"+t_error.status+":" +t_error.statusTxt)
+                    });
+            }
+
+        }
+    });
+    });
+    });
+    </script>
     <script>
         $(document).ready(function(){
             $("#b123").mouseenter(function(){
@@ -149,17 +192,52 @@
     <div class="mycover_caption">
         <div class="mycover_caption_copy">
             <h1>Come possiamo Aiutarti?</h1>
-            <form method="post">
-                <input type="textarea">
+            <form  method="post" name="form-search-help" action="">
+            <input type="text" id="form-help" class="form-control-lg rounded-pill stile-search"  placeholder="Domande Frequenti">
             </form>
         </div>
     </div>
 </section>
+<div class="result">
+<h1>Domande Frequenti nel form</h1>
+</div>
+<div class="list-answer">
+        <div class="row align-items-center">
+            <div class="col-8">
+              <div class="list-group" style="text-align: center;" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action" id="request_1-list" data-bs-toggle="collapse" href="#request_1" role="tab"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>Come eseguire la registrazione/login?</a>
+                <div class="collapse fade" id="request_1" role="tabpanel">  
+                    <div class="card card-body">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                    </div>
+                </div>
+                <a class="list-group-item list-group-item-action" id="request_2-list" data-bs-toggle="collapse" href="#request_2" role="tab">Dove parlare con i compagni di viaggio?</a>
+                <div class="collapse fade" id="request_2" role="tabpanel">  
+                    <div class="card card-body">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                    </div>
+                </div>
+                <a class="list-group-item list-group-item-action" id="request_3-list" data-bs-toggle="collapse" href="#request_3" role="tab">quante destinazioni sono attualmente disponibili?</a>
+                <div class="collapse fade" id="request_3" role="tabpanel">  
+                    <div class="card card-body">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                    </div>
+                </div>
+                <a class="list-group-item list-group-item-action" id="request_4-list" data-bs-toggle="collapse" href="#request_4" role="tab">Come entrare a far parte di un gruppo?</a>
+                <div class="collapse fade" id="request_4" role="tabpanel">  
+                    <div class="card card-body">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+</div>
 </body>
     <script>
+        //menu-Mobile
         const menu_mobile=document.querySelector(".menu-mobile");
         const nav_links=document.querySelector(".nav-linkspers");
-        menu_mobile.addEventListener('click',()=>{nav_links.classList.toggle('mobile-menu')}); 
-
+        menu_mobile.addEventListener('click',()=>{nav_links.classList.toggle('mobile-menu')});
     </script>
 </html>
