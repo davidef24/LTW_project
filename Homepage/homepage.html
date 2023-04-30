@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Stili/Colors_link_nav.css">
     <link rel="stylesheet" href="../bootstrap-5.2.3/bootstrap-5.2.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../Stili/Footer.css">
     <script src="../bootstrap-5.2.3/bootstrap-5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../Login/modal-signin.css">
     <script src= "../Jquery/jquery.js"></script>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css">
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="../Stili/carousel.css">
     <link rel="stylesheet" href="../Stili/cropped-img.css">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css%22%3E">
-    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js%22%3E" ></script>
+    <link rel="stylesheet" href="../Stili/Footer.css">
+    <link rel="stylesheet" href="../Login/modal-signin.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Stili/Colors_link_nav.css">
+    <link rel="stylesheet" href="./StileMegaMenu.css">
     <title>Flight-Mates</title>
     <script>
         $(function(){
@@ -32,6 +31,20 @@
         });
     </script>
     <script>
+        $(document).ready(function(){
+            $("#b123").mouseenter(function(){
+                $(this).removeClass("bg-body");
+                $(this).addClass("bg-success");                
+            });
+
+            $("#b123").mouseleave(function(){
+                $(this).removeClass("bg-success");
+                $(this).addClass("bg-body");                
+            });
+        });
+    </script>
+    <script>
+        
         $(function(){
             var città=["Barcellona", "Palma di Maiorca", "Madrid", "Berlino", "Tokyo", "New York"];
             $("#dove-andare").autocomplete({
@@ -46,13 +59,7 @@
     </script>
 </head>
 <body>
-<!--<img src="Image/Image/Logo.png" alt="Imagine1" width="150" height="150" class="d-inline-block align-text-top"> -->
-<div id="nav-placeholder" style="position: relative;"></div>
-<br>
-<br>
-<br>
-<br>
-<br>
+<div id="nav-placeholder" style="position: relative;" class="row-cols-1"></div>
 <div class="img-container">
     <img src="../Altro/tutti insieme.png" id="img-1">
     <form method="post" action="" name="shortcut" class="align-items-center form-dove-andare">
@@ -64,136 +71,37 @@
         <h1 id="img-text">Tante mete intorno al mondo. <br> Vivi esperienze uniche conoscendo nuove persone</h1>
     </form>
 </div>
-<!--<img src="../Località/Giappone.png" height="1000" width="1519" class="flex-grow-1">-->
-<!--<div id="Nazioni" class="carousel carousel-container carousel slide slide mx-auto" data-bs-ride="carousel" data-bs-interval="3000" style="width:100%">
-    <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active">
-            <img src="../Località/Spagna1.png" class="d-block w-100" alt="Spagna">
-            <div class="carousel-caption">
-                <h1>Spagna</h1>
-                <p>Solare e vitale, la Spagna è uno dei paesi più amati dai turisti, che ne apprezzano la buona cucina, il clima e la simpatia degli abitanti. È il momento di conoscerla più in profondità per scoprire la varietà di attrazioni paesaggistiche e culturali delle regioni che la compongono. Per una settimana di mare, per una fuga romantica, per un city break a tutta cultura… la Spagna è sempre la meta giusta per la vacanza dei sogni! </p>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="../Località/Francia.png" class="d-block w-100" alt="Francia">
-            <div class="carousel-caption">
-                <h1>Francia</h1>
-                <p>Un paese straordinario e affascinante. È il luogo ideale per chi cerca una combinazione perfetta tra arte, cultura, gastronomia e paesaggi mozzafiato. Qui puoi ammirare alcuni dei monumenti più famosi al mondo.</p>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="../Località/Germania.png" class="d-block w-100" alt="Germania">
-            <div class="carousel-caption">
-                <h1>Germania</h1>
-                <p>La Germania è un paese ricco di storia, cultura e bellezze naturali. È famosa per la birra ma offre anche molte altre attrazioni. Il paese è anche famoso per i suoi numerosi festival, tra cui l'Oktoberfest a Monaco, il Karneval di Colonia e il Weihnachtsmarkt, il mercatino di Natale, presente in molte città invernali.</p>
-            </div>
-        </div>
-        <div class="carousel-item">
-          <img src="../Località/Stati Uniti.png" class="d-block w-100" alt="Stati Uniti">
-          <div class="carousel-caption">
-            <h1>Stati Uniti</h1>
-            <p>Un paese ricco di diversità, con un'enorme varietà di paesaggi, culture e attrazioni. Sono anche noti per la loro vivace scena musicale e cinematografica, che ha influenzato la cultura popolare in tutto il mondo. Inoltre, la popolazione degli Stati Uniti è incredibilmente diversa, con una mescolanza di culture, razze ed etnie che hanno influenzato la società e la cultura americana. Insomma, gli Stati Uniti offrono un'esperienza unica e ricca di possibilità, che vale la pena esplorare e scoprire.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="../Località/Giappone.png" class="d-block w-100" alt="Giappone">
-          <div class="carousel-caption">
-            <h1>Giappone</h1>
-            <p>Una nazione affascinante che ha molto da offrire ai visitatori. È una cultura unica, con una storia e una tradizione ricche, e una modernità che si riflette nella sua tecnologia all'avanguardia e nella sua scena artistica. Il Giappone è anche famoso per la sua cucina con piatti che hanno acquisito una grande popolarità in tutto il mondo.</p>
-          </div>
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#Nazioni" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#Nazioni" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
--->
-<!--
-<div id="carousel-cntr">
-    <div style="width: 400px; height: 400px;">
-        <div id="car-1" class="carousel slide carousel-fade" style="border-radius: 100px;">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../Località/Spagna1.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="../Località/Spagna2.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="../Località/Spagna3.png" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#car-1" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#car-1" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-    </div>
-    <div style="width: 400px; height: 400px;">
-        <div id="car-2" class="carousel slide carousel-fade">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../Località/Germania.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="../Località/Giappone.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="../Località/Stati Uniti.png" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#car-2" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#car-2" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-    </div>
-    </div>
-</div>
--->
-<div class="cnt" style="background-color: rgba(233, 236, 239, 1);" id="div-header">
+
+<div class="cnt" style="background-color: rgba(233, 236, 239, 1); overflow: hidden;" id="div-header">
     <h1 style="text-align: center; color: rgb(255, 157, 0); font-weight: 900;" id="div-header">Le nostre mete più popolari</h1> <br>
     <div class="row justify-content-center">
         <div class="col-lg-3 col-md-4 col-sm-12 mb-4 mb-lg-0"> 
             <div style="position: relative;">
-                <img id="crpd-img" src="../Altro/cropped_imgs/Little_Image.webp" class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
-                <h3 id="crpd-txt" class="carousel-caption" >ULURU</h3>
+                <img id="crpd-img" src="../Altro/cropped_imgs/tokyo-good.jpg"  class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
+                <h3 id="crpd-txt" class="carousel-caption" >TOKYO</h3>
             </div>
             <div style="position: relative;">
-                <img id="crpd-img" src="../Altro/cropped_imgs/Little_Image.webp" class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
+                <img id="crpd-img" src="../Altro/cropped_imgs/maiorca.jpg" class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
                 <h3 id="crpd-txt" class="carousel-caption">PALMA DI MAIORCA</h3>
             </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-12 mb-4 mb-lg-0">
             <div style="position: relative;">
-                <img id="crpd-img" src="../Altro/cropped_imgs/Little_Image.webp" class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
+                <img id="crpd-img" src="../Altro/cropped_imgs/parigi.jpg" class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
                 <h3 id="crpd-txt" class="carousel-caption">PARIGI</h3>
             </div>
             <div style="position: relative;">
-                <img id="crpd-img" src="../Altro/cropped_imgs/Little_Image.webp" class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
+                <img id="crpd-img" src="../Altro/cropped_imgs/madrid-good.jpg" class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
                 <h3 id="crpd-txt" class="carousel-caption">MADRID</h3>
             </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-12 mb-4 mb-lg-0">
             <div style="position: relative;"> 
-                <img id="crpd-img" src="../Altro/cropped_imgs/Little_Image.webp" class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
+                <img id="crpd-img" src="../Altro/cropped_imgs/ny.jpg" class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
                 <h3 id="crpd-txt" class="carousel-caption">NEW YORK</h3>
             </div>
             <div style="position: relative;">
-                <img id="crpd-img" src="../Altro/cropped_imgs/Little_Image.webp" class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
+                <img id="crpd-img" src="../Altro/cropped_imgs/reichstag.jpeg" class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
                 <h3 id="crpd-txt" class="carousel-caption">BERLINO</h3>
             </div>
         </div>
@@ -201,7 +109,7 @@
     
 </div>
 <h1 id="div-header">Come funziona la nostra app?</h1>
-<div>
+<div style="overflow: hidden;">
     <div class="row justify-content-center">
         <div class="col-lg-4 col-sm-12 mb-4">
             <img src="https://meetravel.it/wp-content/uploads/brizy/imgs/leio-mclaren-jEgQpfkHEWY-unsplash-1-scaled-555x694x0x139x555x416x1643050549.jpg" class="w-100">
@@ -209,7 +117,7 @@
         <div class="col-lg-4 col-sm-12 mb-4" style="position: relative;">
             <h1 id="par-header">1-Registra un account</h1>
             <p id="par-description">
-                Dopo esserti registrato
+                Dopo esserti registrato potrai compilare i form per cercare un compagno
             </p>
         </div>
     </div>
@@ -217,8 +125,7 @@
         <div class="col-lg-4 col-sm-12 mb-4" style="position: relative;">
             <h1 id="par-header">2-Scegli la meta, il periodo e l'età desiderata dei tuoi compagni di viaggio</h1>
             <p id="par-description">
-                Ricerca tra le nostre mete quella fà più al tuo caso, che sia tra un viaggio di cultura o un'esperienza
-                all'insegna del divertimento. 
+                Esplorando le varie destinazioni, compila il form di richiesta che appare sulla destra della descrizione
             </p>
         </div>
         <div class="col-lg-4 col-sm-12 mb-4">
@@ -230,10 +137,9 @@
             <img src="https://meetravel.it/wp-content/uploads/brizy/imgs/leio-mclaren-jEgQpfkHEWY-unsplash-1-scaled-555x694x0x139x555x416x1643050549.jpg" class="w-100">
         </div>
         <div class="col-lg-4 col-sm-12 mb-4" style="position: relative;">
-            <h1 id="par-header">3-Aspetta che altre persone si aggiungano al tuo gruppo</h1>
+            <h1 id="par-header">3-Controlla la pagina Utenti</h1>
             <p id="par-description">
-                Che sia una semplice uscita, un’avventura o un Viaggione Proponilo in App, troverai sempre qualcuno con cui parlarne e pronto a partire con te
-                E se non hai le idee chiare? Aggregati ad un viaggio in partenza! Ci sono centinaia di proposte in app… e crescono ogni giorno!
+                Non appena verrà trovato un utente che abbia fatto una richiesta con i tuoi stessi parametri, cliccando sul bottone accanto alla riga relativa alla richiesta ti verranno mostrati i contatti dell'utente
             </p>
         </div>
     </div>

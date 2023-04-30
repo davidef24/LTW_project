@@ -18,9 +18,9 @@
 }
 #img-1 {
     max-width: 100%;
-    /*object-fit: cover;*/
+    object-fit: cover;
     height: auto;
-    filter: blur(2px);
+    filter: blur(3px);
 }
 .form-dove-andare {
     position: absolute;
@@ -45,13 +45,13 @@
 
 @media screen and (max-width:800px) {
     #img-1 {
-        filter: blur(0,3px);
-       margin-top: -20px;
+        filter: blur(1.5px);
+        margin-top: 0px;
     }
 }
 
 @media (max-width: 1000px) {
     .form-dove-andare {
-        width: 100%;
+        width: 80%;
     }
 }

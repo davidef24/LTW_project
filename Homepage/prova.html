@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <head>
+        <title>Prova</title>
+        <meta charset="UTF-8">
+        <meta content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Stili/Colors_link_nav.css">
+        <script src="../bootstrap-5.2.3/bootstrap-5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="../bootstrap-5.2.3/bootstrap-5.2.3/dist/css/bootstrap.min.css"/>
+        <script src="../bootstrap-5.2.3/bootstrap-5.2.3/dist/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../Login/modal-signin.css">
+        <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        </head>
+        <script>
+            $(document).ready(function(){
+                $("#b123").mouseenter(function(){
+                    $(this).removeClass("bg-body");
+                    $(this).addClass("bg-success");                
+                });
+    
+                $("#b123").mouseleave(function(){
+                    $(this).removeClass("bg-success");
+                    $(this).addClass("bg-body");                
+                });
+            });
+        </script>
+</head>
+<body>
+    <nav class="navbarpers">
+        <li>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#logPage" class="btn bg-body d-inline-block align-text-center">Accedi</button>
+              <!-- Modal -->
+              <div class="modal fade" id="logPage" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Inserisci le tue credenziali</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form method="post" action="../Login/login.php" name="registrazione" class="form-signin m-auto" onsubmit="return check_lr();">
+                            <input placeholder="Email" type="text" name="email" maxlength="40" class="form-control" required autofocus>
+                            <input placeholder="Password" type="password" name="password1" maxlength="40" class="form-control" required>
+                            <i class="far fa-eye"></i>
+                            <input type="submit" value="Accedi" class="btn btn-primary" >     
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <h5 class="modal-title">Non sei registrato?</h5>
+                        <a href="../Registrazione/registrazione.html"><button class="btn btn-success" form="">Crea un nuovo account</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </li>
+        </ul>
+        </div>
+        <img src="../Icone/Image/iconizer-menu-up.svg" class="menu-mobile"> 
+    
+    </nav>
+</body>
+</html>

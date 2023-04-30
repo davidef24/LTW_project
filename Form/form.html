@@ -95,6 +95,18 @@ per form:
     <form method="post" action="" name="registrazione" onsubmit='return check_lr("registrazione");'>
         <table border="1">
             <tr>
+                <td><b>Nome</b></td>
+                <td><input type="text" name="nome" maxlength="40"></td>
+            </tr>
+            <tr>
+                <td><b>Cognome</b></td>
+                <td><input type="text" name="cognome" maxlength="40"></td>
+            </tr>
+            <tr>
+                <td><b>Data di nascita</b></td>
+                <td><input type="date" name="nascita"></td>
+            </tr>
+            <tr>
                 <td><b>Email</b></td>
                 <td><input type="text" name="email" maxlength="40"></td>
             </tr>
@@ -140,26 +152,10 @@ per form:
     <h1>Destinazione</h1>
     <form method="post" action="" name="destinazione" onsubmit="return check_dest();">
         <table border="1">
-            <tr>
-                <td><b>Cognome</b></td>
-                <td><input type="text" name="cognome" maxlength="40"></td>
-            </tr>
-            <tr>
-                <td><b>Nome</b></td>
-                <td><input type="text" name="nome" maxlength="40"></td>
-            </tr>
-            <tr>
-                <td><b>Email</b></td>
-                <td><input type="text" name="email" maxlength="40"></td>
-            </tr>
-            <tr>
-                <td><b>Numero di telefono</b></td>
-                <td><input type="text" name="telefono" maxlength="15"></td>
-            </tr>
-            <tr>
-                <td><b>Data di nascita</b></td>
-                <td><input type="date" name="nascita"></td>
-            </tr>
+            <!-- <tr>
+                <td><b>Località</b></td>
+                <td>da vedere</td>
+            </tr> -->
             <tr>
                 <td><b>Fascia d'età</b></td>
                 <td>
@@ -171,10 +167,6 @@ per form:
                         <option value="senior">45+</option>
                     </select>
                 </td>
-            </tr>
-            <tr>
-                <td><b>Località</b></td>
-                <td>da vedere</td>
             </tr>
             <tr>
                 <td><b>Andata</b></td>

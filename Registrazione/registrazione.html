@@ -21,11 +21,14 @@
     </script>
 </head>
 <body class="text-center">
-    <div id="nav-placeholder"></div>
+    <div class="row-cols-1">
+        <div id="nav-placeholder">
+        </div>
+    </div>
     <div class="form-container">
         <div class="q1">Inserisci i tuoi dati</div>
         <form method="post" action="registrazione.php" name="registrazione" onsubmit='return check_lr();' class="form-signin m-auto">
-            <input id="nomeField" placeholder="Nome" type="text" name="nome" maxlength="30" class="form-control">
+            <input placeholder="Nome" type="text" name="nome" maxlength="30" class="form-control">
             
             <input placeholder="Cognome" type="text" name="cognome" maxlength="30" class="form-control">
 
@@ -41,7 +44,6 @@
             
             <input type="submit" value="Registrati" class="btn btn-primary">
             <input type="reset" value="Reset" class="btn btn-danger">
-                
         </form>
     </div>
 </body>

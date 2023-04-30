@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap%27');
-*{
+
+/* *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
+*/
 .container{
     position:relative;
+    margin-top: 100px auto;
 }
 .text{
     position: absolute;
@@ -31,7 +34,7 @@
     height: 100%;
     object-fit: cover;
     border-radius:10px 10px 10px 10px;
-    filter:blur(0.4px);
+    filter:blur(0.6px);
 }
 .gallery-element-1
 {
@@ -40,7 +43,7 @@
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 3;
-    transition: 0.5s ease;
+    transition: all 60ms ease;
 }
 .gallery-element-1:hover
 {
@@ -52,7 +55,7 @@
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
-    transition: 0.5s ease;
+    transition: all 60ms ease;
     
 }
 .gallery-element-2:hover
@@ -65,7 +68,7 @@
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 3;
-    transition: 0.5s ease;
+    transition: all 60ms ease;
 }
 .gallery-element-3:hover
 {
@@ -78,7 +81,7 @@
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 3;
-    transition: 0.5s ease;
+    transition: all 60ms ease;
 }
 .gallery-element-4:hover{
     transform: scale(1.2);
@@ -90,7 +93,7 @@
     grid-column-end: 6;
     grid-row-start:1;
     grid-row-end: 3;
-    transition: 0.5s ease;
+    transition: all 60ms ease;
 }
 .gallery-element-5:hover
 {
@@ -103,7 +106,7 @@
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 5;
-    transition: 0.5s ease;
+    transition: all 60ms ease;
 }
 .gallery-element-6:hover{
     transform: scale(1.2);
@@ -115,7 +118,7 @@
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 5;
-    transition: 0.5s ease;
+    transition: all 60ms ease;
 }
 .gallery-element-7:hover{
     transform: scale(1.2);
@@ -127,7 +130,8 @@
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 5;
-    transition: 0.5s ease;
+    transition: all 60ms ease;
+    
 }
 .gallery-element-8:hover{
     transform: scale(1.2);
@@ -139,7 +143,8 @@
     grid-column-end: 5;
     grid-row-start: 3;
     grid-row-end: 5;
-    transition: 0.5s ease;
+    transition: all 60ms ease;
+
 }
 .gallery-element-9:hover{
     transform: scale(1.2);
@@ -151,17 +156,18 @@
     grid-column-end: 6;
     grid-row-start: 3;
     grid-row-end: 5;
-    transition: 0.5s ease;
+    transition: all 60ms ease;
 }
 .gallery-element-10:hover{
     transform: scale(1.2);
 }
 .megamenu{
     position:absolute;
+    padding: 10px;
     width:100%;
-    left:0;
     top:8rem;
-    background-color:white;
+    left:0;
+    background: linear-gradient(90deg, #0d00ff, #ff5500);
     border-radius: 0 0 20px 20px;
     box-shadow: 0 23px 23px -21px rgba(0,0,0,0.25);
     z-index:2;
@@ -185,9 +191,9 @@
     margin-bottom:1rem;
     font-family:'Archivo Black', sans-serif;
 }
-.header_megamenu >h4:hover{
+.header_megamenu > h4:hover{
     color:blue;
-    transition: color 0.3s;
+    transition: color 0.3s
 }
 .drop_menu:hover .megamenu{
    visibility:visible;

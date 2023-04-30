@@ -1,5 +1,5 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;500&display=swap');
-html, body {
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;500&display=swap');
+/*html, body {
   height: 100%;
 }
 
@@ -48,7 +48,6 @@ body {
 
 
 .c1 {
-  grid-area: c1;
   top: 50%;
   left: 30%;
 }
