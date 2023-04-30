@@ -130,7 +130,7 @@
             Utenti</a>
         </li>
         <li>
-        <a  class="nodecoration" href="#">
+        <a  class="nodecoration" href="../Assistenza/assistenza.html">
             <img src="../Icone/Image/iconizer-9685629051582823580.svg" alt="support" width="28" height="28" class="d-inline-block align-text-center">
             Assistenza</a>
         </li>
