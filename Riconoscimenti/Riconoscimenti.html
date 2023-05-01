@@ -25,8 +25,16 @@
         $(".about_us").addClass("inpage");
         $(".title_design").addClass("inpage");
     });
+
+    $(function(){
+            $("#footer-placeholder").load("../Footer.html");
+    });
+    $(function(){
+                $("#nav-placeholder").load("../Navbar/nav.php");
+            });
 </script>
 <body>
+    <div id="nav-placeholder"></div>
     <div class="title_design fadein">
         <h1>Chi siamo</h1>
     </div>
@@ -87,13 +95,13 @@
                     <img src="./icona-dell-utente-di-vettore-7337510.jpg">
                 </div>
                 <h3>
-                    Davide Di Fortunato
+                    Davide Fortunato
                 </h3>
                 <p>Sviluppatore</p>
             </div>
         </div>
     </div>
 </div>
-
+<div id="footer-placeholder"></div>
 </body>
 </html>

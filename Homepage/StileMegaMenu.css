@@ -187,12 +187,12 @@
 }
 .header_megamenu{
     font-weight:600;
-    color:black;
+    color:rgb(255, 255, 255);
     margin-bottom:1rem;
     font-family:'Archivo Black', sans-serif;
 }
 .header_megamenu > h4:hover{
-    color:blue;
+    color: #ff5500;
     transition: color 0.3s
 }
 .drop_menu:hover .megamenu{

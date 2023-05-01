@@ -49,7 +49,7 @@
         <div class="nav-linkspers">
         <ul>
         <li class="drop_menu">
-            <a class="nodecoration"  href="#">
+            <a class="nodecoration underline"  href="#">
             <img src="../Icone/Image/iconizer-globe-central-south-asia.svg" alt="direct-flight" width="28" height="28" class="d-inline-block align-text-center">
             Destinazioni</a>
            <div class="megamenu">
@@ -60,45 +60,45 @@
                     <li class="megamenu_item">
                         <div class="megamenu_link">
                             <div class="gallery">
-                                <figure class="gallery-element-1">
-                                    <a href="../Destinazioni/dest.php"><img src="../Località/lake-braies-in-south-tyrol-in-summer-royalty-free-image-1598602493.jpg" class="gallery_image" alt="Immagine1"> </a>
-                                    <h4 class="text">BARCELLONA</h4>    
+                            <figure class="gallery-element-1">
+                                    <a href=""><img src="../Località/Barcellona.jpg" class="gallery_image" alt="Barcellona"> </a>
+                                    <h4 class="text">Barcellona</h4>    
                                 </figure>
                                 <figure class="gallery-element-2">
-                                    <a href=""><img src="../Località/cinque-terre-in-liguria-italia.jpg" alt="Immagine1" class="gallery_image"></a>
-                                    <h4 class="text">Immagine2</h4> 
+                                    <a href=""><img src="../Località/Costa_Smeralda.jpg" alt="Costa Smeralda" class="gallery_image"></a>
+                                    <h4 class="text">Costa Smeralda</h4> 
                                   </figure>
                                 <figure class="gallery-element-3">
-                                    <a href=""><img src="../Località/20191114131631Ovindoli.jpg" alt="Immagine1" class="gallery_image"></a>
-                                    <h4 class="text">Immagine3</h4> 
+                                    <a href=""><img src="../Località/Creta.jpeg" alt="Creta" class="gallery_image"></a>
+                                    <h4 class="text">Creta</h4> 
                                 </figure>
                                 <figure  class="gallery-element-4" >
-                                    <a href=""><img src="../Località/adf20f3d19afa1f7687c4af9ebb0a328--bella-italia-in-italia.jpg" alt="Immagine1" class="gallery_image"></a>
-                                    <h4 class="text">Immagine4</h4> 
+                                    <a href=""><img src="../Località/Parigi.jpg" alt="Francia" class="gallery_image"></a>
+                                    <h4 class="text">Parigi</h4> 
                                 </figure>
                                 <figure  class="gallery-element-5">
-                                    <a href=""><img src="../Località/GettyImages-636865894.jpg" alt="Immagine1" class="gallery_image"> </a>
-                                    <h4 class="text">Immagine5</h4>     
+                                    <a href=""><img src="../Località/Tokyo.jpg" alt="Tokyo" class="gallery_image"> </a>
+                                    <h4 class="text">Tokyo</h4>     
                                 </figure>
                                 <figure  class="gallery-element-6">
-                                    <a href=""><img src="../Località/seceda.webp" alt="Immagine1" class="gallery_image"> </a>
-                                    <h4 class="text">Immagine6</h4>    
+                                    <a href=""><img src="../Località/Roma.webp" alt="Roma" class="gallery_image"> </a>
+                                    <h4 class="text">Roma</h4>    
                                 </figure>
                                 <figure  class="gallery-element-7">
-                                    <a href=""><img src="../Località/Francia.png" alt="Immagine1" class="gallery_image"></a>
-                                    <h4 class="text">Immagine7</h4>    
+                                    <a href=""><img src="../Località/New-York Notte.jpeg" alt="New York" class="gallery_image"></a>
+                                    <h4 class="text">New  York</h4>    
                                 </figure>
                                 <figure class="gallery-element-8" >
-                                    <a href=""><img src="../Località/Braies-lake-shutterstock-The-Lost-Avocado.jpg" alt="Immagine1" class="gallery_image"> </a>
-                                    <h4 class="text">Immagine8</h4>    
+                                    <a href=""><img src="../Località/IbizaParty.jpg" alt="Ibiza" class="gallery_image"> </a>
+                                    <h4 class="text">Ibiza</h4>    
                                 </figure>
                                 <figure  class="gallery-element-9">
-                                    <a href=""><img src="../Località/GettyImages-636865894.jpg" alt="Immagine1" class="gallery_image"> </a>
-                                    <h4 class="text">Immagine9</h4>  
+                                    <a href=""><img src="../Località/Mykonos.jpg" alt="Mykonos" class="gallery_image"> </a>
+                                    <h4 class="text">Mykonos</h4>  
                                 </figure>
                                 <figure  class="gallery-element-10">
-                                    <a href=""><img src="../Località/57ebc76e2596f0.79662011-299.jpg" alt="Immagine1" class="gallery_image"> </a>
-                                    <h4 class="text">Immagine10</h4>  
+                                    <a href=""><img src="../Località/Dolomiti.jpg" alt="Dolomiti" class="gallery_image"> </a>
+                                    <h4 class="text">Dolomiti</h4>  
                                 </figure>
                             </div>
                         </div>
@@ -109,19 +109,19 @@
         <?php
             if(isset($_SESSION['nome'])){
                 echo "<li>
-                <a class=\"nodecoration\" href=\"#\">
+                <a class=\"nodecoration underline\" href=\"#\">
                     <img src=\"../Icone/Image/iconizer-13869315071620553079.svg\" alt=\"tourist\" width=\"28\" height=\"28\" class=\"d-inline-block align-text-center\">
                     Utenti</a>
                 </li>";
             }
         ?>
         <li>
-        <a  class="nodecoration" href="../Assistenza/assistenza.html">
+        <a  class="nodecoration underline" href="../Assistenza/assistenza.html">
             <img src="../Icone/Image/iconizer-9685629051582823580.svg" alt="support" width="28" height="28" class="d-inline-block align-text-center">
             Assistenza</a>
         </li>
         <li>
-        <a class="nodecoration" href="#">
+        <a class="nodecoration underline" href="#">
             <img src="../Icone/Image/iconizer-514948881625157164.svg" alt="support" width="28" height="28" class="d-inline-block align-text-center">
             Riconoscimenti</a>
         </li>
