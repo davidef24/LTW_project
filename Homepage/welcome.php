@@ -32,6 +32,9 @@
         $(function(){
             $("#img-placeholder").load("../Carousel/v2.html");
         });
+        $(function(){
+            $("#nav-placeholder").load("../Navbar/nav.php");
+        });
     </script>
     <script>
         $(document).ready(function(){
@@ -49,20 +52,20 @@
     </script>
     <script>
         $(function(){
-            var città=["Barcellona", "Palma di Maiorca", "Madrid", "Berlino", "Tokyo", "New York"];
+            var città=["Barcellona", "Palma di Maiorca", "Madrid", "Berlino", "Tokyo", "New York", "Parigi", "Mykonos"];
             $("#dove-andare").autocomplete({
                 source: città,
                 select: function(event, ui){
-                    //var url= ui.item.value + ".html"
+                    var url= ui.item.value + ".php";
                     event.preventDefault();
-                    window.location.href="../Homepage/homepage.html";
+                    window.location.href="../Destinazioni/"+ url;
                 }
             });
         });
     </script>
 </head>
 <body>
-<div id="nav-placeholder" style="position: relative;" class="row-cols-1"></div>
+<div id="nav-placeholder"></div>
 <div class="img-container">
     <img src="../Altro/tutti insieme.png" id="img-1">
     <form method="post" action="" name="shortcut" class="align-items-center form-dove-andare">
@@ -90,8 +93,8 @@
         </div>
         <div class="col-lg-3 col-md-4 col-sm-12 mb-4 mb-lg-0">
             <div style="position: relative;">
-                <img id="crpd-img" src="../Altro/cropped_imgs/parigi.jpg" class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
-                <h3 id="crpd-txt" class="carousel-caption">PARIGI</h3>
+                <a href="../Destinazioni/parigi.php"><img id="crpd-img" src="../Altro/cropped_imgs/parigi.jpg" class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
+                <h3 id="crpd-txt" class="carousel-caption">PARIGI</h3></a>
             </div>
             <div style="position: relative;">
                 <img id="crpd-img" src="../Altro/cropped_imgs/madrid-good.jpg" class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
@@ -100,8 +103,8 @@
         </div>
         <div class="col-lg-3 col-md-4 col-sm-12 mb-4 mb-lg-0">
             <div style="position: relative;"> 
-                <img id="crpd-img" src="../Altro/cropped_imgs/ny.jpg" class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
-                <h3 id="crpd-txt" class="carousel-caption">NEW YORK</h3>
+            <a href="../Destinazioni/New York.php"><img id="crpd-img" src="../Altro/cropped_imgs/ny.jpg" class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
+                <h3 id="crpd-txt" class="carousel-caption">NEW YORK</h3></a>
             </div>
             <div style="position: relative;">
                 <img id="crpd-img" src="../Altro/cropped_imgs/reichstag.jpeg" class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
@@ -120,7 +123,7 @@
         <div class="col-lg-4 col-sm-12 mb-4" style="position: relative;">
             <h1 id="par-header">1-Registra un account</h1>
             <p id="par-description">
-                Dopo esserti registrato
+            Dopo esserti registrato potrai compilare i form per inviare una proposta di viaggio.
             </p>
         </div>
     </div>
@@ -128,8 +131,7 @@
         <div class="col-lg-4 col-sm-12 mb-4" style="position: relative;">
             <h1 id="par-header">2-Scegli la meta, il periodo e l'età desiderata dei tuoi compagni di viaggio</h1>
             <p id="par-description">
-                Ricerca tra le nostre mete quella fà più al tuo caso, che sia tra un viaggio di cultura o un'esperienza
-                all'insegna del divertimento. 
+            Esplorando le varie destinazioni, compila il form di richiesta che appare sulla destra della descrizione
             </p>
         </div>
         <div class="col-lg-4 col-sm-12 mb-4">
@@ -141,10 +143,9 @@
             <img src="https://meetravel.it/wp-content/uploads/brizy/imgs/leio-mclaren-jEgQpfkHEWY-unsplash-1-scaled-555x694x0x139x555x416x1643050549.jpg" class="w-100">
         </div>
         <div class="col-lg-4 col-sm-12 mb-4" style="position: relative;">
-            <h1 id="par-header">3-Aspetta che altre persone si aggiungano al tuo gruppo</h1>
+            <h1 id="par-header">3-Controlla la pagina Utenti</h1>
             <p id="par-description">
-                Che sia una semplice uscita, un’avventura o un Viaggione Proponilo in App, troverai sempre qualcuno con cui parlarne e pronto a partire con te
-                E se non hai le idee chiare? Aggregati ad un viaggio in partenza! Ci sono centinaia di proposte in app… e crescono ogni giorno!
+            Non appena verrà trovato un utente che abbia fatto una richiesta con i tuoi stessi parametri, cliccando sul bottone accanto alla riga relativa alla richiesta ti verranno mostrati i contatti dell'utente
             </p>
         </div>
     </div>
@@ -163,9 +164,4 @@
 </div>
 <div id="footer-placeholder"></div>
 </body>
-<script>
-        const menu_mobile=document.querySelector(".menu-mobile");
-        const nav_links=document.querySelector(".nav-linkspers");
-        menu_mobile.addEventListener('click',()=>{nav_links.classList.toggle('mobile-menu')}); 
-</script>
 </html>

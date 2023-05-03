@@ -69,8 +69,8 @@ else {
                         $_SESSION['nome']= $nome;
                         $_SESSION['timeout']= time();
                         $_SESSION['user-email']= $email;
-                        // header("Location: http://localhost:3000/Homepage/welcome.php");
-                        header("Location: http://localhost:3000/Users/loren/Desktop/LTW/Homepage/welcome.php");
+                        header("Location: http://localhost:3000/Homepage/welcome.php");
+                        //header("Location: http://localhost:3000/Users/loren/Desktop/LTW/Homepage/welcome.php");*/
                     }
                 }
             }
@@ -138,7 +138,7 @@ else {
             </div>
         </li>
         <li>
-        <a class="nodecoration" href="#">
+        <a class="nodecoration" href="../Utenti/utenti.php">
             <img src="../Icone/Image/iconizer-13869315071620553079.svg" alt="tourist" width="28" height="28" class="d-inline-block align-text-center">
             Utenti</a>
         </li>

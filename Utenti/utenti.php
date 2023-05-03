@@ -47,6 +47,20 @@ $dbconn = pg_connect("host=localhost port=5432 dbname=Progetto_LTW
                 $(this).removeClass("bg-success");
                 $(this).addClass("bg-body");                
             });
+
+            $(".green-circle").click(function(){
+                var query= "select r2.email, r2.datarichiesta from richiesta r1, richiesta r2 where r1.id_richiesta =" + $(this).attr('id') + " and r1.email != r2.email and r1.destinazione = r2.destinazione and r1.etàcompagni = r2.etàcompagni and r1.periodo = r2.periodo and r1.durata = r2.durata";
+                var httpRequest = new XMLHttpRequest();
+                httpRequest.open("GET", "mostra-utenti.php?query=" + query, true);
+                httpRequest.onload = function() {
+                    if (httpRequest.status === 200) {
+                    // Aggiorna il contenuto del div con i risultati della query
+                        document.getElementById('zona-dinamica').innerHTML = httpRequest.responseText;
+                    }
+                };
+                httpRequest.send();
+            });
+
         });
     </script>
 </head>
@@ -68,7 +82,7 @@ $dbconn = pg_connect("host=localhost port=5432 dbname=Progetto_LTW
                 <th scope="col" class="id">ID</th>
                 <th scope="col" class="data-richiesta">Data richiesta</th>
                 <th scope="col" class="destinazione">Destinazione</th>
-                <th scope="col" class="stagione">Stagione</th>
+                <th scope="col" class="durata">Durata</th>
                 <th scope="col" class="periodo">Periodo</th>
                 <th scope="col" class="età">Età compagni</th>
                 <th scope="col" class="status">Stato</th>
@@ -83,21 +97,21 @@ $dbconn = pg_connect("host=localhost port=5432 dbname=Progetto_LTW
                     $result=pg_query_params($dbconn, $q1, array($email));
                     while ($tuple=pg_fetch_array($result, NULL, PGSQL_ASSOC)){
                         echo '<tr>
-                                <td class="id">' . $tuple["id"] . '</td>
+                                <td class="id">' . $tuple["id_richiesta"] . '</td>
                                 <td class="data-richiesta">' . $tuple["datarichiesta"] . '</td>
                                 <td class="destinazione">' . $tuple["destinazione"] . '</td>
-                                <td class="stagione">' . $tuple["stagione"] . '</td>
+                                <td class="durata">' . $tuple["durata"] . '</td>
                                 <td class="periodo">' . $tuple["periodo"] . '</td>
                                 <td class="età">' . $tuple["etàcompagni"] . '</td>';
                         $q2="select * 
                         from richiesta r1 join richiesta r2 on r1.email != r2.email
-                        where r1.destinazione = r2.destinazione and r1.stagione = r2.stagione and r1.periodo = r2.periodo 
-                        and r1.etàcompagni = r2.etàcompagni and r1.email = $1 and r1.destinazione = $2 and r1.stagione = $3 
-                        and r1.periodo = $4 and r1.etàcompagni = $5";
-                        $search=pg_query_params($dbconn, $q2, array($email, $tuple["destinazione"], $tuple["stagione"], $tuple["periodo"], $tuple["etàcompagni"]));
+                        where r1.destinazione = r2.destinazione  and r1.periodo = r2.periodo 
+                        and r1.etàcompagni = r2.etàcompagni and r1.email = $1 and r1.destinazione = $2 
+                        and r1.periodo = $3 and r1.etàcompagni = $4";
+                        $search=pg_query_params($dbconn, $q2, array($email, $tuple["destinazione"], $tuple["periodo"], $tuple["etàcompagni"]));
                         if ($match=pg_fetch_array($search, NULL, PGSQL_ASSOC)){
                             echo '<td class="status"><div>
-                                        <input type="button" class="green-circle">
+                                        <input type="button" class="green-circle" id="'.$tuple["id_richiesta"].'">
                                     </div></td>';
                         }
                         else {

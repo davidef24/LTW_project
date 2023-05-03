@@ -35,15 +35,12 @@
 }
 
 @media screen and (max-width: 750px) and (min-width: 450px) {
-    #tabella-richieste .stagione {
+    #tabella-richieste .periodo {
         display: none;
     }
 }
 
 @media screen and (max-width: 450px) {
-    #tabella-richieste .stagione {
-        display: none;
-    }
     #tabella-richieste .periodo {
         display: none;
     }

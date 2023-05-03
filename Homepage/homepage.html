@@ -19,7 +19,7 @@
     <title>Flight-Mates</title>
     <script>
         $(function(){
-            $("#nav-placeholder").load("../Navbar/navbar.html");
+            $("#nav-placeholder").load("../Navbar/nav.php");
         });
 
         $(function(){
@@ -46,13 +46,13 @@
     <script>
         
         $(function(){
-            var città=["Barcellona", "Palma di Maiorca", "Madrid", "Berlino", "Tokyo", "New York"];
+            var città=["Barcellona", "Parigi", "Berlino", "Tokyo", "New York", "Mykonos", "Roma"];
             $("#dove-andare").autocomplete({
                 source: città,
                 select: function(event, ui){
-                    //var url= ui.item.value + ".html"
+                    var url= ui.item.value + ".php";
                     event.preventDefault();
-                    window.location.href="../Homepage/homepage.html";
+                    window.location.href="../Destinazioni/"+ url;
                 }
             });
        });
@@ -87,18 +87,19 @@
         </div>
         <div class="col-lg-3 col-md-4 col-sm-12 mb-4 mb-lg-0">
             <div style="position: relative;">
-                <img id="crpd-img" src="../Altro/cropped_imgs/parigi.jpg" class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
-                <h3 id="crpd-txt" class="carousel-caption">PARIGI</h3>
+                <a href="../Destinazioni/parigi.php"><img id="crpd-img" src="../Altro/cropped_imgs/parigi.jpg" class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
+                <h3 id="crpd-txt" class="carousel-caption">PARIGI</h3></a>
             </div>
             <div style="position: relative;">
+                
                 <img id="crpd-img" src="../Altro/cropped_imgs/madrid-good.jpg" class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
                 <h3 id="crpd-txt" class="carousel-caption">MADRID</h3>
             </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-12 mb-4 mb-lg-0">
             <div style="position: relative;"> 
-                <img id="crpd-img" src="../Altro/cropped_imgs/ny.jpg" class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
-                <h3 id="crpd-txt" class="carousel-caption">NEW YORK</h3>
+                <a href="../Destinazioni/New York.php"><img id="crpd-img" src="../Altro/cropped_imgs/ny.jpg" class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
+                <h3 id="crpd-txt" class="carousel-caption">NEW YORK</h3></a>
             </div>
             <div style="position: relative;">
                 <img id="crpd-img" src="../Altro/cropped_imgs/reichstag.jpeg" class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
@@ -112,12 +113,12 @@
 <div style="overflow: hidden;">
     <div class="row justify-content-center">
         <div class="col-lg-4 col-sm-12 mb-4">
-            <img src="https://meetravel.it/wp-content/uploads/brizy/imgs/leio-mclaren-jEgQpfkHEWY-unsplash-1-scaled-555x694x0x139x555x416x1643050549.jpg" class="w-100">
+            <img src="../Altro/registrazione-img.png" class="w-100">
         </div>
         <div class="col-lg-4 col-sm-12 mb-4" style="position: relative;">
             <h1 id="par-header">1-Registra un account</h1>
             <p id="par-description">
-                Dopo esserti registrato potrai compilare i form per cercare un compagno
+                Dopo esserti registrato potrai compilare i form per inviare una proposta di viaggio.
             </p>
         </div>
     </div>
@@ -129,7 +130,7 @@
             </p>
         </div>
         <div class="col-lg-4 col-sm-12 mb-4">
-            <img src="https://meetravel.it/wp-content/uploads/brizy/imgs/sam-manns-V5Owjg-ZNto-unsplash-scaled-616x416x31x0x555x416x1643051663.jpg" class="w-100">
+            <img src="https://meetravel.it/wp-content/uploads/brizy/imgs/sam-manns-V5Owjg-ZNto-unsplash-scaled-616x416x31x0x555x416x1643051663.jpg" class="w-100 img-fluid">
         </div>
     </div>
     <div class="row justify-content-center pt-5">

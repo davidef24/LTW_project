@@ -29,6 +29,15 @@
                 $(this).removeClass("bg-success");
                 $(this).addClass("bg-body");                
             });
+            $("#logOut").mouseenter(function(){
+                $(this).removeClass("bg-body");
+                $(this).addClass("bg-danger");                
+            });
+
+            $("#logOut").mouseleave(function(){
+                $(this).removeClass("bg-danger");
+                $(this).addClass("bg-body");                
+            });
         });
     </script>
     <script>
@@ -52,7 +61,7 @@
             <a class="nodecoration underline"  href="#">
             <img src="../Icone/Image/iconizer-globe-central-south-asia.svg" alt="direct-flight" width="28" height="28" class="d-inline-block align-text-center">
             Destinazioni</a>
-           <div class="megamenu">
+            <div class="megamenu">
                 <ul class="content">
                     <li class="megamenu_item header_megamenu">
                         <h4>Località Popolari:</h4>
@@ -61,46 +70,46 @@
                         <div class="megamenu_link">
                             <div class="gallery">
                             <figure class="gallery-element-1">
-                                    <a href=""><img src="../Località/Barcellona.jpg" class="gallery_image" alt="Barcellona"> </a>
+                                    <a href="../Destinazioni/barcellona.php"><img src="../Località/Barcellona.jpg" class="gallery_image" alt="Barcellona"></a>
                                     <h4 class="text">Barcellona</h4>    
                                 </figure>
                                 <figure class="gallery-element-2">
                                     <a href=""><img src="../Località/Costa_Smeralda.jpg" alt="Costa Smeralda" class="gallery_image"></a>
-                                    <h4 class="text">Costa Smeralda</h4> 
+                                    <h4 class="text">Palma di Maiorca</h4> 
                                   </figure>
                                 <figure class="gallery-element-3">
                                     <a href=""><img src="../Località/Creta.jpeg" alt="Creta" class="gallery_image"></a>
                                     <h4 class="text">Creta</h4> 
                                 </figure>
                                 <figure  class="gallery-element-4" >
-                                    <a href=""><img src="../Località/Parigi.jpg" alt="Francia" class="gallery_image"></a>
+                                    <a href="../Destinazioni/parigi.php"><img src="../Località/Parigi.jpg" alt="Francia" class="gallery_image"></a>
                                     <h4 class="text">Parigi</h4> 
                                 </figure>
                                 <figure  class="gallery-element-5">
-                                    <a href=""><img src="../Località/Tokyo.jpg" alt="Tokyo" class="gallery_image"> </a>
+                                    <a href=""><img src="../Località/Tokyo.jpg" alt="Tokyo" class="gallery_image"></a>
                                     <h4 class="text">Tokyo</h4>     
                                 </figure>
                                 <figure  class="gallery-element-6">
-                                    <a href=""><img src="../Località/Roma.webp" alt="Roma" class="gallery_image"> </a>
+                                    <a href=""><img src="../Località/Roma.webp" alt="Roma" class="gallery_image"></a>
                                     <h4 class="text">Roma</h4>    
                                 </figure>
                                 <figure  class="gallery-element-7">
-                                    <a href=""><img src="../Località/New-York Notte.jpeg" alt="New York" class="gallery_image"></a>
+                                    <a href="../Destinazioni/new-york.php"><img src="../Località/New-York Notte.jpeg" alt="New York" class="gallery_image"></a>
                                     <h4 class="text">New  York</h4>    
                                 </figure>
                                 <figure class="gallery-element-8" >
-                                    <a href=""><img src="../Località/IbizaParty.jpg" alt="Ibiza" class="gallery_image"> </a>
+                                    <a href=""><img src="../Località/IbizaParty.jpg" alt="Ibiza" class="gallery_image"></a>
                                     <h4 class="text">Ibiza</h4>    
                                 </figure>
                                 <figure  class="gallery-element-9">
-                                    <a href=""><img src="../Località/Mykonos.jpg" alt="Mykonos" class="gallery_image"> </a>
+                                    <a href="../Destinazioni/mykonos.php"><img src="../Località/Mykonos.jpg" alt="Mykonos" class="gallery_image"></a>
                                     <h4 class="text">Mykonos</h4>  
                                 </figure>
                                 <figure  class="gallery-element-10">
-                                    <a href=""><img src="../Località/Dolomiti.jpg" alt="Dolomiti" class="gallery_image"> </a>
+                                    <a href=""><img src="../Località/Dolomiti.jpg" alt="Dolomiti" class="gallery_image"></a>
                                     <h4 class="text">Dolomiti</h4>  
                                 </figure>
-                            </div>
+                            </div> 
                         </div>
                     </li>
                 </ul>
@@ -109,7 +118,7 @@
         <?php
             if(isset($_SESSION['nome'])){
                 echo "<li>
-                <a class=\"nodecoration underline\" href=\"#\">
+                <a class=\"nodecoration underline\" href=\"../Utenti/utenti.php\">
                     <img src=\"../Icone/Image/iconizer-13869315071620553079.svg\" alt=\"tourist\" width=\"28\" height=\"28\" class=\"d-inline-block align-text-center\">
                     Utenti</a>
                 </li>";
@@ -121,7 +130,7 @@
             Assistenza</a>
         </li>
         <li>
-        <a class="nodecoration underline" href="#">
+        <a class="nodecoration underline" href="../Riconoscimenti/riconoscimenti.html">
             <img src="../Icone/Image/iconizer-514948881625157164.svg" alt="support" width="28" height="28" class="d-inline-block align-text-center">
             Riconoscimenti</a>
         </li>

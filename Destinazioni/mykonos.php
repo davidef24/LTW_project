@@ -35,16 +35,17 @@
          <div id="nav-placeholder"></div>
     </div>
     <div class="row" style="position: relative;">
-            <img src="https://www.barcellona.org/wp-content/uploads/sites/14/barcellona.jpg" alt="imm" class="img-fluid" id="dest-img">
-            <h1 id="img-caption">Barcellona</h1>
+            <img src="../Località/myk.jpg" alt="imm" class="img-fluid" id="dest-img">
+            <h1 id="img-caption">Mykonos</h1>
         </div>
         <div class="row justify-content-center p-3" style="background-color: rgba(233, 236, 239, 1);">
             <div class="col-lg-8 col-md-8">           
-                <p id="dest-paragraph"><b>Breve descrizione:</b> Barcellona è la seconda città spagnola per numero di abitanti ed è una delle mete predilette nel Mediterraneo, grazie al fatto d'essere una città cosmopolita e piena di vita. Anche gli amanti dell’arte non resteranno delusi nel visitare la città; in essa infatti si sviluppano varie forme d’arte, dall'arte gotica nel Barrio Gotico, alle curiose forme colorate dell'architetto barcellonese Antoni Gaudí, progettista della maestosa e ancora incompiuta Sagrada Família.
+                <p id="dest-paragraph"><b>Breve descrizione:</b>
+                Mykonos è un'isola greca delle Cicladi ed accoglie migliaia di turisti durante tutto l'arco dell'anno; principalmente nota per le sue spiagge, in giro per la città e per le spiagge potrete scoprire bar, rock cafè e discoteche con DJ provenienti da tutto il mondo. Tra i locali più frequentati troviamo sicuramente quelli del quartiere Piccola Venezia, il centro più popolato della cittadina di Mykonos.
                     <br>
-                    <b>Ideale se cerchi:</b> arte e monumenti iconici, quartieri folkloristici, musei, movida.
-                    Per quanto tempo: un weekend e più giorni. <br>
-                    <b>Il periodo migliore: </b>tutto l'anno.</p>
+                    <b>Ideale se cerchi:</b> divertimento, mare cristallino, belle spiagge <br>
+                    <b>Per quanto tempo:</b> una settimana <br>
+                    <b>Il periodo migliore: </b>da maggio a settembre</p>
             </div>
                 <?php
                     if(!isset($_SESSION['nome'])){
@@ -97,8 +98,8 @@
                             <select size=1 name=\"durata\" class=\"form-select mb-3\">
                                 <option selected value=\"\">Durata</option>
                                 <option value=\"weekend\">Weekend</option>
-                                <option value=\"una-sett\">Una settimana</option>
-                                <option value=\"due-sett\">Due settimane</option>
+                                <option value=\"una-settimana\">Una settimana</option>
+                                <option value=\"due-settimane\">Due settimane</option>
                                 <option value=\"un-mese\">Un mese o più</option>
                             </select>
                             <input type=\"submit\" value=\"Invia\" class=\"btn btn-primary m-auto\">

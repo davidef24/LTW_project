@@ -35,16 +35,16 @@
          <div id="nav-placeholder"></div>
     </div>
     <div class="row" style="position: relative;">
-            <img src="https://www.barcellona.org/wp-content/uploads/sites/14/barcellona.jpg" alt="imm" class="img-fluid" id="dest-img">
-            <h1 id="img-caption">Barcellona</h1>
+            <img src="../Località/louvre.jpg" alt="imm" class="img-fluid" id="dest-img">
+            <h1 id="img-caption">Parigi</h1>
         </div>
         <div class="row justify-content-center p-3" style="background-color: rgba(233, 236, 239, 1);">
             <div class="col-lg-8 col-md-8">           
-                <p id="dest-paragraph"><b>Breve descrizione:</b> Barcellona è la seconda città spagnola per numero di abitanti ed è una delle mete predilette nel Mediterraneo, grazie al fatto d'essere una città cosmopolita e piena di vita. Anche gli amanti dell’arte non resteranno delusi nel visitare la città; in essa infatti si sviluppano varie forme d’arte, dall'arte gotica nel Barrio Gotico, alle curiose forme colorate dell'architetto barcellonese Antoni Gaudí, progettista della maestosa e ancora incompiuta Sagrada Família.
+                <p id="dest-paragraph"><b>Breve descrizione:</b> Capitale della Francia e tra i principali centri turistici al mondo, con oltre 15 milioni di visitatori l'anno, Parigi è la città dell'amore e stimola i sensi di chiunque la visiti. Un esplosione di arte e di cultura dove le attrazioni e le cose da fare sono davvero senza fine. 
                     <br>
-                    <b>Ideale se cerchi:</b> arte e monumenti iconici, quartieri folkloristici, musei, movida.
-                    Per quanto tempo: un weekend e più giorni. <br>
-                    <b>Il periodo migliore: </b>tutto l'anno.</p>
+                    <b>Ideale se cerchi:</b> musei e luoghi di culto, movida e divertimenti, reggie e palazzi storici. <br>
+                    <b>Per quanto tempo: </b>una settimana. <br>
+                    <b>Il periodo migliore: </b>tutto l'anno.
             </div>
                 <?php
                     if(!isset($_SESSION['nome'])){

@@ -42,8 +42,8 @@
             <div class="col-lg-8 col-md-8">           
                 <p id="dest-paragraph"><b>Breve descrizione:</b> Barcellona è la seconda città spagnola per numero di abitanti ed è una delle mete predilette nel Mediterraneo, grazie al fatto d'essere una città cosmopolita e piena di vita. Anche gli amanti dell’arte non resteranno delusi nel visitare la città; in essa infatti si sviluppano varie forme d’arte, dall'arte gotica nel Barrio Gotico, alle curiose forme colorate dell'architetto barcellonese Antoni Gaudí, progettista della maestosa e ancora incompiuta Sagrada Família.
                     <br>
-                    <b>Ideale se cerchi:</b> arte e monumenti iconici, quartieri folkloristici, musei, movida.
-                    Per quanto tempo: un weekend e più giorni. <br>
+                    <b>Ideale se cerchi:</b> arte e monumenti iconici, quartieri folkloristici, musei, movida. <br>
+                    <b>Per quanto tempo:</b> un weekend e più giorni. <br>
                     <b>Il periodo migliore: </b>tutto l'anno.</p>
             </div>
                 <?php

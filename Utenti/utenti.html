@@ -42,6 +42,24 @@
                 $(this).removeClass("bg-success");
                 $(this).addClass("bg-body");                
             });
+
+            $(".green-circle").click(function(){
+                $("#zona-dinamica").load("mostra-utenti-prova.html", function(response,statusTxt,t_error){
+                        if(statusTxt=="error") alert("Errore di caricamento della risposta"+t_error.status+":" +t_error.statusTxt);
+                 });
+            });
+            $(".green-circle").click(function(){
+                var query= "select r2.email, r2.datarichiesta from richiesta r1, richiesta r2 where r1.id_richiesta =" + $(this).attr('id') + "and r1.email != r2.email and r1.destinazione = r2.destinazione and r1.etàcompagni = r2.etàcompagni";
+                var httpRequest = new XMLHttpRequest();
+                httpRequest.onreadystatechange = gestisciResponse;
+                httpRequest.open("GET", "mostra-utenti.php?query=" + query, true);
+                httpRequest.send();
+            });
+            function gestisciResponse(e) {
+                    if (e.target.readyState == XMLHttpRequest.DONE && e.target.status == 200) {
+                                document.getElementById("zonaDinamica").innerHTML = e.target.responseText;
+                     }
+            };
         });
     </script>
 </head>

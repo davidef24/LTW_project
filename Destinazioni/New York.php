@@ -35,16 +35,16 @@
          <div id="nav-placeholder"></div>
     </div>
     <div class="row" style="position: relative;">
-            <img src="https://www.barcellona.org/wp-content/uploads/sites/14/barcellona.jpg" alt="imm" class="img-fluid" id="dest-img">
-            <h1 id="img-caption">Barcellona</h1>
+            <img src="../Località/statua-libertà.jpg" alt="imm" class="img-fluid" id="dest-img">
+            <h1 id="img-caption">New York</h1>
         </div>
         <div class="row justify-content-center p-3" style="background-color: rgba(233, 236, 239, 1);">
             <div class="col-lg-8 col-md-8">           
-                <p id="dest-paragraph"><b>Breve descrizione:</b> Barcellona è la seconda città spagnola per numero di abitanti ed è una delle mete predilette nel Mediterraneo, grazie al fatto d'essere una città cosmopolita e piena di vita. Anche gli amanti dell’arte non resteranno delusi nel visitare la città; in essa infatti si sviluppano varie forme d’arte, dall'arte gotica nel Barrio Gotico, alle curiose forme colorate dell'architetto barcellonese Antoni Gaudí, progettista della maestosa e ancora incompiuta Sagrada Família.
+                <p id="dest-paragraph"><b>Breve descrizione:</b>
+                New York, conosciuta anche come la Grande Mela, rappresenta la città più popolosa degli Stati Uniti, nonché il centro economico più importante del mondo. Per milioni di persone questa città è la capitale del mondo. Metropoli dove è impossibile non trovare qualcosa da fare e da vedere, richiama turisti da ogni parte del pianeta che si stupiscono delle sue tentacolari attrazioni. Visitare New York è un’esperienza davvero unica e affascinante; non si può dire di aver visto New York senza aver camminato a lungo sui suoi marciapiedi oppure senza aver attraversato il ponte di Brooklyn o i sentieri di Central Park che offrono degli angoli di verde dove la città sembra un lontano ricordo. Simbolo della città è la famosa e imponente Statua della Libertà. Situata a Liberty Island è raggiungibile con un traghetto assieme alla vicina Ellis Island.
                     <br>
-                    <b>Ideale se cerchi:</b> arte e monumenti iconici, quartieri folkloristici, musei, movida.
-                    Per quanto tempo: un weekend e più giorni. <br>
-                    <b>Il periodo migliore: </b>tutto l'anno.</p>
+                    <b>Per quanto tempo:</b> almeno una settimana <br>
+                    <b>Il periodo migliore: </b>tutto l'anno</p>
             </div>
                 <?php
                     if(!isset($_SESSION['nome'])){
