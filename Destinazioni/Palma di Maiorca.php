@@ -35,14 +35,15 @@
          <div id="nav-placeholder"></div>
     </div>
     <div class="row" style="position: relative;">
-            <img src="../Località/roma-2.jpeg" alt="imm" class="img-fluid" id="dest-img" height=300px>
+            <img src="../Località/palma-di-maiorca.jpg" alt="imm" class="img-fluid" id="dest-img" height=300px>
             <h1 id="img-caption">Palma di Maiorca</h1>
         </div>
         <div class="row justify-content-center p-3" style="background-color: rgba(233, 236, 239, 1);">
             <div class="col-lg-8 col-md-8">           
-                <p id="dest-paragraph"><b>Breve descrizione:</b> Palma di Maiorca è la capitale dell'isola di Maiorca, situata nel Mar Mediterraneo e appartenente alle Isole Baleari, in Spagna. La città è famosa per la sua bellissima cattedrale gotica, la Cattedrale di Santa Maria, nonché per i suoi splendidi giardini, il suo centro storico e le sue spiagge di sabbia bianca. Palma di Maiorca è una popolare meta turistica, frequentata sia da turisti che cercano relax al mare, che da coloro che vogliono scoprire la cultura e la storia della città.<br><b>Ideale se cerchi:</b>storia e cultura, cibo, parchi e giardini pubblici, arte e architettura, shopping<br>
-                    <b>Per quanto tempo: </b> un weekend. <br>
-                    <b>Il periodo migliore: </b>primavera e autunno.
+                <p id="dest-paragraph"><b>Breve descrizione:</b> Palma di Maiorca è la capitale dell'isola di Maiorca, situata nel Mar Mediterraneo e appartenente alle Isole Baleari, in Spagna. La città è famosa per la sua bellissima cattedrale gotica, la Cattedrale di Santa Maria, nonché per i suoi splendidi giardini, il suo centro storico e le sue spiagge di sabbia bianca. Palma di Maiorca è una popolare meta turistica, frequentata sia da turisti che cercano relax al mare, che da coloro che vogliono scoprire la cultura e la storia della città.<br>
+                    <b>Ideale se cerchi:</b>Mare, relax, divertimento<br>
+                    <b>Per quanto tempo: </b>una settimana<br>
+                    <b>Il periodo migliore: </b>da marzo a ottobre.
             </div>
                 <?php
                     if(!isset($_SESSION['nome'])){

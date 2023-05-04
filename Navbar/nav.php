@@ -74,10 +74,10 @@
             <a class="nodecoration underline" href="#">
             <img src="../Icone/Image/iconizer-globe-central-south-asia.svg" alt="direct-flight" width="28" height="28" class="d-inline-block align-text-center">
             Destinazioni</a>
-            <div class="megamenu">
+           <div class="megamenu">
                 <ul class="content">
                     <li class="megamenu_item header_megamenu">
-                        <h4>Località Popolari:</h4>
+                        <h4>Località disponibili:</h4>
                     </li>
                     <li class="megamenu_item">
                         <div class="megamenu_link">
@@ -87,12 +87,12 @@
                                     <h4 class="text">Barcellona</h4>    
                                 </figure>
                                 <figure class="gallery-element-2">
-                                    <a href=""><img src="../Località/maiorca.jpg" alt="Costa Smeralda" class="gallery_image"></a>
+                                    <a href="../Destinazioni/Palma di Maiorca.php"><img src="../Località/maiorca.jpg" alt="Costa Smeralda" class="gallery_image"></a>
                                     <h4 class="text">Palma di Maiorca</h4> 
                                   </figure>
                                 <figure class="gallery-element-3">
-                                    <a href=""><img src="../Località/Creta.jpeg" alt="Creta" class="gallery_image"></a>
-                                    <h4 class="text">Creta</h4> 
+                                    <a href="../Destinazioni/creta.php"><img src="../Località/Creta.jpeg" alt="Creta" class="gallery_image"></a>
+                                    <h4 class="text">Creta</h4>
                                 </figure>
                                 <figure  class="gallery-element-4" >
                                     <a href="../Destinazioni/parigi.php"><img src="../Località/Parigi.jpg" alt="Francia" class="gallery_image"></a>

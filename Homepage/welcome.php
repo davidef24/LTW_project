@@ -51,7 +51,7 @@
     </script>
     <script>
         $(function(){
-            var città=["Barcellona", "Palma di Maiorca", "Madrid", "Berlino", "Tokyo", "New York", "Parigi", "Mykonos"];
+            var città=["Barcellona", "Palma di Maiorca", "Madrid", "Berlino", "Tokyo", "New York", "Parigi", "Mykonos", "Creta", "Roma"];
             $("#dove-andare").autocomplete({
                 source: città,
                 select: function(event, ui){
@@ -86,7 +86,7 @@
                 <h3 id="crpd-txt" class="carousel-caption" >TOKYO</h3></a>
             </div>
             <div style="position: relative;">
-            <a href="../Destinazioni/tokyo.php"><img id="crpd-img" src="../Altro/cropped_imgs/maiorca.jpg" class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
+            <a href="../Destinazioni/Palma di Maiorca.php"><img id="crpd-img" src="../Altro/cropped_imgs/maiorca.jpg" class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
                 <h3 id="crpd-txt" class="carousel-caption">PALMA DI MAIORCA</h3></a>
             </div>
         </div>

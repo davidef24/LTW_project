@@ -38,6 +38,13 @@
         var x = window.matchMedia("(max-width: 950px)")
         myFunction(x)
         x.addListener(myFunction) 
+        if(window.innerWidth <= 992){
+            var dest_item= document.getElementById("link-destinazione");
+            dest_item.addEventListener('click', function(event){
+                event.preventDefault();
+            });
+        }
+        
     </script>
     <body>
     <nav class="navbarpers">
@@ -45,7 +52,7 @@
         <div class="nav-linkspers">
         <ul>
         <li class="drop_menu">
-            <a class="nodecoration underline"  href="#">
+            <a class="nodecoration underline"  href="#" id="link-destinazione">
             <img src="../Icone/Image/iconizer-globe-central-south-asia.svg" alt="direct-flight" width="28" height="28" class="d-inline-block align-text-center">
             Destinazioni</a>
            <div class="megamenu">
