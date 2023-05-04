@@ -35,15 +35,15 @@
          <div id="nav-placeholder"></div>
     </div>
     <div class="row" style="position: relative;">
-            <img src="../Località/louvre.jpg" alt="imm" class="img-fluid" id="dest-img">
-            <h1 id="img-caption">Parigi</h1>
+            <img src="../Località/tokyo-notte.jpeg" alt="imm" class="img-fluid" id="dest-img" height=300px>
+            <h1 id="img-caption">Tokyo</h1>
         </div>
         <div class="row justify-content-center p-3" style="background-color: rgba(233, 236, 239, 1);">
             <div class="col-lg-8 col-md-8">           
-                <p id="dest-paragraph" style="padding:7%"><b>Breve descrizione:</b> Parigi è la capitale della Francia ed è famosa in tutto il mondo per la sua architettura, la cultura e la gastronomia. La città è conosciuta per la Torre Eiffel, il Louvre, l'Arco di Trionfo, la Cattedrale di Notre Dame e la Champs-Élysées. È un importante centro finanziario, politico e culturale e ospita numerose istituzioni culturali, tra cui il Museo d'Orsay e l'Opéra Garnier. Parigi è anche famosa per la sua cucina, che include piatti come croissant, macarons e boeuf bourguignon. Conosciuta come la "Città dell'Amore", Parigi è anche una meta romantica per molti visitatori.<br>
-                    <b>Ideale se cerchi:</b> musei e luoghi di culto, movida e divertimenti, reggie e palazzi storici. <br>
-                    <b>Per quanto tempo: </b>una settimana. <br>
-                    <b>Il periodo migliore: </b>tutto l'anno.
+                <p id="dest-paragraph"><b>Breve descrizione:</b> Tokyo è la capitale del Giappone ed è una delle città più grandi e affascinanti del mondo, con una popolazione di oltre 13 milioni di persone. La città è famosa per la sua tecnologia all'avanguardia, la sua cultura popolare unica e la sua deliziosa cucina. Tokyo offre una varietà di attrazioni, come il Palazzo Imperiale, il Tempio di Senso-ji, il quartiere di Shibuya famoso per la sua traversa pedonale elettronica e il moderno grattacielo di Tokyo Skytree. La città è anche nota per i suoi negozi di moda alla moda, i suoi caffè alla moda e i suoi ristoranti stellati Michelin. Con la sua miscela di tradizione e modernità, Tokyo offre un'esperienza unica e indimenticabile a chi la visita.<br>
+                    <b>Ideale se cerchi:</b> nuove culture affascinanti, cibo delizioso, città sicura<br>
+                    <b>Per quanto tempo: </b>due settimane. <br>
+                    <b>Il periodo migliore: </b>inizio primavera o inizio autunno.
             </div>
                 <?php
                     if(!isset($_SESSION['nome'])){

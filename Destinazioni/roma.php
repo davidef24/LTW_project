@@ -35,15 +35,15 @@
          <div id="nav-placeholder"></div>
     </div>
     <div class="row" style="position: relative;">
-            <img src="../Località/louvre.jpg" alt="imm" class="img-fluid" id="dest-img">
-            <h1 id="img-caption">Parigi</h1>
+            <img src="../Località/roma-2.jpeg" alt="imm" class="img-fluid" id="dest-img" height=300px>
+            <h1 id="img-caption">Roma</h1>
         </div>
         <div class="row justify-content-center p-3" style="background-color: rgba(233, 236, 239, 1);">
             <div class="col-lg-8 col-md-8">           
-                <p id="dest-paragraph" style="padding:7%"><b>Breve descrizione:</b> Parigi è la capitale della Francia ed è famosa in tutto il mondo per la sua architettura, la cultura e la gastronomia. La città è conosciuta per la Torre Eiffel, il Louvre, l'Arco di Trionfo, la Cattedrale di Notre Dame e la Champs-Élysées. È un importante centro finanziario, politico e culturale e ospita numerose istituzioni culturali, tra cui il Museo d'Orsay e l'Opéra Garnier. Parigi è anche famosa per la sua cucina, che include piatti come croissant, macarons e boeuf bourguignon. Conosciuta come la "Città dell'Amore", Parigi è anche una meta romantica per molti visitatori.<br>
-                    <b>Ideale se cerchi:</b> musei e luoghi di culto, movida e divertimenti, reggie e palazzi storici. <br>
-                    <b>Per quanto tempo: </b>una settimana. <br>
-                    <b>Il periodo migliore: </b>tutto l'anno.
+                <p id="dest-paragraph"><b>Breve descrizione:</b> Roma è la capitale dell'Italia e una delle città più antiche e iconiche del mondo. Conosciuta come "la città eterna", Roma è famosa per la sua storia antica, le sue numerose opere d'arte e monumenti, la sua cucina deliziosa e la sua vibrante cultura contemporanea. La città ospita numerose attrazioni turistiche, tra cui il Colosseo, il Pantheon, la Fontana di Trevi, la Città del Vaticano e il Museo Nazionale Romano. Roma è anche conosciuta per la sua vivace scena sociale, con numerosi ristoranti, bar, caffè e negozi che offrono una vasta gamma di esperienze uniche. Inoltre, Roma è sede di importanti eventi culturali, come la Settimana della Moda di Roma e la Biennale di Architettura di Roma.<br>
+                    <b>Ideale se cerchi:</b>storia e cultura, cibo, parchi e giardini pubblici, arte e architettura, shopping<br>
+                    <b>Per quanto tempo: </b> un weekend. <br>
+                    <b>Il periodo migliore: </b>primavera e autunno.
             </div>
                 <?php
                     if(!isset($_SESSION['nome'])){

@@ -7,7 +7,7 @@
     <head>
     <title>Prova</title>
     <meta charset="UTF-8">
-    <meta content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./StileMegaMenu.css">
     <link rel="stylesheet" href="../Stili/Colors_link_nav.css">
@@ -52,13 +52,26 @@
         myFunction(x)
         x.addListener(myFunction) 
     </script>
+    
+    <script>
+        var menu = document.getElementsByClassName("megamenu");
+        for(var i=menu.childNodes.length-1;i>=0;i--){
+            if(menu.childNodes[i].style.visibility =="hidden")
+            {
+                menu.removeChild(menu.childNodes[i]);
+            }else
+            {
+                document.body.appendChild(menu.childNodes[i]);
+            }
+        }
+    </script>
     <body>
     <nav class="navbarpers">
         <a  class="nodecoration logo" href="../Homepage/welcome.php"><img src="../Altro/LogoMakr-3hmd64.png" height="95" width="115" style="margin-left: 35px;"></a>
         <div class="nav-linkspers">
         <ul>
         <li class="drop_menu">
-            <a class="nodecoration underline"  href="#">
+            <a class="nodecoration underline" href="#">
             <img src="../Icone/Image/iconizer-globe-central-south-asia.svg" alt="direct-flight" width="28" height="28" class="d-inline-block align-text-center">
             Destinazioni</a>
             <div class="megamenu">
@@ -70,11 +83,11 @@
                         <div class="megamenu_link">
                             <div class="gallery">
                             <figure class="gallery-element-1">
-                                    <a href="../Destinazioni/barcellona.php"><img src="../Località/Barcellona.jpg" class="gallery_image" alt="Barcellona"></a>
+                                    <a href="../Destinazioni/barcellona.php"><img src="../Località/menopesanti/Barcellona.jpg" class="gallery_image" alt="Barcellona"></a>
                                     <h4 class="text">Barcellona</h4>    
                                 </figure>
                                 <figure class="gallery-element-2">
-                                    <a href=""><img src="../Località/Costa_Smeralda.jpg" alt="Costa Smeralda" class="gallery_image"></a>
+                                    <a href=""><img src="../Località/maiorca.jpg" alt="Costa Smeralda" class="gallery_image"></a>
                                     <h4 class="text">Palma di Maiorca</h4> 
                                   </figure>
                                 <figure class="gallery-element-3">
@@ -86,28 +99,28 @@
                                     <h4 class="text">Parigi</h4> 
                                 </figure>
                                 <figure  class="gallery-element-5">
-                                    <a href=""><img src="../Località/Tokyo.jpg" alt="Tokyo" class="gallery_image"></a>
+                                    <a href="../Destinazioni/tokyo.php"><img src="../Località/menopesanti/Tokyo.jpg" alt="Tokyo" class="gallery_image"></a>
                                     <h4 class="text">Tokyo</h4>     
                                 </figure>
                                 <figure  class="gallery-element-6">
-                                    <a href=""><img src="../Località/Roma.webp" alt="Roma" class="gallery_image"></a>
+                                    <a href="../Destinazioni/roma.php"><img src="../Località/menopesanti/Roma.webp" alt="Roma" class="gallery_image"></a>
                                     <h4 class="text">Roma</h4>    
                                 </figure>
                                 <figure  class="gallery-element-7">
-                                    <a href="../Destinazioni/new-york.php"><img src="../Località/New-York Notte.jpeg" alt="New York" class="gallery_image"></a>
+                                    <a href="../Destinazioni/New York.php"><img src="../Località/menopesanti/New-York Notte.jpeg" alt="New York" class="gallery_image"></a>
                                     <h4 class="text">New  York</h4>    
                                 </figure>
                                 <figure class="gallery-element-8" >
-                                    <a href=""><img src="../Località/IbizaParty.jpg" alt="Ibiza" class="gallery_image"></a>
-                                    <h4 class="text">Ibiza</h4>    
+                                    <a href="../Destinazioni/madrid.php"><img src="../Località/madrid-2.jpg" alt="Ibiza" class="gallery_image"></a>
+                                    <h4 class="text">Madrid</h4>    
                                 </figure>
                                 <figure  class="gallery-element-9">
                                     <a href="../Destinazioni/mykonos.php"><img src="../Località/Mykonos.jpg" alt="Mykonos" class="gallery_image"></a>
                                     <h4 class="text">Mykonos</h4>  
                                 </figure>
                                 <figure  class="gallery-element-10">
-                                    <a href=""><img src="../Località/Dolomiti.jpg" alt="Dolomiti" class="gallery_image"></a>
-                                    <h4 class="text">Dolomiti</h4>  
+                                    <a href="../Destinazioni/berlino.php"><img src="../Altro/cropped_imgs/reichstag.jpeg" alt="Dolomiti" class="gallery_image"></a>
+                                    <h4 class="text">Berlino</h4></a>
                                 </figure>
                             </div> 
                         </div>
