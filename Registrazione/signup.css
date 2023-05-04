@@ -18,7 +18,7 @@ body {
   margin-right: auto;
   margin-bottom: auto;
   width: 325px;
-  height: 450px;
+  height: 475px;
 }
 
 .container2 {
@@ -33,9 +33,16 @@ body {
   height: 130px;
 }
 
-@media screen and (max-width: 950px){
+@media screen and (max-width: 950px) and (min-width: 400px){
   .form-container{
     margin-top: 25%;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .form-container{
+    margin-top: 10%;
+    margin-bottom: 10%;
   }
 }
 

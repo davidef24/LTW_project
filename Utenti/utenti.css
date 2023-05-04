@@ -38,6 +38,9 @@
     #tabella-richieste .periodo {
         display: none;
     }
+    #tabella-richieste .email-utente {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -45,6 +48,9 @@
         display: none;
     }
     #tabella-richieste .età {
+        display: none;
+    }
+    #tabella-richieste .email-utente {
         display: none;
     }
 }

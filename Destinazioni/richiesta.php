@@ -1,6 +1,7 @@
 <?php
     if ($_SERVER["REQUEST_METHOD"] != "POST") {
-        header("Location: http://localhost:3000/Homepage/homepage.html");
+        //header("Location: http://localhost:3000/Homepage/homepage.html");
+        header("Location: http://localhost:3000/Users/loren/Desktop/LTW/Homepage/homepage.html");
     }
     else {
         $dbconn = pg_connect("host=localhost port=5432 dbname=Progetto_LTW 
@@ -31,7 +32,8 @@
             $data = pg_query_params($dbconn, $q2,
                 array($id_richiesta, $email, $destinazione, $periodo, $fasciaetà, $data, $durata));
             if ($data) {
-                header("Location: http://localhost:3000/Utenti/utenti.php");
+                // header("Location: http://localhost:3000/Utenti/utenti.php");
+                header("Location: http://localhost:3000/Users/loren/Desktop/LTW/Utenti/utenti.php");
             }
             else {
                 echo "Richiesta non andata a buon fine";
