@@ -35,19 +35,19 @@
          <div id="nav-placeholder"></div>
     </div>
     <div class="row" style="position: relative;">
-            <img src="../Località/louvre.jpg" alt="imm" class="img-fluid" id="dest-img">
-            <h1 id="img-caption">Parigi</h1>
+            <img src="../Località/madrid-3.jpg" alt="imm" class="img-fluid" id="dest-img" height=300px>
+            <h1 id="img-caption">Madrid</h1>
         </div>
         <div class="row justify-content-center p-3" style="background-color: rgba(233, 236, 239, 1);">
             <div class="col-lg-8 col-md-8">           
-                <p id="dest-paragraph" style="padding:7%"><b>Breve descrizione:</b> Parigi è la capitale della Francia ed è famosa in tutto il mondo per la sua architettura, la cultura e la gastronomia. La città è conosciuta per la Torre Eiffel, il Louvre, l'Arco di Trionfo, la Cattedrale di Notre Dame e la Champs-Élysées. È un importante centro finanziario, politico e culturale e ospita numerose istituzioni culturali, tra cui il Museo d'Orsay e l'Opéra Garnier. Parigi è anche famosa per la sua cucina, che include piatti come croissant, macarons e boeuf bourguignon. Conosciuta come la "Città dell'Amore", Parigi è anche una meta romantica per molti visitatori.<br>
-                    <b>Ideale se cerchi:</b> musei e luoghi di culto, movida e divertimenti, reggie e palazzi storici. <br>
-                    <b>Per quanto tempo: </b>una settimana. <br>
-                    <b>Il periodo migliore: </b>tutto l'anno.
+                <p id="dest-paragraph" ><b>Breve descrizione:</b> Madrid è la capitale della Spagna ed è situata nel centro del paese. È una città con una vasta storia e una ricca cultura, ed è famosa per la sua architettura, la sua gastronomia e la sua vita notturna. Madrid ospita importanti musei come il Museo del Prado, il Reina Sofia e il Thyssen-Bornemisza, che offrono una vasta gamma di opere d'arte, tra cui alcune dei più grandi capolavori della pittura spagnola come Guernica di Pablo Picasso. La città è anche famosa per i suoi parchi, tra cui il grande e bellissimo Parco del Retiro, dove si può godere di un'atmosfera rilassante e naturale. Madrid è nota per la sua cucina tradizionale, come le tapas, la paella e il cocido, così come per i suoi locali notturni, bar e club, che rimangono aperti fino a tarda notte. Con il suo clima piacevole, la sua cultura vivace e la sua gente calorosa e accogliente, Madrid è una meta turistica molto popolare in Europa.<br>
+                    <b>Ideale se cerchi:</b>vivacità, arte e musei, cibo<br>
+                    <b>Per quanto tempo: </b> un weekend. <br>
+                    <b>Il periodo migliore: </b>da maggio a ottobre.
             </div>
                 <?php
                     if(!isset($_SESSION['nome'])){
-                        echo "<div class=\"col-lg-4 col-md-4 justify-content-center\" id=\"destra-paragr\">
+                        echo "<div class=\"col-lg-4 col-md-4 justify-content-center\" id=\"destra-paragr\" style=\"margin-bottom:13%\">
                         <p id=\"form-paragraph-not-logged\" class=\"text-center\" style=\"color: red;\">Per compilare il form e cercare un compagno, devi aver effettuato l'accesso</p>
                         <a id=\"link-disabled\" role=\"link\" aria-disabled=\"true\"><button type=\"button\" id=\"login-button-dest\" data-bs-toggle=\"modal\" data-bs-target=\"#logPage\" class=\"btn bg-primary d-inline-block align-text-center\">Accedi</button></a>
                             <!-- Modal -->

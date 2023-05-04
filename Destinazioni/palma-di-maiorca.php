@@ -35,15 +35,14 @@
          <div id="nav-placeholder"></div>
     </div>
     <div class="row" style="position: relative;">
-            <img src="../Località/louvre.jpg" alt="imm" class="img-fluid" id="dest-img">
-            <h1 id="img-caption">Parigi</h1>
+            <img src="../Località/roma-2.jpeg" alt="imm" class="img-fluid" id="dest-img" height=300px>
+            <h1 id="img-caption">Palma di Maiorca</h1>
         </div>
         <div class="row justify-content-center p-3" style="background-color: rgba(233, 236, 239, 1);">
             <div class="col-lg-8 col-md-8">           
-                <p id="dest-paragraph" style="padding:7%"><b>Breve descrizione:</b> Parigi è la capitale della Francia ed è famosa in tutto il mondo per la sua architettura, la cultura e la gastronomia. La città è conosciuta per la Torre Eiffel, il Louvre, l'Arco di Trionfo, la Cattedrale di Notre Dame e la Champs-Élysées. È un importante centro finanziario, politico e culturale e ospita numerose istituzioni culturali, tra cui il Museo d'Orsay e l'Opéra Garnier. Parigi è anche famosa per la sua cucina, che include piatti come croissant, macarons e boeuf bourguignon. Conosciuta come la "Città dell'Amore", Parigi è anche una meta romantica per molti visitatori.<br>
-                    <b>Ideale se cerchi:</b> musei e luoghi di culto, movida e divertimenti, reggie e palazzi storici. <br>
-                    <b>Per quanto tempo: </b>una settimana. <br>
-                    <b>Il periodo migliore: </b>tutto l'anno.
+                <p id="dest-paragraph"><b>Breve descrizione:</b> Palma di Maiorca è la capitale dell'isola di Maiorca, situata nel Mar Mediterraneo e appartenente alle Isole Baleari, in Spagna. La città è famosa per la sua bellissima cattedrale gotica, la Cattedrale di Santa Maria, nonché per i suoi splendidi giardini, il suo centro storico e le sue spiagge di sabbia bianca. Palma di Maiorca è una popolare meta turistica, frequentata sia da turisti che cercano relax al mare, che da coloro che vogliono scoprire la cultura e la storia della città.<br><b>Ideale se cerchi:</b>storia e cultura, cibo, parchi e giardini pubblici, arte e architettura, shopping<br>
+                    <b>Per quanto tempo: </b> un weekend. <br>
+                    <b>Il periodo migliore: </b>primavera e autunno.
             </div>
                 <?php
                     if(!isset($_SESSION['nome'])){

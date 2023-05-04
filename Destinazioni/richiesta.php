@@ -34,7 +34,7 @@
                 header("Location: http://localhost:3000/Utenti/utenti.php");
             }
             else {
-                echo "Richiesta non andata a buon fine, spiaze";
+                echo "Richiesta non andata a buon fine";
             }
             
         }

@@ -9,7 +9,6 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../bootstrap-5.2.3/bootstrap-5.2.3/dist/css/bootstrap.min.css">
     <script src="../bootstrap-5.2.3/bootstrap-5.2.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -83,12 +82,12 @@
     <div class="row justify-content-center">
         <div class="col-lg-3 col-md-4 col-sm-12 mb-4 mb-lg-0"> 
             <div style="position: relative;">
-                <img id="crpd-img" src="../Altro/cropped_imgs/tokyo-good.jpg"  class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
-                <h3 id="crpd-txt" class="carousel-caption" >TOKYO</h3>
+                <a href="../Destinazioni/tokyo.php"><img id="crpd-img" src="../Altro/cropped_imgs/tokyo-good.jpg"  class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
+                <h3 id="crpd-txt" class="carousel-caption" >TOKYO</h3></a>
             </div>
             <div style="position: relative;">
-                <img id="crpd-img" src="../Altro/cropped_imgs/maiorca.jpg" class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
-                <h3 id="crpd-txt" class="carousel-caption">PALMA DI MAIORCA</h3>
+            <a href="../Destinazioni/tokyo.php"><img id="crpd-img" src="../Altro/cropped_imgs/maiorca.jpg" class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
+                <h3 id="crpd-txt" class="carousel-caption">PALMA DI MAIORCA</h3></a>
             </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-12 mb-4 mb-lg-0">
@@ -97,8 +96,8 @@
                 <h3 id="crpd-txt" class="carousel-caption">PARIGI</h3></a>
             </div>
             <div style="position: relative;">
-                <img id="crpd-img" src="../Altro/cropped_imgs/madrid-good.jpg" class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
-                <h3 id="crpd-txt" class="carousel-caption">MADRID</h3>
+                <a href="../Destinazioni/madrid.php"><img id="crpd-img" src="../Altro/cropped_imgs/madrid-good.jpg" class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
+                <h3 id="crpd-txt" class="carousel-caption">MADRID</h3></a>
             </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-12 mb-4 mb-lg-0">
@@ -107,8 +106,8 @@
                 <h3 id="crpd-txt" class="carousel-caption">NEW YORK</h3></a>
             </div>
             <div style="position: relative;">
-                <img id="crpd-img" src="../Altro/cropped_imgs/reichstag.jpeg" class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
-                <h3 id="crpd-txt" class="carousel-caption">BERLINO</h3>
+                <a href="../Destinazioni/berlino.php"><img id="crpd-img" src="../Altro/cropped_imgs/reichstag.jpeg" class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
+                <h3 id="crpd-txt" class="carousel-caption">BERLINO</h3></a>
             </div>
         </div>
     </div>
@@ -118,7 +117,7 @@
 <div style="overflow: hidden;">
     <div class="row justify-content-center">
         <div class="col-lg-4 col-sm-12 mb-4">
-            <img src="https://meetravel.it/wp-content/uploads/brizy/imgs/leio-mclaren-jEgQpfkHEWY-unsplash-1-scaled-555x694x0x139x555x416x1643050549.jpg" class="w-100">
+        <img src="../Altro/registrazione-img.png" class="w-100">
         </div>
         <div class="col-lg-4 col-sm-12 mb-4" style="position: relative;">
             <h1 id="par-header">1-Registra un account</h1>

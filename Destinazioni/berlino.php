@@ -35,15 +35,15 @@
          <div id="nav-placeholder"></div>
     </div>
     <div class="row" style="position: relative;">
-            <img src="../Località/louvre.jpg" alt="imm" class="img-fluid" id="dest-img">
-            <h1 id="img-caption">Parigi</h1>
+            <img src="../Località/berlino-2.jpg" alt="imm" class="img-fluid" id="dest-img">
+            <h1 id="img-caption">Berlino</h1>
         </div>
         <div class="row justify-content-center p-3" style="background-color: rgba(233, 236, 239, 1);">
             <div class="col-lg-8 col-md-8">           
-                <p id="dest-paragraph" style="padding:7%"><b>Breve descrizione:</b> Parigi è la capitale della Francia ed è famosa in tutto il mondo per la sua architettura, la cultura e la gastronomia. La città è conosciuta per la Torre Eiffel, il Louvre, l'Arco di Trionfo, la Cattedrale di Notre Dame e la Champs-Élysées. È un importante centro finanziario, politico e culturale e ospita numerose istituzioni culturali, tra cui il Museo d'Orsay e l'Opéra Garnier. Parigi è anche famosa per la sua cucina, che include piatti come croissant, macarons e boeuf bourguignon. Conosciuta come la "Città dell'Amore", Parigi è anche una meta romantica per molti visitatori.<br>
-                    <b>Ideale se cerchi:</b> musei e luoghi di culto, movida e divertimenti, reggie e palazzi storici. <br>
-                    <b>Per quanto tempo: </b>una settimana. <br>
-                    <b>Il periodo migliore: </b>tutto l'anno.
+                <p id="dest-paragraph"><b>Breve descrizione:</b> Berlino è la capitale della Germania e una delle città più popolose dell'Unione Europea. Situata nella parte orientale del paese, Berlino è famosa per la sua storia complessa e il suo patrimonio culturale. La città è stata divisa dal Muro di Berlino durante la Guerra Fredda e solo nel 1989 è stata riunificata. Oggi, Berlino è una città cosmopolita, con una vivace scena artistica, musicale e culturale. La città è anche conosciuta per i suoi numerosi musei, parchi, ristoranti e bar, e per la sua animata vita notturna.                    <br>
+                    <b>Ideale se cerchi:</b> musei e luoghi di culto, storia, verde, diversità <br>
+                    <b>Per quanto tempo: </b>3 giorni. <br>
+                    <b>Il periodo migliore: </b>da maggio a settembre.
             </div>
                 <?php
                     if(!isset($_SESSION['nome'])){
