@@ -1,6 +1,7 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] != "POST") {
-    header("Location: http://localhost:3000/Homepage/homepage.html");
+    // header("Location: http://localhost:3000/Homepage/homepage.html");
+    header("Location: http://localhost:3000/Users/loren/Desktop/LTW/Homepage/homepage.html");
 }
 else {
     $dbconn = pg_connect("host=localhost port=5432 dbname=Progetto_LTW 
@@ -170,10 +171,11 @@ else {
                     $nome = $_POST['nome'];
                     $cognome = $_POST['cognome'];
                     $nascita = $_POST['nascita'];
+                    $cellulare = $_POST['cellulare'];
                     $password = password_hash($_POST['password1'], PASSWORD_DEFAULT);
-                    $q2 = "insert into utente values ($1,$2,$3,$4,$5)";
+                    $q2 = "insert into utente values ($1,$2,$3,$4,$5,$6)";
                     $data = pg_query_params($dbconn, $q2,
-                        array($email, $nome, $cognome, $password, $nascita));
+                        array($email, $nome, $cognome, $password, $nascita, $cellulare));
                     if ($data) {
                         echo "
                         <div class=\"container2\"><h1 class=\"q1\"> 

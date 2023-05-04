@@ -49,7 +49,7 @@ $dbconn = pg_connect("host=localhost port=5432 dbname=Progetto_LTW
             });
 
             $(".green-circle").click(function(){
-                var query= "select r2.email, r2.datarichiesta from richiesta r1, richiesta r2 where r1.id_richiesta =" + $(this).attr('id') + " and r1.email != r2.email and r1.destinazione = r2.destinazione and r1.etàcompagni = r2.etàcompagni and r1.periodo = r2.periodo and r1.durata = r2.durata";
+                var query= "select u.telefono, u.email, r2.datarichiesta from richiesta r1, richiesta r2, utente u where r1.id_richiesta =" + $(this).attr('id') + " and r1.email != r2.email and r1.destinazione = r2.destinazione and r1.etàcompagni = r2.etàcompagni and r1.periodo = r2.periodo and r1.durata = r2.durata and r2.email = u.email";
                 var httpRequest = new XMLHttpRequest();
                 httpRequest.open("GET", "mostra-utenti.php?query=" + query, true);
                 httpRequest.onload = function() {

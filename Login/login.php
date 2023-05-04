@@ -1,6 +1,7 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] != "POST") {
-    header("Location: http://localhost:3000/Homepage/homepage.html");
+    // header("Location: http://localhost:3000/Homepage/homepage.html");
+    header("Location: http://localhost:3000/Users/loren/Desktop/LTW/Homepage/homepage.html");
 }
 else {
     $dbconn = pg_connect("host=localhost port=5432 dbname=Progetto_LTW 
@@ -69,8 +70,8 @@ else {
                         $_SESSION['nome']= $nome;
                         $_SESSION['timeout']= time();
                         $_SESSION['user-email']= $email;
-                        header("Location: http://localhost:3000/Homepage/welcome.php");
-                        //header("Location: http://localhost:3000/Users/loren/Desktop/LTW/Homepage/welcome.php");*/
+                        // header("Location: http://localhost:3000/Homepage/welcome.php");
+                        header("Location: http://localhost:3000/Users/loren/Desktop/LTW/Homepage/welcome.php");
                     }
                 }
             }

@@ -25,21 +25,23 @@
         <div id="nav-placeholder">
         </div>
     </div>
-    <div class="form-container">
+    <div name="div1" class="form-container">
         <div class="q1">Inserisci i tuoi dati</div>
         <form method="post" action="registrazione.php" name="registrazione" onsubmit='return check_lr();' class="form-signin m-auto">
-            <input placeholder="Nome" type="text" name="nome" maxlength="30" class="form-control">
+            <input placeholder="Nome" type="text" id="nome" name="nome" maxlength="30" class="form-control">
             
-            <input placeholder="Cognome" type="text" name="cognome" maxlength="30" class="form-control">
+            <input placeholder="Cognome" type="text" id="cognome" name="cognome" maxlength="30" class="form-control">
 
-            <input placeholder="Data di nascita" type="text" onfocus="this.type='date'" name="nascita" class="form-control">
+            <input placeholder="Data di nascita" type="text" onfocus="this.type='date'" id="nascita" name="nascita" class="form-control">
             
-            <input placeholder="Email" type="text" name="email" maxlength="40" class="form-control">
+            <input placeholder="Email" type="text" id="email" name="email" maxlength="40" class="form-control">
+
+            <input placeholder="Cellulare" type="tel" id="cellulare" name="cellulare" maxlength="10" class="form-control">
             
-            <input placeholder="Password" type="password" name="password1" maxlength="40" class="form-control">
+            <input placeholder="Password" type="password" id="password1" name="password1" maxlength="40" class="form-control">
             <i class="far fa-eye"></i>
 
-            <input placeholder="Ripeti la password" type="password" name="password2" maxlength="40" class="form-control">
+            <input placeholder="Ripeti la password" type="password" id="password2" name="password2" maxlength="40" class="form-control">
             <i class="far fa-eye"></i>
             
             <input type="submit" value="Registrati" class="btn btn-primary">
