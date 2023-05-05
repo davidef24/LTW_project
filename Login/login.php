@@ -70,8 +70,8 @@ else {
                         $_SESSION['nome']= $nome;
                         $_SESSION['timeout']= time();
                         $_SESSION['user-email']= $email;
-                        // header("Location: http://localhost:3000/Homepage/welcome.php");
-                        header("Location: http://localhost:3000/Users/loren/Desktop/LTW/Homepage/welcome.php");
+                        header("Location: http://localhost:3000/Homepage/welcome.php");
+                        //header("Location: http://localhost:3000/Users/loren/Desktop/LTW/Homepage/welcome.php");
                     }
                 }
             }

@@ -18,7 +18,7 @@ function validBirthDate(){
     }
     var spl=date.split('-');
     var day=parseInt(spl[2]), month=parseInt(spl[1]), year=parseInt(spl[0]);
-    if (year>2005 || (year==2005 && month<6)){
+    if (year>2005 || (year==2005 && month >= 6)){
         alert("Devi essere maggiorenne per usare i vari servizi");
         return false;
     }
@@ -38,12 +38,16 @@ function emailToRegister(){
     }
 }
 function validTelephone(){
-    if (document.getElementById("telefono").value=""){
+    if (document.getElementById("telefono").value==""){
         alert("Inserire numero di cellulare");
         return false;
     }
-    if (document.getElementById("telefono").value.match(/^(+?\d{1,3}[- ]?)?\d{9,12}$/)) return true;
-    else return false;
+    console.log(document.getElementById("telefono").value);
+    if (document.getElementById("telefono").value.match(/^((\+|00)?39)?3\d{2}\d{6,7}$/)) return true;
+    else {
+        alert("Inserire un numero di telefono valido");
+        return false;
+    }
 }
 function comparePws(){
     var p1=document.getElementById("password1").value;
@@ -59,6 +63,6 @@ function comparePws(){
     return true;
 }
 function check_lr(){
-    if (!validNameSurname() || !validBirthDate() || !emailToRegister() || validTelephone() || !comparePws()) return false;
+    if (!validNameSurname() || !validBirthDate() || !emailToRegister() || !validTelephone() || !comparePws()) return false;
     return true;
 }
