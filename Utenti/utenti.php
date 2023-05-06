@@ -64,17 +64,15 @@ $dbconn = pg_connect("host=localhost port=5432 dbname=Progetto_LTW
             });
 
             $(".cancella").click(function(){
-                var id=$(this).attr('id').split('-');
-                var query_delete="delete from richiesta where id_richiesta = "+id[1];
-                // var query_show="select * from richiesta where email = "+user_email+" order by datarichiesta";
-                var httpRequest = new XMLHttpRequest();
-                httpRequest.open("GET", "cancella-utenti.php?query_delete=" + query_delete, true);
-                httpRequest.onload = function() {
-                    if (httpRequest.status === 200) {
-                        document.getElementById('richieste').innerHTML = httpRequest.responseText;
-                    }
-                };
-                httpRequest.send();
+                if(confirm("Sei sicuro di voler cancellare la richiesta?")){
+                    var id=$(this).attr('id').split('-');
+                    var query_delete="delete from richiesta where id_richiesta = "+id[1];
+                    var httpRequest = new XMLHttpRequest();
+                    httpRequest.open("GET", "cancella-utenti.php?query_delete=" + query_delete, true);
+                    httpRequest.send();
+                    location.reload();
+                }
+                
             });
 
         });
@@ -129,11 +127,11 @@ $dbconn = pg_connect("host=localhost port=5432 dbname=Progetto_LTW
                             echo '<td class="status"><div>
                                         <input type="button" class="green-circle" id="'.$tuple["id_richiesta"].'">
                                     </div></td>
-                                    <td class="cancella" id="cestino-'.$tuple["id_richiesta"].'><div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                    <td class="cancella" id="cestino-'.$tuple["id_richiesta"].'"><div>
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
                                             <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
                                             <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"/>
-                                        </svg>
+                                        </svg></a>
                                     </div></td></tr></div>';
                         }
                         else {
@@ -141,10 +139,10 @@ $dbconn = pg_connect("host=localhost port=5432 dbname=Progetto_LTW
                                         <input type="button disabled" class="yellow-circle" id="'.$tuple["id_richiesta"].'">
                                     </div></td>
                                     <td class="cancella" id="cestino-'.$tuple["id_richiesta"].'"><div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
                                             <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
                                             <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"/>
-                                        </svg>
+                                        </svg></a>
                                     </div></td></tr></div>';
                         }
                     }

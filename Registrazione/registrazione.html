@@ -12,41 +12,122 @@
     <link rel="stylesheet" href="signup.css">
     <script src="../bootstrap-5.2.3/bootstrap-5.2.3/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="validate.js"></script>
-    <link rel="stylesheet" href="../Stili/Footer.css">
     <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         $(function(){
             $("#nav-placeholder").load("../Navbar/nav.php");
         });
+        function invalidName(){
+            $("#nome").addClass("is-invalid");
+        }
+        function validName(){
+            $("#nome").removeClass("is-invalid");
+            $("#nome").addClass("is-valid");
+        }
+        function invalidSurname(){
+            $("#cognome").addClass("is-invalid");
+        }
+        function validSurname(){
+            $("#cognome").removeClass("is-invalid");
+            $("#cognome").addClass("is-valid");
+        }
+        function invalidDate(){
+            $("#nascita").addClass("is-invalid");
+        }
+        function validDate(){
+            $("#nascita").removeClass("is-invalid");
+            $("#nascita").addClass("is-valid");
+        }
+        function invalidEmail(){
+            $("#email").addClass("is-invalid");
+        }
+        function validEmail(){
+            $("#email").removeClass("is-invalid");
+            $("#email").addClass("is-valid");
+        }
+        function invalidTel(){
+            $("#telefono").addClass("is-invalid");
+        }
+        function validTel(){
+            $("#telefono").removeClass("is-invalid");
+            $("#telefono").addClass("is-valid");
+        }
+        function invalidP1(){
+            $("#password1").addClass("is-invalid");
+        }
+        function invalidP2(){
+            $("#password2").addClass("is-invalid");
+        }
+        function validP1(){
+            $("#password1").removeClass("is-invalid");
+            $("#password1").addClass("is-valid");
+        }
+        function validP2(){
+            $("#password2").removeClass("is-invalid");
+            $("#password2").addClass("is-valid");
+        }
+        function resetAll(){
+            var fields=["#nome", "#cognome", "#nascita", "#email", "#telefono", "#password1", "#password2"];
+            for (var i=0; i<fields.length; i++){
+                $(fields[i]).removeClass("is-invalid");
+                $(fields[i]).removeClass("is-valid");
+            }
+        }
     </script>
+    <style>
+        label{
+            color: rgb(150, 150, 150);
+        }
+    </style>
 </head>
 <body class="text-center">
     <div class="row-cols-1">
         <div id="nav-placeholder">
         </div>
     </div>
-    <div name="div1" class="form-container">
-        <div class="q1">Inserisci i tuoi dati</div>
-        <form method="post" action="registrazione.php" name="registrazione" onsubmit='return check_lr();' class="form-signin m-auto">
-            <input placeholder="Nome" type="text" id="nome" name="nome" maxlength="30" class="form-control">
-            
-            <input placeholder="Cognome" type="text" id="cognome" name="cognome" maxlength="30" class="form-control">
-
-            <input placeholder="Data di nascita" type="text" onfocus="this.type='date'" id="nascita" name="nascita" class="form-control">
-            
-            <input placeholder="Email" type="text" id="email" name="email" maxlength="40" class="form-control">
-
-            <input placeholder="Cellulare" type="text" id="telefono" name="cellulare" maxlength="20" class="form-control">
-            
-            <input placeholder="Password" type="password" id="password1" name="password1" maxlength="40" class="form-control">
-            <i class="far fa-eye"></i>
-
-            <input placeholder="Ripeti la password" type="password" id="password2" name="password2" maxlength="40" class="form-control">
-            <i class="far fa-eye"></i>
-            
-            <input type="submit" value="Registrati" class="btn btn-primary">
-            <input type="reset" value="Reset" class="btn btn-danger">
-        </form>
+    <div class="row-cols-1 d-flex justify-content-center" style="margin-top: 40px;">
+        <div class="col-lg-3 col-md-5 col-9" style="margin-bottom: 40px;">
+            <div name="div1" class="form-container">
+                <div class="q1">Inserisci i tuoi dati</div>
+                <form method="post" action="registrazione.php" name="registrazione" onsubmit='return check_lr();' class="form-signin m-auto">
+                    <div class="form-floating row-cols-1">
+                        <input placeholder="Nome" type="text" id="nome" name="nome" maxlength="30" class="form-control" onchange="return nameIsValid();" >
+                        <label for="nome">Nome</label>
+                    </div>
+                    <div class="form-floating row-cols-1">
+                        <input placeholder="Cognome" type="text" id="cognome" name="cognome" maxlength="30" class="form-control" onchange="return surnameIsValid();">
+                        <label for="cognome">Cognome</label>
+                    </div>
+                    <div class="form-floating row-cols-1">
+                        <input placeholder="Data di nascita" type="text" onfocus="this.type='date'" id="nascita" name="nascita" class="form-control" onchange="return validBirthDate();">
+                        <label for="nascita">Data di nascita</label>
+                    </div>
+                    <div class="form-floating row-cols-1">
+                        <input placeholder="Email" type="text" id="email" name="email" maxlength="40" class="form-control" onchange="return emailToRegister();">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-floating row-cols-1">
+                        <input placeholder="Cellulare" type="text" id="telefono" name="cellulare" maxlength="20" class="form-control" onchange="return validTelephone();">
+                        <label for="telefono">Cellulare</label>
+                    </div>
+                    <div class="form-floating row-cols-1">
+                        <input placeholder="Password" type="password" id="password1" name="password1" maxlength="40" class="form-control">
+                        <i class="far fa-eye"></i>
+                        <label for="password1">Password</label>
+                    </div>
+                    <div class="form-floating row-cols-1">
+                        <input placeholder="Ripeti la password" type="password" id="password2" name="password2" maxlength="40" class="form-control">
+                        <i class="far fa-eye"></i>
+                        <label for="password2">Ripeti la password</label>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-2" style="margin-right: 60px;"><input type="submit" value="Registrati" class="btn btn-primary"></div>
+                        <div class="col-2" style="margin-right: 55px;"><input type="reset" value="Reset" class="btn btn-danger" onclick="resetAll();"></div>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 </html>

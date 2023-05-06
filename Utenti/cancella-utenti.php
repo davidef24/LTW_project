@@ -8,6 +8,5 @@ $dbconn = pg_connect("host=localhost port=5432 dbname=Progetto_LTW
     if ($dbconn){
         $query_delete=$_GET['query_delete'];
         $delete=pg_query($dbconn, $query_delete);
-        header("Location: http://localhost:3000/Users/loren/Desktop/LTW/Utenti/utenti.php");
     }
 ?>

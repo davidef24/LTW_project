@@ -41,19 +41,6 @@
         });
     </script>
     <script>
-        function myFunction(x) {
-            if (x.matches) { // If media query matches
-                document.getElementById("link-disabled").setAttribute("href", "../Login/login.html");
-            } else {
-                document.getElementById("link-disabled").removeAttribute("href");
-            }
-        }
-        var x = window.matchMedia("(max-width: 950px)")
-        myFunction(x)
-        x.addListener(myFunction) 
-    </script>
-    
-    <script>
         var menu = document.getElementsByClassName("megamenu");
         for(var i=menu.childNodes.length-1;i>=0;i--){
             if(menu.childNodes[i].style.visibility =="hidden")
@@ -150,30 +137,8 @@
         <?php
             if(!isset($_SESSION['nome'])){
                 echo "<li>
-                    <a id=\"link-disabled\" role=\"link\" aria-disabled=\"true\"><button type=\"button\" id=\"b123\" data-bs-toggle=\"modal\" data-bs-target=\"#logPage\" class=\"btn bg-body d-inline-block align-text-center\" style=\"margin-top: 20%;\">Accedi</button></a>
-                   <!-- Modal -->
-                   <div class=\"modal fade\" id=\"logPage\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalCenterTitle\" aria-hidden=\"true\">
-                     <div class=\"modal-dialog modal-dialog-centered\" role=\"document\">
-                       <div class=\"modal-content\">
-                         <div class=\"modal-header\">
-                           <h5 class=\"modal-title\" id=\"exampleModalLongTitle\">Inserisci le tue credenziali</h5>
-                         </div>
-                         <div class=\"modal-body\">
-                             <form method=\"post\" action=\"../Login/login.php\" name=\"registrazione\" class=\"form-signin m-auto\" onsubmit=\"return check_lr();\">
-                                 <input placeholder=\"Email\" type=\"text\" name=\"email\" maxlength=\"40\" class=\"form-control\" required autofocus>
-                                 <input placeholder=\"Password\" type=\"password\" name=\"password1\" maxlength=\"40\" class=\"form-control\" required>
-                                 <i class=\"far fa-eye\"></i>
-                                 <input type=\"submit\" value=\"Accedi\" class=\"btn btn-primary\" >     
-                             </form>
-                         </div>
-                         <div class=\"modal-footer\">
-                             <h5 class=\"modal-title\">Non sei registrato?</h5>
-                             <a href=\"../Registrazione/registrazione.html\"><button class=\"btn btn-success\" form=\"\">Crea un nuovo account</button></a>
-                         </div>
-                       </div>
-                     </div>
-                   </div>
-             </li>";
+                            <a id=\"link-disabled\" role=\"link\" aria-disabled=\"true\"><button type=\"button\" id=\"b123\" data-bs-toggle=\"modal\" data-bs-target=\"#logPage\" class=\"btn bg-body d-inline-block align-text-center\" style=\"margin-top: 20%;\">Accedi</button></a> 
+                     </li>";
             }
             else  echo "<li>
                             <a href=\"../Homepage/logout.php\"> <button type=\"button\" id=\"logOut\" class=\"btn bg-body\" style=\"margin-top: 15px;\">Esci</button></a>
@@ -183,6 +148,32 @@
         </div>
         <img src="../Icone/Image/iconizer-menu-up.svg" class="menu-mobile"> 
     </nav>
+    <?php
+        if(!isset($_SESSION['nome'])){
+            echo "<!-- Modal -->
+            <div class=\"modal fade\" id=\"logPage\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalCenterTitle\" aria-hidden=\"true\">
+              <div class=\"modal-dialog modal-dialog-centered\" role=\"document\">
+                <div class=\"modal-content\">
+                  <div class=\"modal-header\">
+                    <h5 class=\"modal-title\" id=\"exampleModalLongTitle\">Inserisci le tue credenziali</h5>
+                  </div>
+                  <div class=\"modal-body\">
+                      <form method=\"post\" action=\"../Login/login.php\" name=\"registrazione\" class=\"form-signin m-auto\" onsubmit=\"return check_lr();\">
+                          <input placeholder=\"Email\" type=\"text\" name=\"email\" maxlength=\"40\" class=\"form-control\" required autofocus>
+                          <input placeholder=\"Password\" type=\"password\" name=\"password1\" maxlength=\"40\" class=\"form-control\" required>
+                          <i class=\"far fa-eye\"></i>
+                          <input type=\"submit\" value=\"Accedi\" class=\"btn btn-primary\" >     
+                      </form>
+                  </div>
+                  <div class=\"modal-footer\">
+                      <h5 class=\"modal-title\">Non sei registrato?</h5>
+                      <a href=\"../Registrazione/registrazione.html\"><button class=\"btn btn-success\" form=\"\">Crea un nuovo account</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>";
+        }
+    ?>
 </body>
     <script>
         const menu_mobile=document.querySelector(".menu-mobile");

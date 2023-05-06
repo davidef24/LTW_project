@@ -13,51 +13,43 @@
         <link rel="stylesheet" href="../Login/modal-signin.css">
         <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         </head>
+        <style>
+            form {
+                display: flex;
+                align-items: center;
+            }
+
+            #search-input {
+              flex: 1;
+              padding: 8px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+            }
+
+            #search-button {
+              margin-left: 8px;
+              padding: 8px 16px;
+              border: none;
+              border-radius: 4px;
+              background-color: #007bff;
+              color: #fff;
+              cursor: pointer;
+            }
+        </style>
         <script>
-            $(document).ready(function(){
-                $("#b123").mouseenter(function(){
-                    $(this).removeClass("bg-body");
-                    $(this).addClass("bg-success");                
+            const form = document.querySelector('form');
+            const input = document.querySelector('#search-input');
+            form.addEventListener('submit', (event) => {
+                event.preventDefault();
+                const query = input.value;
+                    // Eseguire la ricerca
                 });
-    
-                $("#b123").mouseleave(function(){
-                    $(this).removeClass("bg-success");
-                    $(this).addClass("bg-body");                
-                });
-            });
         </script>
 </head>
 <body>
-    <nav class="navbarpers">
-        <li>
-            <button type="button" data-bs-toggle="modal" data-bs-target="#logPage" class="btn bg-body d-inline-block align-text-center">Accedi</button>
-              <!-- Modal -->
-              <div class="modal fade" id="logPage" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLongTitle">Inserisci le tue credenziali</h5>
-                    </div>
-                    <div class="modal-body">
-                        <form method="post" action="../Login/login.php" name="registrazione" class="form-signin m-auto" onsubmit="return check_lr();">
-                            <input placeholder="Email" type="text" name="email" maxlength="40" class="form-control" required autofocus>
-                            <input placeholder="Password" type="password" name="password1" maxlength="40" class="form-control" required>
-                            <i class="far fa-eye"></i>
-                            <input type="submit" value="Accedi" class="btn btn-primary" >     
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <h5 class="modal-title">Non sei registrato?</h5>
-                        <a href="../Registrazione/registrazione.html"><button class="btn btn-success" form="">Crea un nuovo account</button></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-        </li>
-        </ul>
-        </div>
-        <img src="../Icone/Image/iconizer-menu-up.svg" class="menu-mobile"> 
-    
-    </nav>
+    <form>
+        <input type="text" id="search-input" placeholder="Cerca...">
+        <button type="submit" id="search-button">Cerca</button>
+      </form>
 </body>
 </html>

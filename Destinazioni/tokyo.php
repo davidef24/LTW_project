@@ -50,28 +50,6 @@
                         echo "<div class=\"col-lg-4 col-md-4 justify-content-center\" id=\"destra-paragr\">
                         <p id=\"form-paragraph-not-logged\" class=\"text-center\" style=\"color: red;\">Per compilare il form e cercare un compagno, devi aver effettuato l'accesso</p>
                         <a id=\"link-disabled\" role=\"link\" aria-disabled=\"true\"><button type=\"button\" id=\"login-button-dest\" data-bs-toggle=\"modal\" data-bs-target=\"#logPage\" class=\"btn bg-primary d-inline-block align-text-center\">Accedi</button></a>
-                            <!-- Modal -->
-                            <div class=\"modal fade\" id=\"logPage\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalCenterTitle\" aria-hidden=\"true\">
-                              <div class=\"modal-dialog modal-dialog-centered\" role=\"document\">
-                                <div class=\"modal-content\">
-                                  <div class=\"modal-header\">
-                                    <h5 class=\"modal-title\" id=\"exampleModalLongTitle\">Inserisci le tue credenziali</h5>
-                                  </div>
-                                  <div class=\"modal-body\">
-                                      <form method=\"post\" action=\"../Login/login.php\" name=\"registrazione\" class=\"form-signin m-auto\" onsubmit=\"return check_lr();\">
-                                          <input placeholder=\"Email\" type=\"text\" name=\"email\" maxlength=\"40\" class=\"form-control\" required autofocus>
-                                          <input placeholder=\"Password\" type=\"password\" name=\"password1\" maxlength=\"40\" class=\"form-control\" required>
-                                          <i class=\"far fa-eye\"></i>
-                                          <input type=\"submit\" value=\"Accedi\" class=\"btn btn-primary\" >     
-                                      </form>
-                                  </div>
-                                  <div class=\"modal-footer\">
-                                      <h5 class=\"modal-title\">Non sei registrato?</h5>
-                                      <a href=\"../Registrazione/registrazione.html\"><button class=\"btn btn-success\" form=\"\">Crea un nuovo account</button></a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
                     </div>";
                     }
                     else{

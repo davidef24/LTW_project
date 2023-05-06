@@ -1,24 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;500&display=swap');
 
-html,
 body {
-  height: 100%;
-}
-
-body {
-  background: linear-gradient(45deg,#7274d2, #b78a4e);
-  background-size: cover;
+  /*background: linear-gradient(45deg,#7274d2, #b78a4e);*/
+  background-color: rgba(210, 194, 175, 0.823) !important ; 
 }
 
 .form-container {
+  /*position:relative;*/
   background-color: #ffffffc5;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-  margin-top: 5%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: auto;
-  width: 325px;
-  height: 475px;
+
 }
 
 .container2 {
@@ -33,30 +24,17 @@ body {
   height: 130px;
 }
 
-@media screen and (max-width: 950px) and (min-width: 400px){
-  .form-container{
-    margin-top: 25%;
-  }
-}
-
-@media screen and (max-width: 400px){
-  .form-container{
-    margin-top: 10%;
-    margin-bottom: 10%;
-  }
-}
-
 #log-btn{
   margin-top: 20px;
 }
 
 .q1 {
-  margin-top: 10px;
+  margin-top: 15px;
   font-family: 'Outfit', sans-serif;
   font-weight: 500;
   font-size: larger;
 }
-
+/*
 .form-signin {
   max-width: 330px;
   padding: 15px;
@@ -74,4 +52,4 @@ body {
   margin-left: 35px;
   height: 35px;
 }
-
+*/
