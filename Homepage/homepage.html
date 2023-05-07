@@ -23,7 +23,7 @@
         });
 
         $(function(){
-            $("#footer-placeholder").load("../Footer.html");
+            $("#footer-placeholder").load("../Footer/Footer.html");
         });
 
         $(function(){
@@ -44,7 +44,6 @@
         });
     </script>
     <script>
-        
         $(function(){
             var città=["Barcellona", "Parigi", "Berlino", "Tokyo", "New York", "Mykonos", "Roma", "Palma di Maiorca", "Creta", "Madrid"];
             $("#dove-andare").autocomplete({
@@ -60,6 +59,36 @@
                 }
             });
        });
+    </script>
+    <style>
+        .change-color {
+            color: white;
+            transition: color 0.5s ease-in-out;
+        }
+    </style>
+    <script>
+        function highlightElement(){
+            var toChange=document.querySelector(".change-color");
+            toChange.style.color="gold";
+            setTimeout(function(){
+                toChange.style.color="white";
+            }, 1500);
+        }
+    </script>
+    <style>
+        .change-color {
+            color: white;
+            transition: color 0.5s ease-in-out;
+        }
+    </style>
+    <script>
+        function highlightElement(){
+            var toChange=document.querySelector(".change-color");
+            toChange.style.color="gold";
+            setTimeout(function(){
+                toChange.style.color="white";
+            }, 1500);
+        }
     </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
@@ -105,8 +134,8 @@
                 <h3 id="crpd-txt" class="carousel-caption" >TOKYO</h3></a>
             </div>
             <div style="position: relative;">
-                <a href="../Destinazioni/Palma di Maiorca.php"><img id="crpd-img" src="../Altro/cropped_imgs/maiorca.jpg" class="w-100 h-100 shadow-1-strong rounded-4 mb-4"></a>
-                <h3 id="crpd-txt" class="carousel-caption">PALMA DI MAIORCA</h3>
+                <a href="../Destinazioni/Palma di Maiorca.php"><img id="crpd-img" src="../Altro/cropped_imgs/maiorca.jpg" class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
+                <h3 id="crpd-txt" class="carousel-caption">PALMA DI MAIORCA</h3></a>
             </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-12 mb-4 mb-lg-0">
@@ -136,8 +165,8 @@
 <h1 class="div-header">Come funziona la nostra app?</h1>
 <div style="overflow: hidden;">
     <div class="row justify-content-center">
-        <div class="col-lg-4 col-xs-12 mb-4">
-            <img src="../Altro/registrazione-img.png" class="w-100">
+        <div class="col-lg-4 col-sm-12 mb-4">
+            <img src="../Altro/immagine-registrazione.jpg" class="w-100">
         </div>
         <div class="col-lg-4 col-xs-12 mb-4" style="position: relative;">
             <h1 id="par-header">1-Registra un account</h1>
@@ -158,8 +187,8 @@
         </div>
     </div>
     <div class="row justify-content-center pt-5">
-        <div class="col-lg-4 col-xs-12 mb-4">
-            <img src="https://meetravel.it/wp-content/uploads/brizy/imgs/leio-mclaren-jEgQpfkHEWY-unsplash-1-scaled-555x694x0x139x555x416x1643050549.jpg" class="w-100">
+        <div class="col-lg-4 col-sm-12 mb-4">
+            <img src="../Altro/immagine-utenti.jpg" class="w-100">
         </div>
         <div class="col-lg-4 col-xs-12 mb-4" style="position: relative;">
             <h1 id="par-header">3-Controlla la pagina Utenti</h1>

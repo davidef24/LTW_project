@@ -31,7 +31,7 @@ ul{
 }
 .myfooter-col
 {
-    width:25%;
+    width:33%;
     padding:0 15px;
 }
 .myfooter-col h4
@@ -95,7 +95,7 @@ ul{
 {
     .myfooter-col
     {
-        width: 50%;
+        width: 33%;
         margin-bottom:30px;
     }
 }

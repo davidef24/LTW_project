@@ -58,9 +58,9 @@
         <div class="nav-linkspers">
         <ul>
         <li class="drop_menu">
-            <a class="nodecoration underline" href="#">
+            <a class="nodecoration underline" href="#"><div class="change-color">
             <img src="../Icone/Image/iconizer-globe-central-south-asia.svg" alt="direct-flight" width="28" height="28" class="d-inline-block align-text-center">
-            Destinazioni</a>
+            Destinazioni</div></a>
            <div class="megamenu">
                 <ul class="content">
                     <li class="megamenu_item header_megamenu">
