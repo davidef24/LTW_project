@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../Stili/dest.css">
     <link rel="stylesheet" href="../Stili/Colors_link_nav.css">
     <link rel="stylesheet" href="./StileMegaMenu.css">
+    <script type="text/javascript" src="check.js"></script>
     <script>
             $(function(){
                 $("#nav-placeholder").load("../Navbar/nav.php");
@@ -41,7 +42,7 @@
         <div class="row justify-content-center p-3" style="background-color: rgba(233, 236, 239, 1);">
             <div class="col-lg-8 col-md-8">           
                 <p id="dest-paragraph"><b>Breve descrizione:</b>
-                New York è una città degli Stati Uniti d'America situata sulla costa est del paese. Conosciuta come la "Grande Mela" (The Big Apple), è uno dei centri finanziari, culturali e commerciali più importanti al mondo. La città è famosa per i suoi grattacieli, tra cui l'iconica Statua della Libertà, l'Empire State Building e il One World Trade Center. New York è un melting pot di culture e lingue, con una vasta gamma di ristoranti, negozi e musei. Times Square, Broadway e Central Park sono alcune delle principali attrazioni turistiche. La città è anche un importante centro dell'industria cinematografica e musicale. Con il suo ritmo frenetico, la sua cultura vivace e la sua vasta gamma di attività, New York è una delle città più stimolanti e affascinanti del mondo.<br>
+                New York City, la città che non dorme mai, è una delle città più grandi e vibranti del mondo. Conosciuta anche come la Grande Mela, questa metropoli cosmopolita è famosa per la sua architettura iconica, i suoi musei di fama mondiale, le sue boutique di alta moda e le sue esperienze culinarie eclettiche. La Statua della Libertà, l'Empire State Building, il ponte di Brooklyn e il Central Park sono solo alcune delle attrazioni turistiche che attirano milioni di visitatori ogni anno. La città offre una varietà di attività, tra cui shopping, spettacoli di Broadway, concerti, sport, e molto altro ancora. New York è anche nota per la sua vita notturna, dai club esclusivi ai pub di quartiere. Con la sua energia e la sua diversità culturale, New York è una città che non delude mai.<br>
                     <b>Per quanto tempo:</b> almeno una settimana <br>
                     <b>Il periodo migliore: </b>tutto l'anno</p>
             </div>

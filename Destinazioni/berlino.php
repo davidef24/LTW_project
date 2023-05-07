@@ -8,6 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../Stili/Footer.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../bootstrap-5.2.3/bootstrap-5.2.3/dist/css/bootstrap.min.css">
     <script src="../bootstrap-5.2.3/bootstrap-5.2.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -19,9 +20,13 @@
     <link rel="stylesheet" href="../Stili/dest.css">
     <link rel="stylesheet" href="../Stili/Colors_link_nav.css">
     <link rel="stylesheet" href="./StileMegaMenu.css">
+    <script type="text/javascript" src="check.js"></script>
     <script>
             $(function(){
                 $("#nav-placeholder").load("../Navbar/nav.php");
+            });
+            $(function(){
+                $("#footer-placeholder").load("../Footer.html");
             });
 
             $(document).ready(function(){
@@ -112,5 +117,6 @@
           </div>";
         }
     ?>
+    <div id="footer-placeholder"></div>
 </body>
 </html>

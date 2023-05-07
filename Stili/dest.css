@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;800&display=swap');
 
+html{
+    height: 100%;
+}
+
 #img-caption {
     font-family: 'Bebas Neue', cursive;
     color: rgb(255, 255, 255);

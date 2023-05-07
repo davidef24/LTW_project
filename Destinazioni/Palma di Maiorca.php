@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../Stili/dest.css">
     <link rel="stylesheet" href="../Stili/Colors_link_nav.css">
     <link rel="stylesheet" href="./StileMegaMenu.css">
+    <script type="text/javascript" src="check.js"></script>
     <script>
             $(function(){
                 $("#nav-placeholder").load("../Navbar/nav.php");
@@ -40,7 +41,8 @@
         </div>
         <div class="row justify-content-center p-3" style="background-color: rgba(233, 236, 239, 1);">
             <div class="col-lg-8 col-md-8">           
-                <p id="dest-paragraph"><b>Breve descrizione:</b> Palma di Maiorca è la capitale dell'isola di Maiorca, situata nel Mar Mediterraneo e appartenente alle Isole Baleari, in Spagna. La città è famosa per la sua bellissima cattedrale gotica, la Cattedrale di Santa Maria, nonché per i suoi splendidi giardini, il suo centro storico e le sue spiagge di sabbia bianca. Palma di Maiorca è una popolare meta turistica, frequentata sia da turisti che cercano relax al mare, che da coloro che vogliono scoprire la cultura e la storia della città.<br>
+                <p id="dest-paragraph"><b>Breve descrizione:</b>
+                Palma di Maiorca è la città principale dell'isola di Maiorca, la più grande delle Baleari, situata al largo della costa orientale della Spagna. È famosa per la sua architettura moresca, la Cattedrale di Santa Maria e la pittoresca zona del centro storico. La città offre numerose attrazioni turistiche, tra cui musei, gallerie d'arte, parchi, ristoranti e una vivace vita notturna. Palma di Maiorca è anche conosciuta per le sue spiagge di sabbia bianca e acque cristalline, tra cui Cala Major e Playa de Palma. Inoltre, l'isola è un paradiso per gli appassionati di sport acquatici, come il surf, lo snorkeling e la vela, grazie al clima mite e alle condizioni del mare favorevoli. <br>
                     <b>Ideale se cerchi:</b>Mare, relax, divertimento<br>
                     <b>Per quanto tempo: </b>una settimana<br>
                     <b>Il periodo migliore: </b>da marzo a ottobre.

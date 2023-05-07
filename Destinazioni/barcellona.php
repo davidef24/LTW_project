@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="../Stili/Colors_link_nav.css">
     <link rel="stylesheet" href="../Login/modal-signin.css">
     <link rel="stylesheet" href="../Homepage/StileMegaMenu.css">
+    <script type="text/javascript" src="check.js"></script>
     <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
             $(function(){
@@ -42,7 +43,8 @@
         </div>
         <div class="row justify-content-center p-3" style="background-color: rgba(233, 236, 239, 1);">
             <div class="col-lg-8 col-md-8">           
-                <p id="dest-paragraph"><b>Breve descrizione:</b> Barcellona è la seconda città spagnola per numero di abitanti ed è una delle mete predilette nel Mediterraneo, grazie al fatto d'essere una città cosmopolita e piena di vita. Anche gli amanti dell’arte non resteranno delusi nel visitare la città; in essa infatti si sviluppano varie forme d’arte, dall'arte gotica nel Barrio Gotico, alle curiose forme colorate dell'architetto barcellonese Antoni Gaudí, progettista della maestosa e ancora incompiuta Sagrada Família.
+                <p id="dest-paragraph"><b>Breve descrizione:</b> 
+                Barcellona è una città situata sulla costa nord-orientale della Spagna, nota per la sua architettura eclettica, le opere d'arte di Gaudí e la cultura catalana unica. La città è famosa per la basilica della Sagrada Familia, il Parco Guell, la Casa Batlló e la Pedrera, tutte opere d'arte architettoniche di Gaudí. Barcellona offre anche numerose attrazioni culturali e storiche, tra cui musei, gallerie d'arte, parchi, spiagge e ristoranti rinomati per la cucina locale. La città è anche nota per la sua vita notturna vivace, con numerosi bar, club e discoteche che attirano turisti e locali. Inoltre, la posizione della città sul Mediterraneo la rende un luogo ideale per godere del clima mite e delle bellezze naturali della regione.
                     <br>
                     <b>Ideale se cerchi:</b> arte e monumenti iconici, quartieri folkloristici, musei, movida. <br>
                     <b>Per quanto tempo:</b> un weekend e più giorni. <br>

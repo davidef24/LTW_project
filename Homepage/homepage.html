@@ -62,6 +62,7 @@
        });
     </script>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
         .ui-autocomplete {
           background-color: #fff;
           /*border: 1px solid #ccc;*/
@@ -69,21 +70,15 @@
           list-style: none;
           max-height: 200px;
           overflow-y: auto;
-          font-family: "Open Sans", sans-serif;
+          font-family: 'Montserrat', sans-serif;
           border-radius: 10px;
-          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-          animation:
+          /*box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);*/
         }
 
         .ui-menu-item {
           padding: 5px;
-          font-size: 14px;
-          color: #555;
-          cursor: pointer;
-        }
-
-        .ui-menu-item:hover {
-          background-color: #f5f5f5;
+          font-size: 20px;
+          font-weight: 700;
         }
     </style>
 </head>
@@ -94,7 +89,7 @@
     <form method="post" action="" name="shortcut" class="align-items-center form-dove-andare">
         <div class="col-12">
             <div class="input-group mb-3">
-                <input id="dove-andare" type="text" id="dove-andare" class="form-control-lg rounded-pill" placeholder="Dove vuoi andare?" style="width: 1000px; display: flex; border: rgb(252, 252, 252);border-radius: 10px !important;">
+                <input id="dove-andare" type="text" id="dove-andare" class="form-control-lg" placeholder="Dove vuoi andare?" style="width: 1000px; display: flex; border: rgb(252, 252, 252);border-radius: 10px">
             </div>
         </div>
         <h1 id="img-text">Tante mete intorno al mondo. <br> Vivi esperienze uniche conoscendo nuove persone</h1>
@@ -141,10 +136,10 @@
 <h1 class="div-header">Come funziona la nostra app?</h1>
 <div style="overflow: hidden;">
     <div class="row justify-content-center">
-        <div class="col-lg-4 col-sm-12 mb-4">
+        <div class="col-lg-4 col-xs-12 mb-4">
             <img src="../Altro/registrazione-img.png" class="w-100">
         </div>
-        <div class="col-lg-4 col-sm-12 mb-4" style="position: relative;">
+        <div class="col-lg-4 col-xs-12 mb-4" style="position: relative;">
             <h1 id="par-header">1-Registra un account</h1>
             <p id="par-description">
                 Dopo esserti registrato potrai compilare i form per inviare una proposta di viaggio.
@@ -152,21 +147,21 @@
         </div>
     </div>
     <div class="row justify-content-center pt-5" style="background-color: rgba(233, 236, 239, 1);">
-        <div class="col-lg-4 col-sm-12 mb-4" style="position: relative;">
+        <div class="col-lg-4 col-xs-12 mb-4" style="position: relative;">
             <h1 id="par-header">2-Scegli la meta, il periodo e l'età desiderata dei tuoi compagni di viaggio</h1>
             <p id="par-description">
                 Esplorando le varie destinazioni, compila il form di richiesta che appare sulla destra della descrizione
             </p>
         </div>
-        <div class="col-lg-4 col-sm-12 mb-4">
+        <div class="col-lg-4  col-xs-12 mb-4">
             <img src="https://meetravel.it/wp-content/uploads/brizy/imgs/sam-manns-V5Owjg-ZNto-unsplash-scaled-616x416x31x0x555x416x1643051663.jpg" class="w-100 img-fluid">
         </div>
     </div>
     <div class="row justify-content-center pt-5">
-        <div class="col-lg-4 col-sm-12 mb-4">
+        <div class="col-lg-4 col-xs-12 mb-4">
             <img src="https://meetravel.it/wp-content/uploads/brizy/imgs/leio-mclaren-jEgQpfkHEWY-unsplash-1-scaled-555x694x0x139x555x416x1643050549.jpg" class="w-100">
         </div>
-        <div class="col-lg-4 col-sm-12 mb-4" style="position: relative;">
+        <div class="col-lg-4 col-xs-12 mb-4" style="position: relative;">
             <h1 id="par-header">3-Controlla la pagina Utenti</h1>
             <p id="par-description">
                 Non appena verrà trovato un utente che abbia fatto una richiesta con i tuoi stessi parametri, cliccando sul bottone accanto alla riga relativa alla richiesta ti verranno mostrati i contatti dell'utente
@@ -174,14 +169,14 @@
         </div>
     </div>
     <div class="row justify-content-center pt-5" style="background-color: rgba(233, 236, 239, 1);">
-        <div class="col-lg-4 col-sm-12 mb-4" style="position: relative;">
+        <div class="col-lg-4 col-xs-12 mb-4" style="position: relative;">
             <h1 id="par-header">4-Parti e vivi un'esperienza unica</h1>
             <p id="par-description">
                 Che sia una semplice uscita, un’avventura o un Viaggione Proponilo in App, troverai sempre qualcuno con cui parlarne e pronto a partire con te
                 E se non hai le idee chiare? Aggregati ad un viaggio in partenza! Ci sono centinaia di proposte in app… e crescono ogni giorno!
             </p>
         </div>
-        <div class="col-lg-4 col-sm-12 mb-4">
+        <div class="col-lg-4 col-xs-12 mb-4">
             <img src="https://meetravel.it/wp-content/uploads/brizy/imgs/leio-mclaren-jEgQpfkHEWY-unsplash-1-scaled-555x694x0x139x555x416x1643050549.jpg" class="w-100">
         </div>
     </div>

@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../Stili/dest.css">
     <link rel="stylesheet" href="../Stili/Colors_link_nav.css">
     <link rel="stylesheet" href="./StileMegaMenu.css">
+    <script type="text/javascript" src="check.js"></script>
     <script>
             $(function(){
                 $("#nav-placeholder").load("../Navbar/nav.php");
@@ -40,7 +41,8 @@
         </div>
         <div class="row justify-content-center p-3" style="background-color: rgba(233, 236, 239, 1);">
             <div class="col-lg-8 col-md-8">           
-                <p id="dest-paragraph" style="padding:7%"><b>Breve descrizione:</b> Parigi è la capitale della Francia ed è famosa in tutto il mondo per la sua architettura, la cultura e la gastronomia. La città è conosciuta per la Torre Eiffel, il Louvre, l'Arco di Trionfo, la Cattedrale di Notre Dame e la Champs-Élysées. È un importante centro finanziario, politico e culturale e ospita numerose istituzioni culturali, tra cui il Museo d'Orsay e l'Opéra Garnier. Parigi è anche famosa per la sua cucina, che include piatti come croissant, macarons e boeuf bourguignon. Conosciuta come la "Città dell'Amore", Parigi è anche una meta romantica per molti visitatori.<br>
+                <p id="dest-paragraph" style="padding:7%"><b>Breve descrizione:</b> 
+                Parigi è una delle città più visitate al mondo, grazie alla sua bellezza, cultura e storia. Situata al centro della Francia, sulla riva sinistra della Senna, offre una vasta gamma di attrazioni turistiche, tra cui monumenti, musei, parchi e negozi di alta moda. La Torre Eiffel, l'Arco di Trionfo, la Cattedrale di Notre-Dame e il Louvre sono solo alcune delle icone della città. La cucina francese, famosa in tutto il mondo, è particolarmente notevole a Parigi, con ristoranti stellati Michelin e bistrot di quartiere. I caffè accoglienti, la moda di lusso e la vita notturna vibrante completano l'esperienza parigina. Con la sua bellezza romantica, la cultura vibrante e la storia affascinante, Parigi è una città indimenticabile.<br>
                     <b>Ideale se cerchi:</b> musei e luoghi di culto, movida e divertimenti, reggie e palazzi storici. <br>
                     <b>Per quanto tempo: </b>una settimana. <br>
                     <b>Il periodo migliore: </b>tutto l'anno.

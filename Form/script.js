@@ -185,7 +185,3 @@ function validDateTrip(){
         return false;
     }
 }
-function check_dest(){
-    if (validRange() && validDateTrip()) return true;
-    return false;
-}

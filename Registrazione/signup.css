@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;500&display=swap');
 
+html{
+  height: 100%;
+}
+
 body {
-  /*background: linear-gradient(45deg,#7274d2, #b78a4e);*/
-  background-color: rgba(210, 194, 175, 0.823) !important ; 
+  background: linear-gradient(45deg,#7274d2, #b78a4e);
 }
 
 .form-container {
@@ -34,7 +37,7 @@ body {
   font-weight: 500;
   font-size: larger;
 }
-/*
+
 .form-signin {
   max-width: 330px;
   padding: 15px;
@@ -52,4 +55,11 @@ body {
   margin-left: 35px;
   height: 35px;
 }
-*/
+
+@media screen and (max-height:766px) {
+  body{
+    background: linear-gradient(45deg,#7274d2, #7274d2);
+  }
+  
+}
+

@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../Stili/dest.css">
     <link rel="stylesheet" href="../Stili/Colors_link_nav.css">
     <link rel="stylesheet" href="./StileMegaMenu.css">
+    <script type="text/javascript" src="check.js"></script>
     <script>
             $(function(){
                 $("#nav-placeholder").load("../Navbar/nav.php");
@@ -41,7 +42,8 @@
         <div class="row justify-content-center p-3" style="background-color: rgba(233, 236, 239, 1);">
             <div class="col-lg-8 col-md-8">           
                 <p id="dest-paragraph"><b>Breve descrizione:</b>
-                Mykonos è un'isola greca delle Cicladi ed accoglie migliaia di turisti durante tutto l'arco dell'anno; principalmente nota per le sue spiagge, in giro per la città e per le spiagge potrete scoprire bar, rock cafè e discoteche con DJ provenienti da tutto il mondo. Tra i locali più frequentati troviamo sicuramente quelli del quartiere Piccola Venezia, il centro più popolato della cittadina di Mykonos.
+                
+Mykonos è un'isola greca situata nel Mar Egeo, famosa per le sue spiagge bellissime, la vita notturna animata e l'architettura tradizionale caratterizzata da case bianche e mulini a vento. È una destinazione turistica popolare, soprattutto tra i giovani e i festaioli, ma anche tra i viaggiatori alla ricerca di relax e bellezza naturalistica. L'isola è nota anche per la sua storia antica, con numerosi siti archeologici e musei che raccontano la sua ricca eredità culturale. Inoltre, Mykonos è un punto di partenza ideale per esplorare le altre isole dell'arcipelago delle Cicladi e godere di tutte le bellezze che l'Egeo ha da offrire.
                     <br>
                     <b>Ideale se cerchi:</b> divertimento, mare cristallino, belle spiagge <br>
                     <b>Per quanto tempo:</b> una settimana <br>

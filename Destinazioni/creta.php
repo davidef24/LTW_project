@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../Stili/dest.css">
     <link rel="stylesheet" href="../Stili/Colors_link_nav.css">
     <link rel="stylesheet" href="./StileMegaMenu.css">
+    <script type="text/javascript" src="check.js"></script>
     <script>
             $(function(){
                 $("#nav-placeholder").load("../Navbar/nav.php");
@@ -40,7 +41,8 @@
         </div>
         <div class="row justify-content-center p-3" style="background-color: rgba(233, 236, 239, 1);">
             <div class="col-lg-8 col-md-8">           
-                <p id="dest-paragraph"><b>Breve descrizione:</b> Creta è la più grande delle isole greche e si trova nel Mar Egeo. È una destinazione turistica popolare, famosa per le sue spiagge di sabbia dorata, le acque cristalline, le scogliere, le grotte e le montagne rocciose. Creta è anche ricca di storia e cultura, con antiche rovine minoiche, musei e città medievali. Tra le principali attrazioni dell'isola ci sono il Palazzo di Cnosso, la Gola di Samaria, il Monastero di Arkadi, il Museo Archeologico di Heraklion e il sito archeologico di Festos. La cucina cretese è rinomata per la sua freschezza e varietà, con piatti tradizionali come il dakos, l'olive oil e il raki.<br>
+                <p id="dest-paragraph"><b>Breve descrizione:</b>
+                Creta è la più grande delle isole greche, situata nel Mar Egeo meridionale. È famosa per la sua ricca storia e cultura, con numerosi siti archeologici e musei che raccontano la sua eredità greca, romana, bizantina e veneziana. La città principale di Creta è Heraklion, dove si trova il Palazzo di Cnosso, uno dei siti archeologici più importanti dell'isola. Creta è anche nota per le sue spiagge bellissime, le acque cristalline e le scogliere mozzafiato. Inoltre, l'isola offre una varietà di attività, tra cui trekking, arrampicata, sport acquatici e degustazioni di cibo e vino locali. Con la sua bellezza naturale e la sua storia ricca di fascino, Creta è una destinazione turistica popolare e affascinante.<br>
                     <b>Ideale se cerchi:</b> storia e cultura, mare cristallino, spiagge<br>
                     <b>Per quanto tempo: </b>una settimana<br>
                     <b>Il periodo migliore: </b>da maggio a ottobre.
@@ -79,7 +81,6 @@
                                 <option value=\"un-mese\">Un mese o più</option>
                             </select>
                             <input type=\"submit\" value=\"Invia\" class=\"btn btn-primary m-auto\">
-                            <input type=\"reset\" value=\"Reset\" class=\"btn btn-danger m-auto\">
                             
                     </form>
                     </div></div>";

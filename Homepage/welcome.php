@@ -52,17 +52,41 @@
     </script>
     <script>
         $(function(){
-            var città=["Barcellona", "Palma di Maiorca", "Madrid", "Berlino", "Tokyo", "New York", "Parigi", "Mykonos", "Creta", "Roma"];
+            var città=["Barcellona", "Parigi", "Berlino", "Tokyo", "New York", "Mykonos", "Roma", "Palma di Maiorca", "Creta", "Madrid"];
             $("#dove-andare").autocomplete({
                 source: città,
                 select: function(event, ui){
                     var url= ui.item.value + ".php";
                     event.preventDefault();
                     window.location.href="../Destinazioni/"+ url;
+                },
+                open: function(event, ui) {
+                    $(".ui-autocomplete").hide();
+                    $(".ui-autocomplete").fadeIn(280);
                 }
             });
-        });
+       });
     </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+        .ui-autocomplete {
+          background-color: #fff;
+          /*border: 1px solid #ccc;*/
+          padding: 5px;
+          list-style: none;
+          max-height: 200px;
+          overflow-y: auto;
+          font-family: 'Montserrat', sans-serif;
+          border-radius: 10px;
+          /*box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);*/
+        }
+
+        .ui-menu-item {
+          padding: 5px;
+          font-size: 20px;
+          font-weight: 700;
+        }
+    </style>
 </head>
 <body>
 <div id="nav-placeholder"></div>

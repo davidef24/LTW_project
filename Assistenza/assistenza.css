@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;500&display=swap');
 .mycover
 {
     top:0%;
@@ -8,6 +9,23 @@
     background-position: center center;
     position: relative;
 }
+
+.ui-autocomplete {
+  background-color: #fff;
+  padding: 5px;
+  list-style: none;
+  max-height: 200px;
+  overflow-y: auto;
+  font-family: 'Lexend Deca', sans-serif !important;
+  font-weight: 200;
+  border-radius: 10px;
+}
+
+.ui-menu-item {
+  padding: 5px;
+  font-size: 20px;
+}
+
 .mycover_caption
 {
     display:table;
@@ -16,8 +34,9 @@
     position: absolute;
 }
 
-#ciao{
-    font-weight: lighter;
+#h1-text{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 500;
 }
 
 .mycover_caption_copy
@@ -26,8 +45,15 @@
     vertical-align:middle;
     text-align:center;
     color:rgb(255, 255, 255);
-    font-family:'Archivo Black', sans-serif;
-    font-weight: bold;
+}
+
+.card-body-testo{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 200;
+}
+
+#testo-img{
+    font-family: 'Secular One', sans-serif;
 }
 
 .show_help_answer{
@@ -44,13 +70,14 @@
     opacity:0.5;
 }
 .stile-search{
-    width: 1000px;
+    width: 60%;
     border:rgb(252, 252, 252);
     z-index:-1;  
 }
 
 .list-answer{
-    font-family: 'Archivo Black','sans-serif';
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 500;
 }
 .style-button{
     background-color: blue;
@@ -66,7 +93,7 @@
         position:relative;
     }
     .stile-search{
-        width:80%;
+        width:70%;
         border:rgb(252, 252, 252);
     }
     .show_help_answer
@@ -76,4 +103,14 @@
         text-align: center;
         color:rgb(0, 0, 0);
     }
+
+    .ui-menu-item {
+        
+        font-size: 13px;
+      }
+
+    .ui-widget-content{
+        width: 70%;
+    }
+    
 }
