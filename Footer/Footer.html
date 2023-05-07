@@ -3,6 +3,18 @@
         <link rel="stylesheet" href="./Stili/Footer.css">
         <link rel="stylesheet" href="./bootstrap-5.2.3/bootstrap-5.2.3/dist/css/bootstrap.min.css">
         <title>Footer</title>
+        <script>
+            function checkLogin(){
+                $.ajax({
+                    url: "../Footer/Footer.php",
+                    type: "POST",
+                    success: function(response){
+                        if (response=="valid") window.location.href="../Utenti/utenti.php";
+                        else alert("Devi essere loggato per accedere a questa pagina");
+                    }
+                })
+            }
+        </script>
     </head>
     <body>
     <footer class="myfooter mybody">
@@ -11,20 +23,21 @@
                 <div class="myfooter-col">
                     <h4>Informazioni Sito</h4>
                     <ul>
-                    <li><a href="">Chi siamo</a></li>
-                    <li><a href="">Programma</a></li>
-                    <li><a href="">Contattaci</a></li>
+                    <li><a href="../Riconoscimenti/Riconoscimenti.html">Chi siamo</a></li>
+                    <!--<li><a href="">Programma</a></li>-->
+                    <li><a href="../Riconoscimenti/Riconoscimenti.html#contattaci">Contattaci</a></li>
                     </ul>
                 </div>
                  <div class="myfooter-col">
                     <h4>Mappa del sito web</h4>
                     <ul>
-                    <li><a href="">Destinazioni</a></li>
-                    <li><a href="">Utenti</a></li>
-                    <li><a href="">Assistenza</a></li>
-                    <li><a href="">Riconoscimenti</a></li>
+                    <li><a href="#nav-placeholder" onclick="highlightElement();">Destinazioni</a></li>
+                    <li><a href="" onclick="checkLogin();">Utenti</a></li>
+                    <li><a href="../Assistenza/assistenza.html">Assistenza</a></li>
+                    <li><a href="../Riconoscimenti/Riconoscimenti.html">Riconoscimenti</a></li>
                     </ul>
                 </div>
+                <!--
                  <div class="myfooter-col">
                     <h4>Note Legali</h4>
                     <ul>
@@ -32,6 +45,7 @@
                     <li><a href="">Cookie Policy</a></li>
                     </ul>
                 </div>
+                -->
                 <div class="myfooter-col">
                     <h4>Iscriviti alla Newsletter</h4>
                     <ul>
@@ -39,7 +53,7 @@
                         <div class="myform">
                             <form  method="post" action="" name="news_letter" onsubmit="return check_nl();">
                                     Per non perderti novità riguardanti nuove destinazioni possibili
-                                   z <div class="form-floating">
+                                    <div class="form-floating">
                                         <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                                         <label for="floatingInput" class="mylabel">Email address</label>
                                     </div>
