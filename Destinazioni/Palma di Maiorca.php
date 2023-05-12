@@ -19,7 +19,10 @@
     <link rel="stylesheet" href="../Stili/dest.css">
     <link rel="stylesheet" href="../Stili/Colors_link_nav.css">
     <link rel="stylesheet" href="./StileMegaMenu.css">
+    <link rel="stylesheet" href="../Login/modal-signin.css">
+    <link rel="stylesheet" href="../Homepage/StileMegaMenu.css">
     <script type="text/javascript" src="check.js"></script>
+     <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
             $(function(){
                 $("#nav-placeholder").load("../Navbar/nav.php");

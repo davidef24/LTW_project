@@ -20,10 +20,10 @@ $dbconn = pg_connect("host=localhost port=5432 dbname=Progetto_LTW
     <link rel="stylesheet" href="../Stili/cropped-img.css">
     <link rel="stylesheet" href="../Stili/Footer.css">
     <link rel="stylesheet" href="../Login/modal-signin.css">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../Stili/Colors_link_nav.css">
-    <link rel="stylesheet" href="./StileMegaMenu.css">
+    <link rel="stylesheet" href="../Homepage/StileMegaMenu.css">
     <link rel="stylesheet" href="./utenti.css">
+    <link rel="stylesheet" href="../Stili/dest.css">
     <title>Utenti</title>
     <script>
         $(function(){

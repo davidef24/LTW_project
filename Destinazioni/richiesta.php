@@ -1,7 +1,7 @@
 <?php
     if ($_SERVER["REQUEST_METHOD"] != "POST") {
-        //header("Location: http://localhost:3000/Homepage/homepage.html");
-        header("Location: http://localhost:3000/Users/loren/Desktop/LTW/Homepage/homepage.html");
+        header("Location: http://localhost:3000/Homepage/homepage.html");
+        //header("Location: http://localhost:3000/Users/loren/Desktop/LTW/Homepage/homepage.html");
     }
     else {
         $dbconn = pg_connect("host=localhost port=5432 dbname=Progetto_LTW 

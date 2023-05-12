@@ -6,7 +6,7 @@
 <html lang="it">
 <head>
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../bootstrap-5.2.3/bootstrap-5.2.3/dist/css/bootstrap.min.css">
@@ -18,8 +18,10 @@
     <link rel="stylesheet" href="../Stili/cropped-img.css">
     <link rel="stylesheet" href="../Stili/dest.css">
     <link rel="stylesheet" href="../Stili/Colors_link_nav.css">
-    <link rel="stylesheet" href="./StileMegaMenu.css">
+    <link rel="stylesheet" href="../Login/modal-signin.css">
+    <link rel="stylesheet" href="../Homepage/StileMegaMenu.css">
     <script type="text/javascript" src="check.js"></script>
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
             $(function(){
                 $("#nav-placeholder").load("../Navbar/nav.php");
@@ -36,10 +38,10 @@
          <div id="nav-placeholder"></div>
     </div>
     <div class="row" style="position: relative;">
-            <img src="../Località/myk.jpg" alt="imm" class="img-fluid" id="dest-img">
-            <h1 id="img-caption">Mykonos</h1>
+            <img src="../Località/myk.jpg" alt="imm" class="img-fluid fadein" id="dest-img">
+            <h1 id="img-caption" class="fadein_text">Mykonos</h1>
         </div>
-        <div class="row justify-content-center p-3" style="background-color: rgba(233, 236, 239, 1);">
+        <div class="row justify-content-center p-3 fadein_text" style="background-color: rgba(233, 236, 239, 1);">
             <div class="col-lg-8 col-md-8">           
                 <p id="dest-paragraph"><b>Breve descrizione:</b>
                 
@@ -53,7 +55,7 @@ Mykonos è un'isola greca situata nel Mar Egeo, famosa per le sue spiagge bellis
                     if(!isset($_SESSION['nome'])){
                         echo "<div class=\"col-lg-4 col-md-4 justify-content-center\" id=\"destra-paragr\">
                         <p id=\"form-paragraph-not-logged\" class=\"text-center\" style=\"color: red;\">Per compilare il form e cercare un compagno, devi aver effettuato l'accesso</p>
-                        <a id=\"link-disabled\" role=\"link\" aria-disabled=\"true\"><button type=\"button\" id=\"login-button-dest\" data-bs-toggle=\"modal\" data-bs-target=\"#logPage\" class=\"btn bg-primary d-inline-block align-text-center\">Accedi</button></a>
+                        <a id=\"link-disabled\" role=\"link\" aria-disabled=\"true\"><button type=\"button\" id=\"login-button-dest\" data-bs-toggle=\"modal\" data-bs-target=\"#logPage\" class=\"btn bg-primary d-inline-block align-text-center animation_button_loop animation_button_loop--move\">Accedi</button></a>
                     </div>";
                     }
                     else{
