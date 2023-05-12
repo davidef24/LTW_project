@@ -2,6 +2,7 @@
     <head>
         <link rel="stylesheet" href="./Stili/Footer.css">
         <link rel="stylesheet" href="./bootstrap-5.2.3/bootstrap-5.2.3/dist/css/bootstrap.min.css">
+        <script src="../Form/script.js"></script>
         <title>Footer</title>
         <script>
             function checkLogin(){
@@ -51,10 +52,10 @@
                     <ul>
                         <li>
                         <div class="myform">
-                            <form  method="post" action="" name="news_letter" onsubmit="return check_nl();">
+                            <form  method="post" action="newsletter.php" name="news_letter" onsubmit="return check_nl();">
                                     Per non perderti novità riguardanti nuove destinazioni possibili
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <input type="text" class="form-control" id="floatingInput" name="floatingInput" placeholder="name@example.com">
                                         <label for="floatingInput" class="mylabel">Email address</label>
                                     </div>
                                     <hr>
