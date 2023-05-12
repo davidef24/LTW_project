@@ -6,7 +6,7 @@
 <html lang="it">
 <head>
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../bootstrap-5.2.3/bootstrap-5.2.3/dist/css/bootstrap.min.css">
@@ -18,8 +18,10 @@
     <link rel="stylesheet" href="../Stili/cropped-img.css">
     <link rel="stylesheet" href="../Stili/dest.css">
     <link rel="stylesheet" href="../Stili/Colors_link_nav.css">
-    <link rel="stylesheet" href="./StileMegaMenu.css">
+    <link rel="stylesheet" href="../Login/modal-signin.css">
+    <link rel="stylesheet" href="../Homepage/StileMegaMenu.css">
     <script type="text/javascript" src="check.js"></script>
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
             $(function(){
                 $("#nav-placeholder").load("../Navbar/nav.php");

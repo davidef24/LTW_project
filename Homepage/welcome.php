@@ -26,7 +26,7 @@
     <title>Flight-Mates</title>
     <script>
         $(function(){
-            $("#footer-placeholder").load("../Footer.html");
+            $("#footer-placeholder").load("../Footer/Footer.html");
         });
 
         $(function(){

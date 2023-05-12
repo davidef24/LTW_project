@@ -128,12 +128,12 @@ function check_lr(mode){
 
 // controlli su news letter
 function EmailIsValid(){
-    if (document.news_letter.email.value==""){
+    if (document.getElementById("floatingInput").value==""){
         alert("Inserire email");
         return false;
     }
     else{
-        if (document.news_letter.email.value.match(/@/)) return true;
+        if (document.getElementById("floatingInput").value.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) return true;
         else{
             alert("Email invalida");
             return false;
@@ -141,7 +141,9 @@ function EmailIsValid(){
     }
 }
 function check_nl(){
-    if (EmailIsValid()) return true;
+    if (EmailIsValid()){
+        return true;
+    }
     return false;
 }
 
