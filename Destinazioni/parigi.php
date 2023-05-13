@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="../Stili/Colors_link_nav.css">
     <link rel="stylesheet" href="../Login/modal-signin.css">
     <link rel="stylesheet" href="../Homepage/StileMegaMenu.css">
+    <link rel="stylesheet" href="../Stili/Footer.css">
     <script type="text/javascript" src="check.js"></script>
     <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="../Stili/Animation.css">
@@ -31,10 +32,13 @@
             $(function(){
                 $("#nav-placeholder").load("../Navbar/nav.php");
             });
+            $(function(){
+                $("#footer-placeholder").load("../Footer/Footer.html");
+            });
 
             $(document).ready(function(){
                 document.getElementById("dest-name").value =  document.getElementById("img-caption").innerText;
-            })
+            });
     </script>
 </head>
 <body>
@@ -46,7 +50,7 @@
          <div id="nav-placeholder"></div>
     </div>
     <div class="row" style="position: relative;">
-            <img src="../Località/louvre.jpg" alt="imm" class="img-fluid" id="dest-img">
+            <img src="../Località/louvre.jpg" alt="imm" class="img-fluid fadein" id="dest-img">
             <h1 id="img-caption" data-aos="fade-up" data-aos-duration="800" data-aos-offset="200">Parigi</h1>
         </div>
         <div class="row justify-content-center p-3" data-aos="fade-down" data-aos-offset="80" data-aos-duration="1500" style="background-color: rgba(233, 236, 239, 1);">
@@ -124,5 +128,6 @@
           </div>";
         }
     ?>
+    <div id="footer-placeholder"></div>
 </body>
 </html>

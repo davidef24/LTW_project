@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="../Stili/Colors_link_nav.css">
     <link rel="stylesheet" href="../Login/modal-signin.css">
     <link rel="stylesheet" href="../Homepage/StileMegaMenu.css">
+    <link rel="stylesheet" href="../Stili/Footer.css">
     <script type="text/javascript" src="check.js"></script>
     <link rel="stylesheet" href="../Stili/Animation.css">
     <script  src="../Stili/animation.js"></script>
@@ -34,7 +35,10 @@
 
             $(document).ready(function(){
                 document.getElementById("dest-name").value =  document.getElementById("img-caption").innerText;
-            })
+            });
+            $(function(){
+                $("#footer-placeholder").load("../Footer/Footer.html");
+            });
     </script>
 </head>
 <body>
@@ -123,5 +127,6 @@
           </div>";
         }
     ?>
+    <div id="footer-placeholder"></div>
 </body>
 </html>

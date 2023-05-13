@@ -126,34 +126,34 @@
 </div>
 
 <div class="cnt" style="background-color: rgba(233, 236, 239, 1); overflow: hidden;" id="div-header">
-    <h1 style="text-align: center; color: rgb(255, 157, 0); font-weight: 900;" id="div-header">Le nostre mete più popolari</h1> <br>
+    <h1 style="text-align: center; color: rgb(255, 157, 0); font-weight: 900;" class="div-header" class="text_animate">Le nostre mete più popolari</h1> <br>
     <div class="row justify-content-center">
         <div class="col-lg-3 col-md-4 col-sm-12 mb-4 mb-lg-0"> 
-            <div style="position: relative;">
+            <div style="position: relative;" data-aos="fade-down-right" data-aos-offset="20" data-aos-delay="100" data-aos-duration="800">
                 <a href="../Destinazioni/tokyo.php"><img id="crpd-img" src="../Altro/cropped_imgs/tokyo-good.jpg"  class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
                 <h3 id="crpd-txt" class="carousel-caption" >TOKYO</h3></a>
             </div>
-            <div style="position: relative;">
+            <div style="position: relative;" data-aos="fade-up-right" data-aos-offset="20" data-aos-delay="100" data-aos-duration="800">
             <a href="../Destinazioni/Palma di Maiorca.php"><img id="crpd-img" src="../Altro/cropped_imgs/maiorca.jpg" class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
                 <h3 id="crpd-txt" class="carousel-caption">PALMA DI MAIORCA</h3></a>
             </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-12 mb-4 mb-lg-0">
-            <div style="position: relative;">
+            <div style="position: relative;"  data-aos="fade-down" data-aos-offset="20" data-aos-delay="100" data-aos-duration="800">
                 <a href="../Destinazioni/parigi.php"><img id="crpd-img" src="../Altro/cropped_imgs/parigi.jpg" class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
                 <h3 id="crpd-txt" class="carousel-caption">PARIGI</h3></a>
             </div>
-            <div style="position: relative;">
+            <div style="position: relative;" data-aos="fade-up" data-aos-offset="20" data-aos-delay="100" data-aos-duration="800">
                 <a href="../Destinazioni/madrid.php"><img id="crpd-img" src="../Altro/cropped_imgs/madrid-good.jpg" class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
                 <h3 id="crpd-txt" class="carousel-caption">MADRID</h3></a>
             </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-12 mb-4 mb-lg-0">
-            <div style="position: relative;"> 
+            <div style="position: relative;" data-aos="fade-down-left" data-aos-offset="20" data-aos-delay="100" data-aos-duration="800"> 
             <a href="../Destinazioni/New York.php"><img id="crpd-img" src="../Altro/cropped_imgs/ny.jpg" class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
                 <h3 id="crpd-txt" class="carousel-caption">NEW YORK</h3></a>
             </div>
-            <div style="position: relative;">
+            <div style="position: relative;" data-aos="fade-up-left" data-aos-offset="20" data-aos-delay="100" data-aos-duration="800">
                 <a href="../Destinazioni/berlino.php"><img id="crpd-img" src="../Altro/cropped_imgs/reichstag.jpeg" class="w-100 h-100 shadow-1-strong rounded-4 mb-4">
                 <h3 id="crpd-txt" class="carousel-caption">BERLINO</h3></a>
             </div>
@@ -161,20 +161,20 @@
     </div>
     
 </div>
-<h1 id="div-header"  data-aos="zoom-in-down" data-aos-duration="800" data-aos-offset="50">Come funziona la nostra app?</h1>
+<h1 class="div-header"  data-aos="zoom-in-down" data-aos-duration="800" data-aos-offset="50">Come funziona la nostra app?</h1>
 <div style="overflow: hidden;">
-    <div class="row justify-content-center" data-aos="fade-right" data-aos-duration="800" data-aos-offset="50">
+    <div class="row justify-content-center" data-aos="fade-right" data-aos-duration="1300" data-aos-offset="50">
         <div class="col-lg-4 col-sm-12 mb-4">
         <img src="../Altro/immagine-registrazione.jpg" class="w-100">
         </div>
-        <div class="col-lg-4 col-sm-12 mb-4" style="position: relative;">
+        <div class="col-lg-4 col-sm-12 mb-4" style="position: relative;" data-aos="fade-down-right" data-aos-offset="20" data-aos-delay="100" data-aos-duration="1300">
             <h1 id="par-header">1-Registra un account</h1>
             <p id="par-description">
             Dopo esserti registrato potrai compilare i form per inviare una proposta di viaggio.
             </p>
         </div>
     </div>
-    <div class="row justify-content-center pt-5" style="background-color: rgba(233, 236, 239, 1);" data-aos="fade-left" data-aos-duration="800" data-aos-offset="50">
+    <div class="row justify-content-center pt-5" style="background-color: rgba(233, 236, 239, 1);" data-aos="fade-left" data-aos-duration="1300" data-aos-offset="50">
         <div class="col-lg-4 col-sm-12 mb-4" style="position: relative;">
             <h1 id="par-header">2-Scegli la meta, il periodo e l'età desiderata dei tuoi compagni di viaggio</h1>
             <p id="par-description">
@@ -185,7 +185,7 @@
             <img src="https://meetravel.it/wp-content/uploads/brizy/imgs/sam-manns-V5Owjg-ZNto-unsplash-scaled-616x416x31x0x555x416x1643051663.jpg" class="w-100">
         </div>
     </div>
-    <div class="row justify-content-center pt-5" data-aos="fade-right" data-aos-duration="800" data-aos-offset="50">
+    <div class="row justify-content-center pt-5" data-aos="fade-right" data-aos-duration="1300" data-aos-offset="50">
         <div class="col-lg-4 col-sm-12 mb-4">
             <img src="../Altro/immagine-utenti.jpg" class="w-100">
         </div>
@@ -196,7 +196,7 @@
             </p>
         </div>
     </div>
-    <div class="row justify-content-center pt-5" style="background-color: rgba(233, 236, 239, 1);" data-aos="fade-left" data-aos-duration="800" data-aos-offset="50">
+    <div class="row justify-content-center pt-5" style="background-color: rgba(233, 236, 239, 1);" data-aos="fade-left" data-aos-duration="1300" data-aos-offset="50">
         <div class="col-lg-4 col-sm-12 mb-4" style="position: relative;">
             <h1 id="par-header">4-Parti e vivi un'esperienza unica</h1>
             <p id="par-description">

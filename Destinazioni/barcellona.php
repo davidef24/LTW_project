@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="../Stili/Colors_link_nav.css">
     <link rel="stylesheet" href="../Login/modal-signin.css">
     <link rel="stylesheet" href="../Homepage/StileMegaMenu.css">
+    <link rel="stylesheet" href="../Stili/Footer.css">
     <script type="text/javascript" src="check.js"></script>
     <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="../Stili/Animation.css">
@@ -32,9 +33,13 @@
                 $("#nav-placeholder").load("../Navbar/nav.php");
             });
 
+            $(function(){
+                $("#footer-placeholder").load("../Footer/Footer.html");
+            });
+
             $(document).ready(function(){
                 document.getElementById("dest-name").value =  document.getElementById("img-caption").innerText;
-            })
+            });
     </script>
 </head>
 <body>
@@ -126,5 +131,6 @@
           </div>";
         }
     ?>
+    <div id="footer-placeholder"></div>
 </body>
 </html>
