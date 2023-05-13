@@ -18,6 +18,13 @@
     <script src="../Riconoscimenti/animation.js"></script>
     <link rel="stylesheet" href="../Riconoscimenti/Animation.css">
     <title>Flight-Mates</title>
+    <script>
+        const menuItem= document.getElementById("#link-destinazioni");
+        const megamenu= document.querySelector(".megamenu");
+        menuItem.addEventListener('click', function(){
+            megamenu.style.display= 'block';
+        })
+    </script>
     <!--<script>
             $(function(){
                 $("#nav-placeholder").load("../Navbar/navbar.html");

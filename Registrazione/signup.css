@@ -10,6 +10,7 @@ body {
 
 .form-container {
   /*position:relative;*/
+  border-radius: 15px;
   background-color: #ffffffc5;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 
@@ -56,9 +57,10 @@ body {
   height: 35px;
 }
 
+
 @media screen and (max-height:766px) {
   body{
-    background: linear-gradient(45deg,#7274d2, #7274d2);
+    background: linear-gradient(45deg,#cccce2, #c9cade);
   }
   
 }

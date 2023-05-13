@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;500&display=swap');
+
+.header-txt{
+    font-family: 'Secular One', sans-serif;
+}
+
+.descr-header{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 500;
+}
+
+.descr-txt{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 200;
+    position: relative; 
+    top:10%;
+    font-size: larger;
+}
+
 .title_design
 {
     display: flex;
@@ -12,16 +32,7 @@
     color:black;
     position: relative;
 }
-.title_design h1::after
-{
-    content:"";
-    position: absolute;
-    height:5px;
-    width:100%;
-    left:0;
-    bottom:-8px;
-    background-color:rgb(0, 85, 255);
-}
+
 .section_team{
     display: flex;
     flex-flow:row nowrap;

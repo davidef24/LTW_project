@@ -22,6 +22,11 @@
     <link rel="stylesheet" href="../Homepage/StileMegaMenu.css">
     <script type="text/javascript" src="check.js"></script>
     <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="../Stili/Animation.css">
+    <script  src="../Stili/animation.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <script>
             $(function(){
                 $("#nav-placeholder").load("../Navbar/nav.php");
@@ -33,15 +38,18 @@
     </script>
 </head>
 <body>
+    <script>
+        AOS.init();
+    </script>
     <div id="cnt-griglia" style="overflow: hidden;">
     <div class="row">
          <div id="nav-placeholder"></div>
     </div>
     <div class="row" style="position: relative;">
             <img src="../Località/myk.jpg" alt="imm" class="img-fluid fadein" id="dest-img">
-            <h1 id="img-caption" class="fadein_text">Mykonos</h1>
+            <h1 id="img-caption" data-aos="fade-up" data-aos-duration="800" data-aos-offset="30">Mykonos</h1>
         </div>
-        <div class="row justify-content-center p-3 fadein_text" style="background-color: rgba(233, 236, 239, 1);">
+        <div class="row justify-content-center p-3" data-aos="fade-down" data-aos-offset="30" data-aos-duration="1500" style="background-color: rgba(233, 236, 239, 1);">
             <div class="col-lg-8 col-md-8">           
                 <p id="dest-paragraph"><b>Breve descrizione:</b>
                 

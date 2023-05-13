@@ -1,0 +1,34 @@
+.fadein{
+    opacity: 0;
+    transform: translateY(-30vh);
+    transition:all 1.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+.fadein.inpage  {
+    opacity:1;
+    transform: translateY(0);
+    z-index: -5;
+}
+.fadein_text
+{
+    opacity: 0;
+    transform: translateY(30vh);
+    transition:all 1.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+.fadein_text.inpagetext
+{
+    opacity:1;
+    transform: translateY(0);
+}
+.animation_button_loop--move
+{
+    animation: rotate_effect 4s infinite ease-in-out;
+}
+@keyframes rotate_effect
+{
+    0%{transform: rotate(0deg);}
+    20%{transform: rotate(0deg);}
+    40%{transform:rotate(20deg);}
+    60%{transform:rotate(-20deg);}
+    80%{transform:rotate(0deg);}
+    100%{transform:rotate(0deg);}
+}
