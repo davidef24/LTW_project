@@ -1,8 +1,8 @@
 <?php
-session_start();
-$dbconn = pg_connect("host=localhost port=5432 dbname=Progetto_LTW 
-    user=postgres password=password") 
-    or die('Could not connect: ' . pg_last_error());
+    session_start();
+    $dbconn = pg_connect("host=localhost port=5432 dbname=Progetto_LTW 
+        user=postgres password=password") 
+        or die('Could not connect: ' . pg_last_error());
 ?>
 <!DOCTYPE html>
 <html lang="en">
