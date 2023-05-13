@@ -17,6 +17,11 @@
     <link rel="stylesheet" href="../Login/modal-signin.css">
     <link rel="stylesheet" href="../Homepage/StileMegaMenu.css">
     <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="../Stili/Animation.css">
+    <script  src="../Stili/animation.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     </head>
     <script>
         $(document).ready(function(){
@@ -53,6 +58,9 @@
         }
     </script>
     <body>
+        <script>
+            AOS.init();
+        </script>
     <nav class="navbarpers">
         <a  class="nodecoration logo" href="../Homepage/welcome.php"><img src="../Altro/LogoMakr-3hmd64.png" height="95" width="115" style="margin-left: 35px;"></a>
         <div class="nav-linkspers">

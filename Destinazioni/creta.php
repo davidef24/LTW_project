@@ -21,6 +21,11 @@
     <link rel="stylesheet" href="../Login/modal-signin.css">
     <link rel="stylesheet" href="../Homepage/StileMegaMenu.css">
     <script type="text/javascript" src="check.js"></script>
+    <link rel="stylesheet" href="../Stili/Animation.css">
+    <script  src="../Stili/animation.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
             $(function(){
@@ -33,15 +38,18 @@
     </script>
 </head>
 <body>
+    <script>
+        AOS.init();
+    </script>
     <div id="cnt-griglia" style="overflow: hidden;">
     <div class="row">
          <div id="nav-placeholder"></div>
     </div>
     <div class="row" style="position: relative;">
-            <img src="../Località/creta-grecia.jpg" alt="imm" class="img-fluid" id="dest-img" height=300px>
-            <h1 id="img-caption">Creta</h1>
+            <img src="../Località/creta-grecia.jpg" alt="imm" class="img-fluid fadein" id="dest-img" height=300px>
+            <h1 id="img-caption" data-aos="fade-up" data-aos-duration="800" data-aos-offset="200">Creta</h1>
         </div>
-        <div class="row justify-content-center p-3" style="background-color: rgba(233, 236, 239, 1);">
+        <div class="row justify-content-center p-3" data-aos="fade-down" data-aos-offset="80" data-aos-duration="1500" style="background-color: rgba(233, 236, 239, 1);">
             <div class="col-lg-8 col-md-8">           
                 <p id="dest-paragraph"><b>Breve descrizione:</b>
                 Creta è la più grande delle isole greche, situata nel Mar Egeo meridionale. È famosa per la sua ricca storia e cultura, con numerosi siti archeologici e musei che raccontano la sua eredità greca, romana, bizantina e veneziana. La città principale di Creta è Heraklion, dove si trova il Palazzo di Cnosso, uno dei siti archeologici più importanti dell'isola. Creta è anche nota per le sue spiagge bellissime, le acque cristalline e le scogliere mozzafiato. Inoltre, l'isola offre una varietà di attività, tra cui trekking, arrampicata, sport acquatici e degustazioni di cibo e vino locali. Con la sua bellezza naturale e la sua storia ricca di fascino, Creta è una destinazione turistica popolare e affascinante.<br>
@@ -53,7 +61,7 @@
                     if(!isset($_SESSION['nome'])){
                         echo "<div class=\"col-lg-4 col-md-4 justify-content-center\" id=\"destra-paragr\">
                         <p id=\"form-paragraph-not-logged\" class=\"text-center\" style=\"color: red;\">Per compilare il form e cercare un compagno, devi aver effettuato l'accesso</p>
-                        <a id=\"link-disabled\" role=\"link\" aria-disabled=\"true\"><button type=\"button\" id=\"login-button-dest\" data-bs-toggle=\"modal\" data-bs-target=\"#logPage\" class=\"btn bg-primary d-inline-block align-text-center\">Accedi</button></a>
+                        <a id=\"link-disabled\" role=\"link\" aria-disabled=\"true\"><button type=\"button\" id=\"login-button-dest\" data-bs-toggle=\"modal\" data-bs-target=\"#logPage\" class=\"btn bg-primary d-inline-block align-text-center animation_button_loop animation_button_loop--move\">Accedi</button></a>
                     </div>";
                     }
                     else{

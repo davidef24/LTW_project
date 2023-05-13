@@ -22,6 +22,11 @@
     <link rel="stylesheet" href="../Homepage/StileMegaMenu.css">
     <script type="text/javascript" src="check.js"></script>
     <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="../Stili/Animation.css">
+    <script  src="../Stili/animation.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <script>
             $(function(){
                 $("#nav-placeholder").load("../Navbar/nav.php");
@@ -33,15 +38,18 @@
     </script>
 </head>
 <body>
+    <script>
+        AOS.init();
+    </script>
     <div id="cnt-griglia" style="overflow: hidden;">
     <div class="row">
          <div id="nav-placeholder"></div>
     </div>
     <div class="row" style="position: relative;">
-            <img src="../Località/tokyo-notte.jpeg" alt="imm" class="img-fluid" id="dest-img" height=300px>
-            <h1 id="img-caption">Tokyo</h1>
+            <img src="../Località/tokyo-notte.jpeg" alt="imm" class="img-fluid fadein" id="dest-img" height=300px>
+            <h1 id="img-caption" data-aos="fade-up" data-aos-duration="800" data-aos-offset="200">Tokyo</h1>
         </div>
-        <div class="row justify-content-center p-3" style="background-color: rgba(233, 236, 239, 1);">
+        <div class="row justify-content-center p-3" data-aos="fade-down" data-aos-offset="80" data-aos-duration="1500" style="background-color: rgba(233, 236, 239, 1);">
             <div class="col-lg-8 col-md-8">           
                 <p id="dest-paragraph"><b>Breve descrizione:</b> Tokyo è la capitale del Giappone ed è una delle città più grandi e affascinanti del mondo, con una popolazione di oltre 13 milioni di persone. La città è famosa per la sua tecnologia all'avanguardia, la sua cultura popolare unica e la sua deliziosa cucina. Tokyo offre una varietà di attrazioni, come il Palazzo Imperiale, il Tempio di Senso-ji, il quartiere di Shibuya famoso per la sua traversa pedonale elettronica e il moderno grattacielo di Tokyo Skytree. La città è anche nota per i suoi negozi di moda alla moda, i suoi caffè alla moda e i suoi ristoranti stellati Michelin. Con la sua miscela di tradizione e modernità, Tokyo offre un'esperienza unica e indimenticabile a chi la visita.<br>
                     <b>Ideale se cerchi:</b> nuove culture affascinanti, cibo delizioso, città sicura<br>
@@ -52,7 +60,7 @@
                     if(!isset($_SESSION['nome'])){
                         echo "<div class=\"col-lg-4 col-md-4 justify-content-center\" id=\"destra-paragr\">
                         <p id=\"form-paragraph-not-logged\" class=\"text-center\" style=\"color: red;\">Per compilare il form e cercare un compagno, devi aver effettuato l'accesso</p>
-                        <a id=\"link-disabled\" role=\"link\" aria-disabled=\"true\"><button type=\"button\" id=\"login-button-dest\" data-bs-toggle=\"modal\" data-bs-target=\"#logPage\" class=\"btn bg-primary d-inline-block align-text-center\">Accedi</button></a>
+                        <a id=\"link-disabled\" role=\"link\" aria-disabled=\"true\"><button type=\"button\" id=\"login-button-dest\" data-bs-toggle=\"modal\" data-bs-target=\"#logPage\" class=\"btn bg-primary d-inline-block align-text-center animation_button_loop animation_button_loop--move\">Accedi</button></a>
                     </div>";
                     }
                     else{

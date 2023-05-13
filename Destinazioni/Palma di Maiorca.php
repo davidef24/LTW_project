@@ -22,6 +22,11 @@
     <link rel="stylesheet" href="../Homepage/StileMegaMenu.css">
     <script type="text/javascript" src="check.js"></script>
     <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="../Stili/Animation.css">
+    <script  src="../Stili/animation.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <script>
             $(function(){
                 $("#nav-placeholder").load("../Navbar/nav.php");
@@ -33,15 +38,18 @@
     </script>
 </head>
 <body>
+    <script>
+        AOS.init();
+    </script>
     <div id="cnt-griglia" style="overflow: hidden;">
     <div class="row">
          <div id="nav-placeholder"></div>
     </div>
     <div class="row" style="position: relative;">
-            <img src="../Località/palma-di-maiorca.jpg" alt="imm" class="img-fluid" id="dest-img" height=300px>
-            <h1 id="img-caption">Palma di Maiorca</h1>
+            <img src="../Località/palma-di-maiorca.jpg" alt="imm" class="img-fluid fadein" id="dest-img" height=300px>
+            <h1 id="img-caption" data-aos="fade-up" data-aos-duration="800" data-aos-offset="200">Palma di Maiorca</h1>
         </div>
-        <div class="row justify-content-center p-3" style="background-color: rgba(233, 236, 239, 1);">
+        <div class="row justify-content-center p-3" data-aos="fade-down" data-aos-offset="80" data-aos-duration="1500" style="background-color: rgba(233, 236, 239, 1);">
             <div class="col-lg-8 col-md-8">           
                 <p id="dest-paragraph"><b>Breve descrizione:</b>
                 Palma di Maiorca è la città principale dell'isola di Maiorca, la più grande delle Baleari, situata al largo della costa orientale della Spagna. È famosa per la sua architettura moresca, la Cattedrale di Santa Maria e la pittoresca zona del centro storico. La città offre numerose attrazioni turistiche, tra cui musei, gallerie d'arte, parchi, ristoranti e una vivace vita notturna. Palma di Maiorca è anche conosciuta per le sue spiagge di sabbia bianca e acque cristalline, tra cui Cala Major e Playa de Palma. Inoltre, l'isola è un paradiso per gli appassionati di sport acquatici, come il surf, lo snorkeling e la vela, grazie al clima mite e alle condizioni del mare favorevoli. <br>
@@ -53,7 +61,7 @@
                     if(!isset($_SESSION['nome'])){
                         echo "<div class=\"col-lg-4 col-md-4 justify-content-center\" id=\"destra-paragr\">
                         <p id=\"form-paragraph-not-logged\" class=\"text-center\" style=\"color: red;\">Per compilare il form e cercare un compagno, devi aver effettuato l'accesso</p>
-                        <a id=\"link-disabled\" role=\"link\" aria-disabled=\"true\"><button type=\"button\" id=\"login-button-dest\" data-bs-toggle=\"modal\" data-bs-target=\"#logPage\" class=\"btn bg-primary d-inline-block align-text-center\">Accedi</button></a>
+                        <a id=\"link-disabled\" role=\"link\" aria-disabled=\"true\"><button type=\"button\" id=\"login-button-dest\" data-bs-toggle=\"modal\" data-bs-target=\"#logPage\" class=\"btn bg-primary d-inline-block align-text-center animation_button_loop animation_button_loop--move\">Accedi</button></a>
                     </div>";
                     }
                     else{

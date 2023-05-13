@@ -1,7 +1,7 @@
 <?php
     if ($_SERVER["REQUEST_METHOD"] != "POST") {
-        // header("Location: http://localhost:3000/Homepage/welcome.php");
-        header("Location: http://localhost:3000/Users/loren/Desktop/LTW/Homepage/welcome.php");
+         header("Location: http://localhost:3000/Homepage/welcome.php");
+        //header("Location: http://localhost:3000/Users/loren/Desktop/LTW/Homepage/welcome.php");
     }
     $dbconn = pg_connect("host=localhost port=5432 dbname=Progetto_LTW 
                 user=postgres password=password") 

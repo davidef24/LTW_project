@@ -1,0 +1,10 @@
+.fade-in{
+    opacity: 0;
+    transform:translateY(10vh); /*sposto del 10% l'elemento nella mia window in cascata*/
+    transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1); /*tutti gli elementi sono in transizione per 1s con effetto cubic*/
+}
+.fade-in.in-page
+{
+    opacity: 1; /*elemento quando è in pagina deve essere visibile*/
+    transform:translateY(0vh); /*transformo in altezza elemento 0 quindi (fade_in si blocca)*/
+}

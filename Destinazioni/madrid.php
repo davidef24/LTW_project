@@ -22,6 +22,11 @@
     <link rel="stylesheet" href="../Homepage/StileMegaMenu.css">
     <script type="text/javascript" src="check.js"></script>
     <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="../Stili/Animation.css">
+    <script  src="../Stili/animation.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <script>
             $(function(){
                 $("#nav-placeholder").load("../Navbar/nav.php");
@@ -33,15 +38,18 @@
     </script>
 </head>
 <body>
+    <script>
+        AOS.init();
+    </script>
     <div id="cnt-griglia" style="overflow: hidden;">
     <div class="row">
          <div id="nav-placeholder"></div>
     </div>
     <div class="row" style="position: relative;">
-            <img src="../Località/madrid-3.jpg" alt="imm" class="img-fluid" id="dest-img" height=300px>
-            <h1 id="img-caption">Madrid</h1>
+            <img src="../Località/madrid-3.jpg" alt="imm" class="img-fluid fadein" id="dest-img" height=300px>
+            <h1 id="img-caption" data-aos="fade-up" data-aos-duration="800" data-aos-offset="200">Madrid</h1>
         </div>
-        <div class="row justify-content-center p-3" style="background-color: rgba(233, 236, 239, 1);">
+        <div class="row justify-content-center p-3" data-aos="fade-down" data-aos-offset="80" data-aos-duration="1500" style="background-color: rgba(233, 236, 239, 1);">
             <div class="col-lg-8 col-md-8">           
                 <p id="dest-paragraph" ><b>Breve descrizione:</b> Madrid è la capitale della Spagna ed è situata nel centro del paese. È una città con una vasta storia e una ricca cultura, ed è famosa per la sua architettura, la sua gastronomia e la sua vita notturna. Madrid ospita importanti musei come il Museo del Prado, il Reina Sofia e il Thyssen-Bornemisza, che offrono una vasta gamma di opere d'arte, tra cui alcune dei più grandi capolavori della pittura spagnola come Guernica di Pablo Picasso. La città è anche famosa per i suoi parchi, tra cui il grande e bellissimo Parco del Retiro, dove si può godere di un'atmosfera rilassante e naturale. Madrid è nota per la sua cucina tradizionale, come le tapas, la paella e il cocido, così come per i suoi locali notturni, bar e club, che rimangono aperti fino a tarda notte. Con il suo clima piacevole, la sua cultura vivace e la sua gente calorosa e accogliente, Madrid è una meta turistica molto popolare in Europa.<br>
                     <b>Ideale se cerchi:</b>vivacità, arte e musei, cibo<br>
@@ -52,7 +60,7 @@
                     if(!isset($_SESSION['nome'])){
                         echo "<div class=\"col-lg-4 col-md-4 justify-content-center\" id=\"destra-paragr\" style=\"margin-bottom:13%\">
                         <p id=\"form-paragraph-not-logged\" class=\"text-center\" style=\"color: red;\">Per compilare il form e cercare un compagno, devi aver effettuato l'accesso</p>
-                        <a id=\"link-disabled\" role=\"link\" aria-disabled=\"true\"><button type=\"button\" id=\"login-button-dest\" data-bs-toggle=\"modal\" data-bs-target=\"#logPage\" class=\"btn bg-primary d-inline-block align-text-center\">Accedi</button></a>
+                        <a id=\"link-disabled\" role=\"link\" aria-disabled=\"true\"><button type=\"button\" id=\"login-button-dest\" data-bs-toggle=\"modal\" data-bs-target=\"#logPage\" class=\"btn bg-primary d-inline-block align-text-center animation_button_loop animation_button_loop--move\">Accedi</button></a>
                     </div>";
                     }
                     else{

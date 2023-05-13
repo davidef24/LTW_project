@@ -23,6 +23,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../Stili/Colors_link_nav.css">
     <link rel="stylesheet" href="./StileMegaMenu.css">
+    <link rel="stylesheet" href="../Stili/Animation.css">
+    <script src="../Stili/animation.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <title>Flight-Mates</title>
     <script>
         $(function(){
@@ -49,6 +54,15 @@
             });
 
         });
+    </script>
+    <script>
+        function highlightElement(){
+            var toChange=document.querySelector(".change-color");
+            toChange.style.color="gold";
+            setTimeout(function(){
+                toChange.style.color="white";
+            }, 1500);
+        }
     </script>
     <script>
         $(function(){
@@ -87,11 +101,20 @@
           font-weight: 700;
         }
     </style>
+    <style>
+        .change-color {
+            color: white;
+            transition: color 0.5s ease-in-out;
+        }
+    </style>
 </head>
 <body>
+<script>
+        AOS.init();
+</script>
 <div id="nav-placeholder"></div>
 <div class="img-container">
-    <img src="../Altro/tutti insieme.png" id="img-1">
+    <img src="../Altro/tutti insieme2.png" id="img-1">
     <form method="post" action="" name="shortcut" class="align-items-center form-dove-andare">
         <div class="col-12">
             <div class="input-group mb-3">
@@ -138,11 +161,11 @@
     </div>
     
 </div>
-<h1 id="div-header">Come funziona la nostra app?</h1>
+<h1 id="div-header"  data-aos="zoom-in-down" data-aos-duration="800" data-aos-offset="50">Come funziona la nostra app?</h1>
 <div style="overflow: hidden;">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" data-aos="fade-right" data-aos-duration="800" data-aos-offset="50">
         <div class="col-lg-4 col-sm-12 mb-4">
-        <img src="../Altro/registrazione-img.png" class="w-100">
+        <img src="../Altro/immagine-registrazione.jpg" class="w-100">
         </div>
         <div class="col-lg-4 col-sm-12 mb-4" style="position: relative;">
             <h1 id="par-header">1-Registra un account</h1>
@@ -151,7 +174,7 @@
             </p>
         </div>
     </div>
-    <div class="row justify-content-center pt-5" style="background-color: rgba(233, 236, 239, 1);">
+    <div class="row justify-content-center pt-5" style="background-color: rgba(233, 236, 239, 1);" data-aos="fade-left" data-aos-duration="800" data-aos-offset="50">
         <div class="col-lg-4 col-sm-12 mb-4" style="position: relative;">
             <h1 id="par-header">2-Scegli la meta, il periodo e l'età desiderata dei tuoi compagni di viaggio</h1>
             <p id="par-description">
@@ -162,9 +185,9 @@
             <img src="https://meetravel.it/wp-content/uploads/brizy/imgs/sam-manns-V5Owjg-ZNto-unsplash-scaled-616x416x31x0x555x416x1643051663.jpg" class="w-100">
         </div>
     </div>
-    <div class="row justify-content-center pt-5">
+    <div class="row justify-content-center pt-5" data-aos="fade-right" data-aos-duration="800" data-aos-offset="50">
         <div class="col-lg-4 col-sm-12 mb-4">
-            <img src="https://meetravel.it/wp-content/uploads/brizy/imgs/leio-mclaren-jEgQpfkHEWY-unsplash-1-scaled-555x694x0x139x555x416x1643050549.jpg" class="w-100">
+            <img src="../Altro/immagine-utenti.jpg" class="w-100">
         </div>
         <div class="col-lg-4 col-sm-12 mb-4" style="position: relative;">
             <h1 id="par-header">3-Controlla la pagina Utenti</h1>
@@ -173,7 +196,7 @@
             </p>
         </div>
     </div>
-    <div class="row justify-content-center pt-5" style="background-color: rgba(233, 236, 239, 1);">
+    <div class="row justify-content-center pt-5" style="background-color: rgba(233, 236, 239, 1);" data-aos="fade-left" data-aos-duration="800" data-aos-offset="50">
         <div class="col-lg-4 col-sm-12 mb-4" style="position: relative;">
             <h1 id="par-header">4-Parti e vivi un'esperienza unica</h1>
             <p id="par-description">
