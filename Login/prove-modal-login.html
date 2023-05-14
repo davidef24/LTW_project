@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="../bootstrap-5.2.3/bootstrap-5.2.3/dist/css/bootstrap.min.css">
     <script src="../bootstrap-5.2.3/bootstrap-5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Prova modal login</title>
+    <style>
+      .alert{
+        position: relative;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border: 0 solid transparent;
+        background-color: #d4441a;
+      }
+    </style>
+    <script>
+        document.getElementById("avviso").style.display= 'block';
+    </script>
 </head>
 <body style="z-index: 5;">
     <div class="col-lg-4 col-md-4 justify-content-center" id="destra-paragr">
@@ -26,6 +38,7 @@
                           <i class="far fa-eye"></i>
                           <input type="submit" value="Accedi" class="btn btn-primary" >     
                       </form>
+                     <div role="alert" class="alert" id="avviso">Email sbagliata</div>
                   </div>
                   <div class="modal-footer">
                       <h5 class="modal-title">Non sei registrato?</h5>

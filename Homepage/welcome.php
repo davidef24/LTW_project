@@ -118,7 +118,7 @@
     <form method="post" action="" name="shortcut" class="align-items-center form-dove-andare">
         <div class="col-12">
             <div class="input-group mb-3">
-                <input type="text" id="dove-andare" class="form-control-lg rounded-pill" placeholder="Dove vuoi andare?" style="width: 1000px; display: flex; border: rgb(252, 252, 252);">
+                <input type="text" id="dove-andare" class="form-control-lg rounded-pill" placeholder="Dove vuoi andare?" style="width: 1000px; display: flex; border: rgb(252, 252, 252);border-radius: 10px !important;">
             </div>
         </div>
         <h1 id="img-text">Bentornato <?php echo $_SESSION['nome']?>, pronto per una nuova avventura?</h1>
@@ -126,7 +126,7 @@
 </div>
 
 <div class="cnt" style="background-color: rgba(233, 236, 239, 1); overflow: hidden;" id="div-header">
-    <h1 style="text-align: center; color: rgb(255, 157, 0); font-weight: 900;" class="div-header" class="text_animate">Le nostre mete più popolari</h1> <br>
+    <h1 style="text-align: center; color: rgb(255, 157, 0); font-weight: 900;" class="div-header text_animate">Le nostre mete più popolari</h1> <br>
     <div class="row justify-content-center">
         <div class="col-lg-3 col-md-4 col-sm-12 mb-4 mb-lg-0"> 
             <div style="position: relative;" data-aos="fade-down-right" data-aos-offset="20" data-aos-delay="100" data-aos-duration="800">

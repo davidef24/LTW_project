@@ -72,9 +72,7 @@
                     httpRequest.send();
                     location.reload();
                 }
-                
             });
-
         });
     </script>
 </head>

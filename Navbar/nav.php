@@ -23,6 +23,17 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     </head>
+    <style>
+        .alert{
+            position: relative;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: 0 solid transparent;
+            background-color: red;
+            color: white;
+            display: none;
+        }
+    </style>
     <script>
         $(document).ready(function(){
             $("#b123").mouseenter(function(){
@@ -166,12 +177,14 @@
                     <h5 class=\"modal-title\" id=\"exampleModalLongTitle\">Inserisci le tue credenziali</h5>
                   </div>
                   <div class=\"modal-body\">
+                  <div role=\"alert\" class=\"alert\" id=\"avviso\"></div>
                       <form method=\"post\" action=\"../Login/login.php\" name=\"registrazione\" class=\"form-signin m-auto\" onsubmit=\"return check_lr();\">
                           <input placeholder=\"Email\" type=\"text\" name=\"email\" maxlength=\"40\" class=\"form-control\" required autofocus>
                           <input placeholder=\"Password\" type=\"password\" name=\"password1\" maxlength=\"40\" class=\"form-control\" required>
                           <i class=\"far fa-eye\"></i>
                           <input type=\"submit\" value=\"Accedi\" class=\"btn btn-primary\" >     
                       </form>
+                      
                   </div>
                   <div class=\"modal-footer\">
                       <h5 class=\"modal-title\">Non sei registrato?</h5>
