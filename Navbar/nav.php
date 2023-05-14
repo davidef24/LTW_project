@@ -45,6 +45,7 @@
                 $(this).removeClass("bg-success");
                 $(this).addClass("bg-body");                
             });
+
             $("#logOut").mouseenter(function(){
                 $(this).removeClass("bg-body");
                 $(this).addClass("bg-danger");                
@@ -53,6 +54,30 @@
             $("#logOut").mouseleave(function(){
                 $(this).removeClass("bg-danger");
                 $(this).addClass("bg-body");                
+            });
+
+            $("#form-login").on("submit", function(event){
+                event.preventDefault();
+                var email = $('#email').val();
+                var password = $('#pwd').val();
+                $.ajax({
+                  type: "POST",
+                  url: "../Login/login.php",
+                  data: { email: email, password1: password },
+                  success: function(response) {
+                    console.log(response);
+                    if (response == "success") {
+                      window.location.href = "http://localhost:3000/Homepage/welcome.php";
+                    } else if(response == "unregistered") {
+                      $('#avviso').show();
+                      $('#avviso').text("Non esiste un utente registrato con questa email, registrati cliccando su \"Crea un nuovo Account\".");
+                    }
+                    else{
+                      $('#avviso').show();
+                      $('#avviso').text("Email o password non validi, riprova.");
+                    }
+                  }
+                });
             });
         });
     </script>
@@ -177,12 +202,12 @@
                     <h5 class=\"modal-title\" id=\"exampleModalLongTitle\">Inserisci le tue credenziali</h5>
                   </div>
                   <div class=\"modal-body\">
-                  <div role=\"alert\" class=\"alert\" id=\"avviso\"></div>
-                      <form method=\"post\" action=\"../Login/login.php\" name=\"registrazione\" class=\"form-signin m-auto\" onsubmit=\"return check_lr();\">
-                          <input placeholder=\"Email\" type=\"text\" name=\"email\" maxlength=\"40\" class=\"form-control\" required autofocus>
-                          <input placeholder=\"Password\" type=\"password\" name=\"password1\" maxlength=\"40\" class=\"form-control\" required>
+                  <div role=\"alert\" class=\"alert\" id=\"avviso\">Errore madornale</div>
+                      <form method=\"post\" id=\"form-login\" action=\"\" name=\"registrazione\" class=\"form-signin m-auto\" onsubmit=\"return check_lr();\">
+                          <input placeholder=\"Email\" type=\"text\" id=\"email\" name=\"email\" maxlength=\"40\" class=\"form-control\" required>
+                          <input placeholder=\"Password\" id=\"pwd\" type=\"password\" name=\"password1\" maxlength=\"40\" class=\"form-control\" required>
                           <i class=\"far fa-eye\"></i>
-                          <input type=\"submit\" value=\"Accedi\" class=\"btn btn-primary\" >     
+                          <input type=\"submit\" value=\"Accedi\" id=\"accedi-btn\" class=\"btn btn-primary\" >     
                       </form>
                       
                   </div>
