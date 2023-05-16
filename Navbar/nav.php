@@ -65,7 +65,6 @@
                   url: "../Login/login.php",
                   data: { email: email, password1: password },
                   success: function(response) {
-                    console.log(response);
                     if (response == "success") {
                       window.location.href = "http://localhost:3000/Homepage/welcome.php";
                     } else if(response == "unregistered") {
@@ -202,7 +201,7 @@
                     <h5 class=\"modal-title\" id=\"exampleModalLongTitle\">Inserisci le tue credenziali</h5>
                   </div>
                   <div class=\"modal-body\">
-                  <div role=\"alert\" class=\"alert\" id=\"avviso\">Errore madornale</div>
+                  <div role=\"alert\" class=\"alert\" id=\"avviso\">Errore</div>
                       <form method=\"post\" id=\"form-login\" action=\"\" name=\"registrazione\" class=\"form-signin m-auto\" onsubmit=\"return check_lr();\">
                           <input placeholder=\"Email\" type=\"text\" id=\"email\" name=\"email\" maxlength=\"40\" class=\"form-control\" required>
                           <input placeholder=\"Password\" id=\"pwd\" type=\"password\" name=\"password1\" maxlength=\"40\" class=\"form-control\" required>

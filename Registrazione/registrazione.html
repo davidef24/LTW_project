@@ -41,11 +41,11 @@
             $("#nascita").addClass("is-valid");
         }
         function invalidEmail(){
-            $("#email").addClass("is-invalid");
+            $("#email-reg").addClass("is-invalid");
         }
         function validEmail(){
-            $("#email").removeClass("is-invalid");
-            $("#email").addClass("is-valid");
+            $("#email-reg").removeClass("is-invalid");
+            $("#email-reg").addClass("is-valid");
         }
         function invalidTel(){
             $("#telefono").addClass("is-invalid");
@@ -55,18 +55,18 @@
             $("#telefono").addClass("is-valid");
         }
         function invalidP1(){
-            $("#password1").addClass("is-invalid");
+            $("#password1-reg").addClass("is-invalid");
         }
         function invalidP2(){
-            $("#password2").addClass("is-invalid");
+            $("#password2-reg").addClass("is-invalid");
         }
         function validP1(){
-            $("#password1").removeClass("is-invalid");
-            $("#password1").addClass("is-valid");
+            $("#password1-reg").removeClass("is-invalid");
+            $("#password1-reg").addClass("is-valid");
         }
         function validP2(){
-            $("#password2").removeClass("is-invalid");
-            $("#password2").addClass("is-valid");
+            $("#password2-reg").removeClass("is-invalid");
+            $("#password2-reg").addClass("is-valid");
         }
         function resetAll(){
             var fields=["#nome", "#cognome", "#nascita", "#email", "#telefono", "#password1", "#password2"];
@@ -105,22 +105,22 @@
                         <label for="nascita">Data di nascita</label>
                     </div>
                     <div class="form-floating row-cols-1">
-                        <input placeholder="Email" type="text" id="email" name="email" maxlength="40" class="form-control" onchange="return emailToRegister();">
-                        <label for="email">Email</label>
+                        <input placeholder="Email" type="text" id="email-reg" name="email" maxlength="40" class="form-control" onchange="return emailToRegister();">
+                        <label for="email-reg">Email</label>
                     </div>
                     <div class="form-floating row-cols-1">
                         <input placeholder="Cellulare" type="text" id="telefono" name="cellulare" maxlength="20" class="form-control" onchange="return validTelephone();">
                         <label for="telefono">Cellulare</label>
                     </div>
                     <div class="form-floating row-cols-1">
-                        <input placeholder="Password" type="password" id="password1" name="password1" maxlength="40" class="form-control">
+                        <input placeholder="Password" type="password" id="password1-reg" name="password1" maxlength="40" class="form-control">
                         <i class="far fa-eye"></i>
-                        <label for="password1">Password</label>
+                        <label for="password1-reg">Password</label>
                     </div>
                     <div class="form-floating row-cols-1">
-                        <input placeholder="Ripeti la password" type="password" id="password2" name="password2" maxlength="40" class="form-control">
+                        <input placeholder="Ripeti la password" type="password" id="password2-reg" name="password2" maxlength="40" class="form-control">
                         <i class="far fa-eye"></i>
-                        <label for="password2">Ripeti la password</label>
+                        <label for="password2-reg">Ripeti la password</label>
                     </div>
                     <div class="row d-flex justify-content-center">
                         <div class="col-2" style="margin-right: 60px;"><input type="submit" value="Registrati" class="btn btn-primary"></div>

@@ -44,15 +44,20 @@ function validBirthDate(){
     }
 }
 function emailToRegister(){
-    if (document.getElementById("email").value==""){
+    if (document.getElementById("email-reg").value==""){
         invalidEmail();
+        console.log("Email vuota");
         return false;
     }
     else{
         validEmail();
-        if (document.getElementById("email").value.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) return true;
+        if (document.getElementById("email-reg").value.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)){
+            console.log("Controlli email passati");
+            return true;
+        } 
         else{
             invalidEmail();
+            console.log("Email non valida");
             return false;
         }
     }
@@ -63,33 +68,42 @@ function validTelephone(){
         return false;
     }
     validTel();
-    if (document.getElementById("telefono").value.match(/^((\+|00)?39)?3\d{2}\d{6,7}$/)) return true;
+    if (document.getElementById("telefono").value.match(/^((\+|00)?39)?3\d{2}\d{6,7}$/)) {
+        return true;
+    }
     else {
         invalidTel();
         return false;
     }
 }
 function comparePws(){
-    var p1=document.getElementById("password1").value;
-    var p2=document.getElementById("password2").value;
+    
+    var p1=document.getElementById("password1-reg").value;
+    console.log(p1);
+    var p2=document.getElementById("password2-reg").value;
     if (p1==""){
         invalidP1();
+        console.log("password vuota");
         return false;
     }
     if (p2==""){
         invalidP2();
+        console.log("password vuota");
         return false;
     }
     if (p1!=p2){
         invalidP1();
         invalidP2();
+        console.log("Password diverse");
         return false;
     }
     validP1();
     validP2();
+    console.log("Controlli password passati");
     return true;
 }
 function check_lr(){
     if (!nameIsValid() || !surnameIsValid() || !validBirthDate() || !emailToRegister() || !validTelephone() || !comparePws()) return false;
+    console.log("Controlli passati");
     return true;
 }

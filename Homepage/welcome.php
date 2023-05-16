@@ -192,7 +192,7 @@
         <div class="col-lg-4 col-sm-12 mb-4" style="position: relative;">
             <h1 id="par-header">3-Controlla la pagina Utenti</h1>
             <p id="par-description">
-            Non appena verrà trovato un utente che abbia fatto una richiesta con i tuoi stessi parametri, cliccando sul bottone accanto alla riga relativa alla richiesta ti verranno mostrati i contatti dell'utente
+            Sulla pagina Utenti potrai verificare lo stato delle tue richieste: se non è stato trovato un utente con le tue stesse preferenze per il viaggio, apparirà un bottone giallo sulla riga della richiesta in questione o, in caso contrario, il bottone sarà verde.
             </p>
         </div>
     </div>
@@ -200,8 +200,7 @@
         <div class="col-lg-4 col-sm-12 mb-4" style="position: relative;">
             <h1 id="par-header">4-Parti e vivi un'esperienza unica</h1>
             <p id="par-description">
-                Che sia una semplice uscita, un’avventura o un Viaggione Proponilo in App, troverai sempre qualcuno con cui parlarne e pronto a partire con te
-                E se non hai le idee chiare? Aggregati ad un viaggio in partenza! Ci sono centinaia di proposte in app… e crescono ogni giorno!
+               Contatta gli utenti che preferisci per organizzare una nuova avventura, che sia un semplice viaggio di un weekend o un'indimenticabile esperienza di più settimane.
             </p>
         </div>
         <div class="col-lg-4 col-sm-12 mb-4">

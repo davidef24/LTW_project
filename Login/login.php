@@ -25,7 +25,7 @@
                     $saved_pwd= $tuple["pwd"];
                     $given_pwd= $_POST['password1'];
                     if (!(password_verify($given_pwd, $saved_pwd))){
-                        echo "uncorrect";
+                        echo "incorrect";
                         
                     }
                     else {

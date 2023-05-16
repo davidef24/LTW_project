@@ -22,7 +22,7 @@
     </head>
              <script>
              $(function(){
-             var domande_frequenti =["Come eseguire la registrazione/login?","Come mi vengono proposti i compagni di viaggio?","Quante destinazioni sono attualmente disponibili?","Come controllare lo stato delle mie richieste?"];
+             var domande_frequenti =["Come eseguire la registrazione/login?","Come mi vengono proposti i compagni di viaggio?","Quante destinazioni sono attualmente disponibili?","Come controllare lo stato delle mie richieste?", "Il sito fa utilizzo in qualche modo delle mie informazioni?"];
              $(document).ready(function()
              {
                  $("#form-help").autocomplete({
@@ -47,7 +47,12 @@
                          $(".result").load("document4.html",function(response,statusTxt,t_error){
                              if(statusTxt=="error") alert("Errore di caricamento della risposta"+t_error.status+":" +t_error.statusTxt);
                          });
-                     }
+                         }
+                    else if(url=="Il sito fa utilizzo in qualche modo delle mie informazioni?"){
+                         $(".result").load("document5.html",function(response,statusTxt,t_error){
+                             if(statusTxt=="error") alert("Errore di caricamento della risposta"+t_error.status+":" +t_error.statusTxt);
+                         });
+                         }
                  
                  },
                  open: function(event, ui) {

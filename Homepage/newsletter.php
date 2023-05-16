@@ -24,7 +24,7 @@
 
 <script>
     setTimeout(function() {
-       // window.location.href="http://localhost:3000/Homepage/welcome.php";
-        window.location.href="http://localhost:3000/Users/loren/Desktop/LTW/Homepage/welcome.php";
+        window.location.href="http://localhost:3000/Homepage/welcome.php";
+        //window.location.href="http://localhost:3000/Users/loren/Desktop/LTW/Homepage/welcome.php";
     }, 0);
 </script>
