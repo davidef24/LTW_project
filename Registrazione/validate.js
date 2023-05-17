@@ -46,18 +46,15 @@ function validBirthDate(){
 function emailToRegister(){
     if (document.getElementById("email-reg").value==""){
         invalidEmail();
-        console.log("Email vuota");
         return false;
     }
     else{
         validEmail();
         if (document.getElementById("email-reg").value.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)){
-            console.log("Controlli email passati");
             return true;
         } 
         else{
             invalidEmail();
-            console.log("Email non valida");
             return false;
         }
     }

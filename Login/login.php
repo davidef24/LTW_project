@@ -34,7 +34,6 @@
                         $nome = $tuple['nome'];
                         session_start();
                         $_SESSION['nome']= $nome;
-                        $_SESSION['timeout']= time();
                         $_SESSION['user-email']= $email;
                         echo "success";
                     }

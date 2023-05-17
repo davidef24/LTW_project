@@ -15,6 +15,8 @@
     <script src= "../Jquery/jquery.js"></script>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css">
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js" ></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
     <title>Riconoscimenti</title>
 </head>
 <script>
@@ -34,6 +36,9 @@
             });
 </script>
 <body>
+    <script>
+        AOS.init();
+    </script>
     <div id="nav-placeholder"></div>
     <div class="title_design fadein">
         <h1 class="header-txt">Chi siamo</h1>
@@ -54,15 +59,15 @@
             </div>
         </div>
     </div>
-<div class="title_design fadein" id="team">
+<div class="title_design" id="team" data-aos="zoom-in-up" data-aos-duration="900" data-aos-offset="50">
     <h1 class="header-txt">Team</h1>
 </div>
-<div id="contattaci" class="section_team fadein">
+<div id="contattaci" class="section_team" data-aos="zoom-in-up" data-aos-duration="900" data-aos-offset="100" data-aos-delay="100">
     <div class="m_row">
         <div class="column">
             <div class="m_card">
                 <div class="img_container">
-                    <img src="./avatar1.jpeg">
+                    <img src="./Sticker-EL.png">
                 </div>
                 <h3>
                     Emilio Leo
@@ -76,7 +81,7 @@
         <div class="column">
             <div class="m_card">
                 <div class="img_container">
-                    <img src="./avatar1.jpeg">
+                    <img src="./Sticker-EL.png">
                 </div>
                 <h3>
                     Lorenzo Iacopino
@@ -90,7 +95,7 @@
         <div class="column">
             <div class="m_card">
                 <div class="img_container">
-                    <img src="./avatar1.jpeg">
+                    <img src="./Sticker-DF.png">
                 </div>
                 <h3>
                     Davide Fortunato
