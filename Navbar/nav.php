@@ -60,23 +60,36 @@
                 event.preventDefault();
                 var email = $('#email').val();
                 var password = $('#pwd').val();
-                $.ajax({
-                  type: "POST",
-                  url: "../Login/login.php",
-                  data: { email: email, password1: password },
-                  success: function(response) {
-                    if (response == "success") {
-                      window.location.href = "http://localhost:3000/Homepage/welcome.php";
-                    } else if(response == "unregistered") {
-                      $('#avviso').show();
-                      $('#avviso').text("Non esiste un utente registrato con questa email, registrati cliccando su \"Crea un nuovo Account\".");
+                if (email==""){
+                    $("#avviso").show();
+                    $("#avviso").text("Inserire email");
+                }
+                else{
+                    if (password==""){
+                        $("#avviso").show();
+                        $("#avviso").text("Inserire password");
                     }
                     else{
-                      $('#avviso').show();
-                      $('#avviso').text("Email o password non validi, riprova.");
+                        $.ajax({
+                        type: "POST",
+                        url: "../Login/login.php",
+                        data: { email: email, password1: password },
+                        success: function(response) {
+                            if (response == "success") {
+                            window.location.href = "http://localhost:3000/Homepage/welcome.php";
+                            //window.location.href = "http://localhost:3000/Users/loren/Desktop/LTW/Homepage/welcome.php";
+                            } else if(response == "unregistered") {
+                            $('#avviso').show();
+                            $('#avviso').text("Non esiste un utente registrato con questa email, registrati cliccando su \"Crea un nuovo Account\".");
+                            }
+                            else{
+                            $('#avviso').show();
+                            $('#avviso').text("Email o password non validi, riprova.");
+                            }
+                        }
+                        });
                     }
-                  }
-                });
+                }
             });
         });
     </script>
@@ -203,8 +216,8 @@
                   <div class=\"modal-body\">
                   <div role=\"alert\" class=\"alert\" id=\"avviso\">Errore</div>
                       <form method=\"post\" id=\"form-login\" action=\"\" name=\"registrazione\" class=\"form-signin m-auto\" onsubmit=\"return check_lr();\">
-                          <input placeholder=\"Email\" type=\"text\" id=\"email\" name=\"email\" maxlength=\"40\" class=\"form-control\" required>
-                          <input placeholder=\"Password\" id=\"pwd\" type=\"password\" name=\"password1\" maxlength=\"40\" class=\"form-control\" required>
+                          <input placeholder=\"Email\" type=\"text\" id=\"email\" name=\"email\" maxlength=\"40\" class=\"form-control\">
+                          <input placeholder=\"Password\" id=\"pwd\" type=\"password\" name=\"password1\" maxlength=\"40\" class=\"form-control\">
                           <i class=\"far fa-eye\"></i>
                           <input type=\"submit\" value=\"Accedi\" id=\"accedi-btn\" class=\"btn btn-primary\" >     
                       </form>
