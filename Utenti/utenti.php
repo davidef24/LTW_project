@@ -50,7 +50,7 @@
                 $(this).addClass("bg-body");                
             });
 
-            $(".green-circle").click(function(){
+            $(".green-btn").click(function(){
                 var query= "select u.telefono, u.email, r2.datarichiesta from richiesta r1, richiesta r2, utente u where r1.id_richiesta =" + $(this).attr('id') + " and r1.email != r2.email and r1.destinazione = r2.destinazione and r1.etàcompagni = r2.etàcompagni and r1.periodo = r2.periodo and r1.durata = r2.durata and r2.email = u.email";
                 var httpRequest = new XMLHttpRequest();
                 httpRequest.open("GET", "mostra-utenti.php?query=" + query, true);
@@ -123,7 +123,7 @@
                         $search=pg_query_params($dbconn, $q2, array($email, $tuple["destinazione"], $tuple["periodo"], $tuple["etàcompagni"]));
                         if ($match=pg_fetch_array($search, NULL, PGSQL_ASSOC)){
                             echo '<td class="status"><div>
-                                        <input type="button" class="green-circle" id="'.$tuple["id_richiesta"].'">
+                                        <input type="button" class="green-btn" id="'.$tuple["id_richiesta"].'">
                                     </div></td>
                                     <td class="cancella" id="cestino-'.$tuple["id_richiesta"].'"><div>
                                         <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">

@@ -28,6 +28,16 @@
     margin-bottom: 20px;
 }
 
+.green-btn{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: green;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
 @media screen and (max-width: 950px) {
     .container-legenda{
         width: 100%;
