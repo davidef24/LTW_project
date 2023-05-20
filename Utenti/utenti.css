@@ -45,22 +45,24 @@
 }
 
 @media screen and (max-width: 750px) and (min-width: 450px) {
-    #tabella-richieste .periodo {
+   /* #tabella-richieste .periodo {
         display: none;
     }
     #tabella-richieste .email-utente {
         display: none;
-    }
+    }*/
 }
 
 @media screen and (max-width: 450px) {
+    /*
     #tabella-richieste .periodo {
         display: none;
     }
     #tabella-richieste .età {
         display: none;
     }
+    
     #tabella-richieste .email-utente {
         display: none;
-    }
+    } */
 }

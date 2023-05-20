@@ -59,7 +59,7 @@
                 <p id="dest-paragraph"><b>Breve descrizione:</b> Tokyo è la capitale del Giappone ed è una delle città più grandi e affascinanti del mondo, con una popolazione di oltre 13 milioni di persone. La città è famosa per la sua tecnologia all'avanguardia, la sua cultura popolare unica e la sua deliziosa cucina. Tokyo offre una varietà di attrazioni, come il Palazzo Imperiale, il Tempio di Senso-ji, il quartiere di Shibuya famoso per la sua traversa pedonale elettronica e il moderno grattacielo di Tokyo Skytree. La città è anche nota per i suoi negozi di moda alla moda, i suoi caffè alla moda e i suoi ristoranti stellati Michelin. Con la sua miscela di tradizione e modernità, Tokyo offre un'esperienza unica e indimenticabile a chi la visita.<br>
                     <b>Ideale se cerchi:</b> nuove culture affascinanti, cibo delizioso, città sicura<br>
                     <b>Per quanto tempo: </b>due settimane. <br>
-                    <b>Il periodo migliore: </b>inizio primavera o inizio autunno.
+                    <b>Il periodo migliore: </b>inizio Primavera o inizio Autunno.
             </div>
                 <?php
                     if(!isset($_SESSION['nome'])){
@@ -82,10 +82,10 @@
                             </select>
                             <select size=1 name=\"periodo\" class=\"form-select mb-3\">
                                 <option selected value=\"\">Periodo</option>
-                                <option value=\"estate\">Estate</option>
-                                <option value=\"primavera\">Primavera</option>
-                                <option value=\"autunno\">Autunno</option>
-                                <option value=\"inverno\">Inverno</option>
+                                <option value=\"Estate\">Estate</option>
+                                <option value=\"Primavera\">Primavera</option>
+                                <option value=\"Autunno\">Autunno</option>
+                                <option value=\"Inverno\">Inverno</option>
                             </select>
                             <select size=1 name=\"durata\" class=\"form-select mb-3\">
                                 <option selected value=\"\">Durata</option>

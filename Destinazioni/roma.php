@@ -59,7 +59,7 @@
                 <p id="dest-paragraph"><b>Breve descrizione:</b> Roma è la capitale dell'Italia e una delle città più antiche e iconiche del mondo. Conosciuta come "la città eterna", Roma è famosa per la sua storia antica, le sue numerose opere d'arte e monumenti, la sua cucina deliziosa e la sua vibrante cultura contemporanea. La città ospita numerose attrazioni turistiche, tra cui il Colosseo, il Pantheon, la Fontana di Trevi, la Città del Vaticano e il Museo Nazionale Romano. Roma è anche conosciuta per la sua vivace scena sociale, con numerosi ristoranti, bar, caffè e negozi che offrono una vasta gamma di esperienze uniche. Inoltre, Roma è sede di importanti eventi culturali, come la Settimana della Moda di Roma e la Biennale di Architettura di Roma.<br>
                     <b>Ideale se cerchi:</b>storia e cultura, cibo, parchi e giardini pubblici, arte e architettura, shopping<br>
                     <b>Per quanto tempo: </b> un weekend. <br>
-                    <b>Il periodo migliore: </b>primavera e autunno.
+                    <b>Il periodo migliore: </b>Primavera e Autunno.
             </div>
                 <?php
                     if(!isset($_SESSION['nome'])){
@@ -82,10 +82,10 @@
                             </select>
                             <select size=1 name=\"periodo\" class=\"form-select mb-3\">
                                 <option selected value=\"\">Periodo</option>
-                                <option value=\"estate\">Estate</option>
-                                <option value=\"primavera\">Primavera</option>
-                                <option value=\"autunno\">Autunno</option>
-                                <option value=\"inverno\">Inverno</option>
+                                <option value=\"Estate\">Estate</option>
+                                <option value=\"Primavera\">Primavera</option>
+                                <option value=\"Autunno\">Autunno</option>
+                                <option value=\"Inverno\">Inverno</option>
                             </select>
                             <select size=1 name=\"durata\" class=\"form-select mb-3\">
                                 <option selected value=\"\">Durata</option>

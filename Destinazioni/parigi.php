@@ -83,10 +83,10 @@
                             </select>
                             <select size=1 name=\"periodo\" class=\"form-select mb-3\">
                                 <option selected value=\"\">Periodo</option>
-                                <option value=\"estate\">Estate</option>
-                                <option value=\"primavera\">Primavera</option>
-                                <option value=\"autunno\">Autunno</option>
-                                <option value=\"inverno\">Inverno</option>
+                                <option value=\"Estate\">Estate</option>
+                                <option value=\"Primavera\">Primavera</option>
+                                <option value=\"Autunno\">Autunno</option>
+                                <option value=\"Inverno\">Inverno</option>
                             </select>
                             <select size=1 name=\"durata\" class=\"form-select mb-3\">
                                 <option selected value=\"\">Durata</option>

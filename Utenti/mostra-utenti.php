@@ -5,7 +5,7 @@ $dbconn = pg_connect("host=localhost port=5432 dbname=Progetto_LTW
 ?>
 
 <?php
-    echo "<table id=\"tabella-richieste\" class=\"table table-hover table-striped flex-column\" style=\"max-width: 100%;\">
+    echo "<div class= \"table-responsive\"><table id=\"tabella-richieste\" class=\"table table-hover table-striped flex-column\" style=\"max-width: 100%;\">
     <thead>
     <tr>
         <th scope=\"col\" class=\"data-richiesta data-richiesta-utente\">Data richiesta</th>
@@ -26,5 +26,5 @@ $dbconn = pg_connect("host=localhost port=5432 dbname=Progetto_LTW
 
     echo "
         </tbody>
-</table>";
+</table></div>";
 ?>

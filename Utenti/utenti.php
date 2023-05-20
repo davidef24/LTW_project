@@ -88,6 +88,7 @@
         </div>
     </div>
     <h1 style="font-family:'Archivo Black', sans-serif;">Storico richieste</h1>
+    <div class="table-responsive">
     <table id="tabella-richieste" class="table table-hover table-striped flex-column" style="max-width: 100%;">
         <thead>
             <tr>
@@ -148,6 +149,7 @@
             ?>
         </tbody>
     </table>
+    </div>
     <hr/>
     <div id="zona-dinamica">
         <!---->
