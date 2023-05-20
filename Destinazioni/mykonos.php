@@ -93,9 +93,9 @@ Mykonos è un'isola greca situata nel Mar Egeo, famosa per le sue spiagge bellis
                             <select size=1 name=\"durata\" class=\"form-select mb-3\">
                                 <option selected value=\"\">Durata</option>
                                 <option value=\"weekend\">Weekend</option>
-                                <option value=\"una-settimana\">Una settimana</option>
-                                <option value=\"due-settimane\">Due settimane</option>
-                                <option value=\"un-mese\">Un mese o più</option>
+                                <option value=\"Una settimana\">Una settimana</option>
+                                <option value=\"Due settimane\">Due settimane</option>
+                                <option value=\"Un mese\">Un mese o più</option>
                             </select>
                             <input type=\"submit\" value=\"Invia\" class=\"btn btn-primary m-auto\">
                             <input type=\"reset\" value=\"Reset\" class=\"btn btn-danger m-auto\">

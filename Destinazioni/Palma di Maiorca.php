@@ -91,9 +91,9 @@
                             <select size=1 name=\"durata\" class=\"form-select mb-3\">
                                 <option selected value=\"\">Durata</option>
                                 <option value=\"weekend\">Weekend</option>
-                                <option value=\"una-sett\">Una settimana</option>
-                                <option value=\"due-sett\">Due settimane</option>
-                                <option value=\"un-mese\">Un mese o più</option>
+                                <option value=\"Una settimane\">Una settimana</option>
+                                <option value=\"Due settimane\">Due settimane</option>
+                                <option value=\"Un mese\">Un mese o più</option>
                             </select>
                             <input type=\"submit\" value=\"Invia\" class=\"btn btn-primary m-auto\">
                             <input type=\"reset\" value=\"Reset\" class=\"btn btn-danger m-auto\">
