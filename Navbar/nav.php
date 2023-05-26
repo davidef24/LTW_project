@@ -77,7 +77,6 @@
                         success: function(response) {
                             if (response == "success") {
                             window.location.href = "http://localhost:3000/Homepage/welcome.php";
-                            //window.location.href = "http://localhost:3000/Users/loren/Desktop/LTW/Homepage/welcome.php";
                             } else if(response == "unregistered") {
                             $('#avviso').show();
                             $('#avviso').text("Non esiste un utente registrato con questa email, registrati cliccando su \"Crea un nuovo Account\".");

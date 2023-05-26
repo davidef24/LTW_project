@@ -15,7 +15,7 @@ $dbconn = pg_connect("host=localhost port=5432 dbname=Progetto_LTW
     if ($dbconn){
         $query = $_GET['query'];
         $result=pg_query($dbconn, $query);
-        echo "Questi sono gli utenti che hanno selezionato le tue stesse preferenze, contattali! <br>";
+        echo "<h3 style=\"font-family:'Archivo Black', sans-serif;\">Questi sono gli utenti che hanno selezionato le tue stesse preferenze, contattali! </h3><br>";
         while ($tuple=pg_fetch_array($result, NULL, PGSQL_ASSOC)){
             echo '<tr>
                     <td class="data-richiesta data-richiesta-utente">' . $tuple["datarichiesta"] . '</td>
